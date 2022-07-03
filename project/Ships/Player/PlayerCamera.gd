@@ -6,9 +6,9 @@
 # The camera supports zooming and camera shake.
 extends Camera2D
 
-const SHAKE_EXPONENT := 1.8
+const SHAKE_EXPONENT := 0.8
 
-export var max_zoom := 5.0
+export var max_zoom := 20.0
 export var decay_rate := 1.0
 export var max_offset := Vector2(100.0, 100.0)
 export var max_rotation := 0.1
