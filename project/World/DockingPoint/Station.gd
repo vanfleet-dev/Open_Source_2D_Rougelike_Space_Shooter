@@ -3,6 +3,15 @@
 class_name Station
 extends DockingPoint
 
+export var rotation_speed = 0.08
+
+
+func _process(delta):
+	rotation += rotation_speed * delta
+	$Sprite/sat_1.rotation += rotation_speed * delta
+	$Sprite/sat_2.rotation += rotation_speed * delta
+
+
 export var upgrade_iron_amount := 99.0
 
 var accumulated_iron := 0.0 setget _set_accumulated_iron

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/station_audio.wav-080bcf685c813f456c28891b9ad40f30.sample"
+
+[deps]
+
+source_file="res://World/DockingPoint/station_audio.wav"
+dest_files=[ "res://.import/station_audio.wav-080bcf685c813f456c28891b9ad40f30.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

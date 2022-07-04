@@ -1,146 +1,119 @@
 [gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://World/DockingPoint/station_map_icon.tres" type="Resource" id=1]
-[ext_resource path="res://World/DockingPoint/space-station.svg" type="Texture" id=2]
+[ext_resource path="res://World/DockingPoint/sprites/satellite_1.png" type="Texture" id=2]
 [ext_resource path="res://World/DockingPoint/DockingPoint.tscn" type="PackedScene" id=3]
 [ext_resource path="res://World/DockingPoint/Station.gd" type="Script" id=4]
-[ext_resource path="res://World/DockingPoint/Radar.wav" type="AudioStream" id=5]
-[ext_resource path="res://World/DockingPoint/signal.svg" type="Texture" id=6]
-
-[sub_resource type="Gradient" id=1]
-offsets = PoolRealArray( 0.525692, 1 )
-colors = PoolColorArray( 0.294118, 0.356863, 0.670588, 1, 0.294118, 0.356863, 0.670588, 0.0196078 )
-
-[sub_resource type="GradientTexture" id=2]
-gradient = SubResource( 1 )
-
-[sub_resource type="Curve" id=3]
-_data = [ Vector2( 0, 0 ), 0.0, 3.17121, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
-
-[sub_resource type="CurveTexture" id=4]
-curve = SubResource( 3 )
-
-[sub_resource type="ParticlesMaterial" id=5]
-flag_disable_z = true
-gravity = Vector3( 0, 0, 0 )
-orbit_velocity = 0.0
-orbit_velocity_random = 0.0
-scale = 1.5
-scale_curve = SubResource( 4 )
-color_ramp = SubResource( 2 )
+[ext_resource path="res://World/DockingPoint/station_audio.wav" type="AudioStream" id=5]
+[ext_resource path="res://World/DockingPoint/sprites/space_station_10.png" type="Texture" id=6]
+[ext_resource path="res://World/DockingPoint/sprites/dock-aura.svg" type="Texture" id=7]
+[ext_resource path="res://VFX/Station_Particle_1.tscn" type="PackedScene" id=8]
+[ext_resource path="res://VFX/lighting_texture_2.png" type="Texture" id=9]
+[ext_resource path="res://VFX/Station_Particle_2.tscn" type="PackedScene" id=10]
 
 [sub_resource type="Animation" id=6]
 resource_name = "Idle"
-length = 10.0
+length = 60.0
 loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite/Antenna/Sprite:rotation_degrees")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 5 ),
-"transitions": PoolRealArray( -2, -2 ),
-"update": 0,
-"values": [ 30.0, -44.9999 ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("Sprite/Antenna/Sprite/Particles2D:emitting")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0, 1, 4, 5, 8, 9 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ true, false, true, false, true, false ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("Sprite/Glow:modulate")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0, 3, 6, 9 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 1 ), Color( 1.2, 1.2, 1.2, 1 ), Color( 1, 1, 1, 1 ), Color( 1.2, 1.2, 1.2, 1 ) ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("Sprite:rotation_degrees")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0, 6 ),
-"transitions": PoolRealArray( -2, -2 ),
-"update": 0,
-"values": [ -5.0, 15.0 ]
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("AudioStreamPlayer2D:playing")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"times": PoolRealArray( 0, 4.2, 8.2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 1,
-"values": [ true, true, true ]
-}
+
+[sub_resource type="OccluderPolygon2D" id=8]
+polygon = PoolVector2Array( 781.087, 1029.53, 805.804, 1013.09, 876.78, 953.843, 982.124, 857.99, 1058.79, 780.641, 1118.64, 714.586, 1133.31, 695.327, 1140.08, 682.207, 1142.87, 670.156, 1142.87, 670.156, 1145.85, 669.104, 1152.01, 677.998, 1151.34, 697.013, 1129.04, 737.408, 1078.96, 790.29, 1002.3, 867.64, 920.599, 943.077, 855.604, 1001.22, 812.204, 1035.98, 791.364, 1045.35, 780.418, 1048.54, 770.333, 1043.71, 761.229, 1037.87 )
 
 [node name="Station" instance=ExtResource( 3 )]
+rotation = 0.0174533
+scale = Vector2( 3, 3 )
 script = ExtResource( 4 )
 map_icon = ExtResource( 1 )
 
+[node name="DockingAura" parent="." index="1"]
+visible = true
+position = Vector2( 1432.87, 1355.2 )
+texture = ExtResource( 7 )
+
 [node name="Sprite" parent="." index="2"]
-rotation = -0.075777
-scale = Vector2( 0.977, 1 )
-texture = ExtResource( 2 )
-region_enabled = true
-region_rect = Rect2( 42, 66, 172, 172 )
-
-[node name="Glow" type="Sprite" parent="Sprite" index="0"]
-modulate = Color( 1.05131, 1.05131, 1.05131, 1 )
-position = Vector2( -40.9417, -32 )
-scale = Vector2( 1.02354, 1 )
-texture = ExtResource( 2 )
-region_enabled = true
-region_rect = Rect2( 14, 13, 32, 31 )
-
-[node name="Antenna" type="Sprite" parent="Sprite" index="1"]
-show_behind_parent = true
-position = Vector2( 40.8769, -62.8014 )
-rotation = 0.523598
-scale = Vector2( 1.00594, 0.9943 )
-texture = ExtResource( 2 )
-offset = Vector2( 0, -15 )
-region_enabled = true
-region_rect = Rect2( 218, 18, 21, 26 )
-
-[node name="Sprite" type="Sprite" parent="Sprite/Antenna" index="0"]
-position = Vector2( 0.709229, -19.7334 )
-rotation = 0.461556
-texture = ExtResource( 2 )
-offset = Vector2( 0.136154, -13.2755 )
-region_enabled = true
-region_rect = Rect2( 119, 5, 31, 39 )
-
-[node name="Particles2D" type="Particles2D" parent="Sprite/Antenna/Sprite" index="0"]
-position = Vector2( -0.0514908, -14.6679 )
-z_index = -1
-amount = 3
-process_material = SubResource( 5 )
+position = Vector2( 1084.31, 982.226 )
+rotation = -0.764454
+scale = Vector2( 2, 2 )
 texture = ExtResource( 6 )
+
+[node name="sat_1" type="Node2D" parent="Sprite" index="0"]
+position = Vector2( -0.213196, 206.282 )
+rotation = -6.13483
+scale = Vector2( 0.75, 0.75 )
+
+[node name="sat_1_sprite" type="Sprite" parent="Sprite/sat_1" index="0"]
+position = Vector2( -191.187, 16.459 )
+rotation = 1.63886
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+
+[node name="sat_2" type="Node2D" parent="Sprite" index="1"]
+position = Vector2( -0.212402, 206.284 )
+rotation = -1.34914
+scale = Vector2( 0.75, 0.75 )
+
+[node name="sat_2_sprite" type="Sprite" parent="Sprite/sat_2" index="0"]
+position = Vector2( 207.708, 41.8079 )
+rotation = 1.5708
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PlayerRotationRig" parent="Sprite" index="2"]
+position = Vector2( -0.212345, 206.284 )
+
+[node name="DockingArea" parent="." index="3"]
+position = Vector2( 1432.87, 1355.2 )
+rotation = -2.27416
+
+[node name="CollisionShape2D" parent="DockingArea" index="0"]
+position = Vector2( -0.000244141, 6.10352e-05 )
+
+[node name="KinematicBody2D" parent="." index="4"]
+position = Vector2( 1433.42, 1354.62 )
+rotation = -2.27416
+
+[node name="CollisionShape2D" parent="KinematicBody2D" index="0"]
+position = Vector2( -0.000183105, 0 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." index="5"]
+position = Vector2( 1433.42, 1354.62 )
+rotation = -2.27416
+stream = ExtResource( 5 )
+volume_db = 15.073
+autoplay = true
+bus = "Thrusters"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="6"]
 autoplay = "Idle"
+playback_default_blend_time = 108.5
 anims/Idle = SubResource( 6 )
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." index="7"]
-stream = ExtResource( 5 )
+[node name="MapTransform" parent="." index="7"]
+position = Vector2( 1433.42, 1354.62 )
+rotation = -2.27416
+
+[node name="Station_Particle_1" parent="." index="8" instance=ExtResource( 8 )]
+show_behind_parent = true
+position = Vector2( 941.085, 842.112 )
+rotation = -0.764454
+amount = 60
+lifetime = 3.65
+speed_scale = 0.3
+
+[node name="Station_Particle_2" parent="." index="9" instance=ExtResource( 10 )]
+position = Vector2( 1432.87, 1355.2 )
+rotation = -0.773181
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Light2D" type="Light2D" parent="." index="10"]
+position = Vector2( 1433.77, 1354.37 )
+rotation = -2.33001
+scale = Vector2( 1.69828, 1.04487 )
+texture = ExtResource( 9 )
+color = Color( 1, 0.996078, 0.772549, 1 )
+range_z_min = -3000
+range_z_max = 3000
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="." index="11"]
+position = Vector2( -84.1567, -65.5412 )
+occluder = SubResource( 8 )
