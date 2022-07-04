@@ -11,11 +11,11 @@ signal cluster_depleted(iron_left)
 export var count_min := 1
 export var count_max := 5
 
-export var min_distance_from_station := 800.0
-export var min_distance_between_clusters := 600.0
+export var min_distance_from_station := 10000.0
+export var min_distance_between_clusters := 3000.0
 
-export var cluster_radius := 150.0
-export var asteroid_radius := 75.0
+export var cluster_radius := 200.0
+export var asteroid_radius := 200.0
 export var randomize_rotation := true
 
 

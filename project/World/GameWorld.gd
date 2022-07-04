@@ -6,13 +6,13 @@ class_name GameWorld
 extends Node2D
 
 # Radius of the world in pixels.
-export var radius := 8000.0
+export var radius := 20000.0
 
 # Minimum amount of iron that must be added when the world spawns new asteroids.
 # Used in `_spawn_asteroids`.
-export var iron_amount_balance_level := 100.0
+export var iron_amount_balance_level := 5000.0
 # If the amouns of iron in the world goes below this threshold, spawns new asteroids.
-export var refresh_threshold_range := 25.0
+export var refresh_threshold_range := 500.0
 
 var _spawned_positions := []
 var _world_objects := []

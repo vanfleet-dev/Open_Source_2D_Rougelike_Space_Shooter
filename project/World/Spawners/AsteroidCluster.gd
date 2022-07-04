@@ -20,10 +20,10 @@ func _init() -> void:
 # Spawns a new random count of asteroids and adds them as children.
 func spawn_asteroids(
 	rng: RandomNumberGenerator,
-	count_min := 1,
-	count_max := 5,
-	spawn_radius := 150.0,
-	asteroid_radius := 75.0
+	count_min := 20,
+	count_max := 50,
+	spawn_radius := 1000.0,
+	asteroid_radius := 500.0
 ) -> void:
 	var count = rng.randi_range(count_min, count_max)
 	var min_distance_squared := pow(asteroid_radius, 2)

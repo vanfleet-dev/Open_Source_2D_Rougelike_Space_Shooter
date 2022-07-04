@@ -5,8 +5,8 @@ extends PlayerState
 
 enum DockingProcess { CLEARING, DOCKING, DOCKED }
 
-export var docking_release_speed := 150.0
-export var docking_speed_multiplier := 0.65
+export var docking_release_speed := 1.0
+export var docking_speed_multiplier := 0.09
 
 var _acceleration := GSAITargetAcceleration.new()
 var _agent: GSAISteeringAgent
@@ -38,7 +38,7 @@ func _ready() -> void:
 	# Face makes sure we face away from the docking point
 	var face := GSAIFace.new(_agent, _reverse_face_position)
 	face.alignment_tolerance = deg2rad(15)
-	face.deceleration_radius = deg2rad(45)
+	face.deceleration_radius = deg2rad(22)
 
 	_flee_blend = GSAIBlend.new(_agent)
 	_flee_blend.add(flee, 1)

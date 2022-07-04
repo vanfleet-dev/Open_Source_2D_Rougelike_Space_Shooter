@@ -7,8 +7,8 @@ extends Node2D
 
 export var PirateScene: PackedScene
 export var count_min := 1
-export var count_max := 5
-export var spawn_radius := 150.0
+export var count_max := 1
+export var spawn_radius := 10000.0
 
 
 func spawn_pirate_group(

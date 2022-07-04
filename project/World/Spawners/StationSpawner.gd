@@ -4,7 +4,7 @@ class_name StationSpawner
 extends Node2D
 
 export var Station: PackedScene
-export var radius_player_near_station := 300.0
+export var radius_player_near_station := 3000.0
 
 onready var player_ship: PlayerShip = $PlayerShip
 
