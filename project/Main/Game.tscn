@@ -21,8 +21,7 @@
 [ext_resource path="res://VFX/DistortMaskView.tscn" type="PackedScene" id=20]
 [ext_resource path="res://VFX/PostProcessGameView.gd" type="Script" id=21]
 [ext_resource path="res://UI/HUD/HUD.tscn" type="PackedScene" id=22]
-
-
+[ext_resource path="res://World/DockingPoint/Sun.tscn" type="PackedScene" id=23]
 
 
 
@@ -55,6 +54,9 @@ radius = 3000.0
 iron_amount_balance_level = 750.0
 refresh_threshold_range = 350.0
 
+[node name="Sun" parent="GameWorld" instance=ExtResource( 23 )]
+light_mask = 0
+scale = Vector2( 3, 3 )
 [node name="BackgroundStars" parent="GameWorld" instance=ExtResource( 8 )]
 
 [node name="Camera" parent="GameWorld" instance=ExtResource( 12 )]
