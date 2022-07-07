@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/star.png-f1912b529d4fdb75e3de0d776ad88804.stex"
+path="res://.import/bg_purple_sun.png-1955f9523929ff0802a5d30669507169.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://VFX/star.png"
-dest_files=[ "res://.import/star.png-f1912b529d4fdb75e3de0d776ad88804.stex" ]
+source_file="res://VFX/bg_purple_sun.png"
+dest_files=[ "res://.import/bg_purple_sun.png-1955f9523929ff0802a5d30669507169.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
