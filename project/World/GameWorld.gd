@@ -24,6 +24,43 @@ onready var station_spawner: StationSpawner = $StationSpawner
 onready var asteroid_spawner: AsteroidSpawner = $AsteroidSpawner
 onready var pirate_spawner: PirateSpawner = $PirateSpawner
 
+# rotation for planet and sats
+export var rotation_speed = 0.1
+export var rotation_speed1 = 0.03
+export var rotation_speed2 = 0.3
+export var rotation_speed3 = 0.02
+export var rotation_speed4 = 0.04
+export var rotation_speed5 = 0.06
+export var rotation_speed6 = 0.08
+
+func _process(delta):
+#twins sprites
+	$Sun/twins_1/twin_1.rotation += rotation_speed * delta
+#wet sprites
+	$Sun/wet_1.rotation += rotation_speed1 * delta
+	$Sun/wet_1/wet_moon_1.rotation += rotation_speed2 * delta
+#gas sprites
+	$Sun/gas_1.rotation += rotation_speed3 * delta
+	$Sun/gas_1/gas_moon_1.rotation += rotation_speed4 * delta
+	$Sun/gas_1/gas_moon_2.rotation += rotation_speed6 * delta
+	$Sun/gas_1/gas_moon_3.rotation += rotation_speed5 * delta
+#gas ring sprites
+	$Sun/gas_1/gas_1_rings.rotation += rotation_speed1 * delta
+	$Sun/gas_1/gas_1_rings2.rotation += rotation_speed1 * delta
+	$Sun/gas_1/gas_1_rings3.rotation += rotation_speed1 * delta
+	$Sun/gas_1/gas_1_rings4.rotation += rotation_speed1 * delta
+	$Sun/gas_1/gas_1_rings5.rotation += rotation_speed1 * delta
+	$Sun/gas_1/gas_1_rings6.rotation += rotation_speed1 * delta
+	$Sun/gas_1/gas_1_rings7.rotation += rotation_speed1 * delta
+	$Sun/gas_1/gas_1_rings8.rotation += rotation_speed1 * delta
+	$Sun/gas_1/gas_1_rings9.rotation += rotation_speed1 * delta
+	$Sun/gas_1/gas_1_rings10.rotation += rotation_speed1 * delta
+	$Sun/gas_1/gas_1_rings11.rotation += rotation_speed1 * delta
+	$Sun/gas_1/gas_1_rings12.rotation += rotation_speed1 * delta
+	$Sun/gas_1/gas_1_rings13.rotation += rotation_speed1 * delta
+	$Sun/gas_1/gas_1_rings14.rotation += rotation_speed1 * delta
+	$Sun/gas_1/gas_1_rings15.rotation += rotation_speed1 * delta
+	$Sun/gas_1/gas_1_rings16.rotation += rotation_speed1 * delta
 
 func _ready() -> void:
 	yield(owner, "ready")
