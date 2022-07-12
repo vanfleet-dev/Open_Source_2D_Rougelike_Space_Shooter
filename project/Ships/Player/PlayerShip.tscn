@@ -19,15 +19,27 @@
 [ext_resource path="res://VFX/MoveTrail.tscn" type="PackedScene" id=17]
 [ext_resource path="res://Ships/Player/VFX.gd" type="Script" id=18]
 [ext_resource path="res://VFX/DustEmitter.tscn" type="PackedScene" id=19]
-[ext_resource path="res://Ships/Player/ThrustersAudioPlayer.tscn" type="PackedScene" id=20]
+[ext_resource path="res://VFX/exhaust_sprite_3.png" type="Texture" id=22]
 [ext_resource path="res://Ships/Player/Player_Landing.wav" type="AudioStream" id=24]
 
+[sub_resource type="ImageTexture" id=1]
 [node name="PlayerShip" instance=ExtResource( 1 )]
 collision_mask = 14
 script = ExtResource( 6 )
 projectile_mask = 6
 ExplosionEffect = ExtResource( 11 )
 map_icon = ExtResource( 8 )
+
+[node name="Sprite" parent="." index="0"]
+light_mask = 0
+position = Vector2( 0, 2.38419e-07 )
+scale = Vector2( 1.5, 1.5 )
+normal_map = SubResource( 1 )
+
+[node name="CollisionShape" parent="." index="1"]
+position = Vector2( 0, -13.3333 )
+rotation = -3.12938
+polygon = PoolVector2Array( -0.264699, -21.665, -28.148, 15.345, 29.3477, 14.6426 )
 
 [node name="StateMachine" type="Node" parent="." index="2"]
 script = ExtResource( 2 )
@@ -70,7 +82,16 @@ script = ExtResource( 10 )
 [node name="VFX" type="Node2D" parent="." index="9"]
 script = ExtResource( 18 )
 
-[node name="MoveTrail" parent="VFX" index="0" instance=ExtResource( 17 )]
+[node name="MoveTrail1" parent="VFX" index="0" instance=ExtResource( 17 )]
+position = Vector2( -40.8333, -12.5 )
+scale = Vector2( 1.2, 1.2 )
+amount = 3
+lifetime = 0.1
+speed_scale = 3.0
+texture = ExtResource( 22 )
+initial_velocity = 200.0
+linear_accel = 50.0
+damping = 500.0
 z_index = -1
 lifetime = 0.3
 initial_velocity = 200.0
