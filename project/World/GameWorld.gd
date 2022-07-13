@@ -78,6 +78,24 @@ func setup() -> void:
 	pirate_spawner.spawn_pirate_group(
 		rng, 0, radius, _find_largest_inoccupied_asteroid_cluster().global_position
 	)
+	pirate_spawner.spawn_pirate_group2(
+		rng, 0, radius, _find_largest_inoccupied_asteroid_cluster().global_position
+	)
+	pirate_spawner.spawn_pirate_group3(
+		rng, 0, radius, _find_largest_inoccupied_asteroid_cluster().global_position
+	)
+	pirate_spawner.spawn_pirate_group4(
+		rng, 0, radius, _find_largest_inoccupied_asteroid_cluster().global_position
+	)
+	pirate_spawner.spawn_pirate_group5(
+		rng, 0, radius, _find_largest_inoccupied_asteroid_cluster().global_position
+	)
+	pirate_spawner.spawn_pirate_group6(
+		rng, 0, radius, _find_largest_inoccupied_asteroid_cluster().global_position
+	)
+	pirate_spawner.spawn_pirate_group7(
+		rng, 0, radius, _find_largest_inoccupied_asteroid_cluster().global_position
+	)
 
 
 # Returns the AsteroidCluster with the most iron that isn't occupied.
