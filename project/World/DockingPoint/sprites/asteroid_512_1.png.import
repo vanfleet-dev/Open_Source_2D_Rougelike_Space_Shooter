@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/asteroid-round.svg-2fd7d1e67218a745010fb26d849ed70c.stex"
+path="res://.import/asteroid_512_1.png-a76298c8ecfb3bb7a68c036b709e82ec.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://World/DockingPoint/asteroid-round.svg"
-dest_files=[ "res://.import/asteroid-round.svg-2fd7d1e67218a745010fb26d849ed70c.stex" ]
+source_file="res://World/DockingPoint/sprites/asteroid_512_1.png"
+dest_files=[ "res://.import/asteroid_512_1.png-a76298c8ecfb3bb7a68c036b709e82ec.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

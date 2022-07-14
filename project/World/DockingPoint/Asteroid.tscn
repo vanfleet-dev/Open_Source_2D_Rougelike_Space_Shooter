@@ -2,16 +2,14 @@
 
 [ext_resource path="res://World/DockingPoint/DockingPoint.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/DockingPoint/Asteroid.gd" type="Script" id=2]
-[ext_resource path="res://World/DockingPoint/asteroid-round.svg" type="Texture" id=3]
+[ext_resource path="res://World/DockingPoint/sprites/asteroid_512_1.png" type="Texture" id=3]
 [ext_resource path="res://World/DockingPoint/Minig_DigUp.wav" type="AudioStream" id=4]
 
-
-
 [sub_resource type="CircleShape2D" id=1]
-radius = 117.956
+radius = 108.116
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 48.0012
+radius = 69.1809
 
 [sub_resource type="Animation" id=3]
 resource_name = "spin"
@@ -72,21 +70,21 @@ audio_stream = ExtResource( 4 )
 
 [node name="Asteroid" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
+min_scale = 1.0
 
 [node name="Sprite" parent="." index="2"]
-scale = Vector2( 0.449401, 0.449401 )
+scale = Vector2( 1, 1 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" parent="DockingArea" index="0"]
-visible = true
 shape = SubResource( 1 )
 
 [node name="CollisionShape2D" parent="KinematicBody2D" index="0"]
-visible = true
 shape = SubResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="6"]
 autoplay = "spin"
+playback_speed = 0.01
 anims/spin = SubResource( 3 )
 script = SubResource( 4 )
 
