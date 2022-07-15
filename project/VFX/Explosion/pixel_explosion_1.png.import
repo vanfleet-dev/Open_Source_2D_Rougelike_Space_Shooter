@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/puff.png-17343d3079ec2b5a1c4066139325ca90.stex"
+path="res://.import/pixel_explosion_1.png-452f62f02933b847b6e3d5a87c372bc9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://VFX/Explosion/puff.png"
-dest_files=[ "res://.import/puff.png-17343d3079ec2b5a1c4066139325ca90.stex" ]
+source_file="res://VFX/Explosion/pixel_explosion_1.png"
+dest_files=[ "res://.import/pixel_explosion_1.png-452f62f02933b847b6e3d5a87c372bc9.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
