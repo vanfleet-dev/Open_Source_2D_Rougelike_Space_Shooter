@@ -34,7 +34,7 @@ func fire(spawn_position: Vector2, spawn_orientation: float, projectile_mask: in
 	projectile.damage += stats.get_damage()
 
 	ObjectRegistry.register_projectile(projectile)
-	cooldown.wait_time = stats.get_cooldown() * (1.0 + random_spread(0.2))
+	cooldown.wait_time = stats.get_cooldown() * (0.0 + random_spread(0.0))
 	cooldown.start()
 
 
