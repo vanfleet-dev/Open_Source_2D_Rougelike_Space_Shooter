@@ -65,16 +65,13 @@ stream = ExtResource( 24 )
 [node name="Precision" type="Node" parent="StateMachine/Move" index="2"]
 script = ExtResource( 7 )
 
-[node name="Gun" parent="." index="3"]
-position = Vector2( 0, -30.5 )
+[node name="Gun" parent="." index="5"]
+position = Vector2( -12.5, -30.8333 )
 script = ExtResource( 9 )
 Projectile = ExtResource( 14 )
 
-[node name="CameraTransform" type="RemoteTransform2D" parent="." index="4"]
-
-[node name="UITransform" type="RemoteTransform2D" parent="." index="5"]
-remote_path = NodePath("../BarRig")
-update_rotation = false
+[node name="Gun 2" parent="." index="6" instance=ExtResource( 21 )]
+position = Vector2( 12.5, -30.8333 )
 
 [node name="MapTimer" type="Timer" parent="." index="6"]
 
