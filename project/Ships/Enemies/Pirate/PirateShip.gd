@@ -12,7 +12,7 @@ const ALIGNMENT_TOLERANCE := deg2rad(5)
 # Represents the ship on the minimap. Use a MapIcon resource.
 export var map_icon: Resource
 
-export var health_max := 100
+export var health_max := 25
 
 export var linear_speed_max := 2000.0
 export var acceleration_max := 1000.0
