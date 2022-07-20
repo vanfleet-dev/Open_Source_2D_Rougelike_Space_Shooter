@@ -111,5 +111,6 @@ rotation = 3.66519
 z_index = -1
 
 [node name="LaserGun" parent="." index="10" instance=ExtResource( 13 )]
+visible = false
 rotation = -1.57079
 script = ExtResource( 12 )
