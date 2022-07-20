@@ -1,26 +1,11 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Ships/Guns/Projectiles/Projectile.gd" type="Script" id=1]
 [ext_resource path="res://Ships/Guns/Projectiles/plasma_ball.png" type="Texture" id=2]
-[ext_resource path="res://VFX/Shaders/glow_sprite.shader" type="Shader" id=3]
-[ext_resource path="res://VFX/DistortionEmitter.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Ships/Guns/Projectiles/Weapons_Plasma_Shot_01.wav" type="AudioStream" id=5]
 
-
-
-
-
-[sub_resource type="ShaderMaterial" id=1]
-shader = ExtResource( 3 )
-shader_param/alpha_intensity_front = 0.5
-shader_param/tint_front = Color( 0.972549, 0.92549, 0.92549, 1 )
-shader_param/alpha_intensity_back = 1.39583
-shader_param/tint_back = Color( 0.94902, 0.054902, 0.054902, 1 )
-shader_param/blend_amount = 1.0
-shader_param/fade_amount = 1.0
-
 [sub_resource type="CircleShape2D" id=2]
-radius = 15.6706
+radius = 16.0312
 
 [sub_resource type="Animation" id=3]
 resource_name = "Flicker"
@@ -43,11 +28,9 @@ tracks/0/keys = {
 collision_layer = 16
 collision_mask = 0
 script = ExtResource( 1 )
-distortion_emitter = ExtResource( 4 )
 
 [node name="Sprite" type="Sprite" parent="."]
-material = SubResource( 1 )
-scale = Vector2( 0.387347, 0.387347 )
+scale = Vector2( 8, 8 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -64,6 +47,7 @@ autostart = true
 anims/Flicker = SubResource( 3 )
 
 [node name="DistortionTransform" type="RemoteTransform2D" parent="."]
+visible = false
 position = Vector2( 0, 15 )
 update_rotation = false
 update_scale = false

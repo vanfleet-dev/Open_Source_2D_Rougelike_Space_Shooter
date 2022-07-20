@@ -12,16 +12,16 @@ const ALIGNMENT_TOLERANCE := deg2rad(5)
 # Represents the ship on the minimap. Use a MapIcon resource.
 export var map_icon: Resource
 
-export var health_max := 100
+export var health_max := 25
 
-export var linear_speed_max := 200.0
-export var acceleration_max := 15.0
-export var drag_factor := 0.04
-export var angular_speed_max := 270
-export var angular_acceleration_max := 15
-export var angular_drag_factor := 0.1
-export var distance_from_target_min := 200.0
-export var distance_from_obstacles_min := 200.0
+export var linear_speed_max := 2000.0
+export var acceleration_max := 1000.0
+export var drag_factor := 0.005
+export var angular_speed_max := 1000
+export var angular_acceleration_max := 1000
+export var angular_drag_factor := 0.02
+export var distance_from_target_min := 500.0
+export var distance_from_obstacles_min := 500.0
 export (int, LAYERS_2D_PHYSICS) var projectile_mask := 0
 export var ExplosionEffect: PackedScene
 

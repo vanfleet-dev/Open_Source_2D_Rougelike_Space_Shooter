@@ -6,11 +6,11 @@ extends Stats
 
 signal health_depleted
 
-export var _max_health := 100.0
-export var _acceleration_max := 15.0
-export var _linear_speed_max := 350.0
-export var _angular_speed_max := 120.0
-export var _angular_acceleration_max := 45.0
+export var _max_health := 1000.0
+export var _acceleration_max := 1600.0
+export var _linear_speed_max := 810.0
+export var _angular_speed_max := 300.0
+export var _angular_acceleration_max := 5000.0
 
 var health: float = _max_health setget set_health
 
