@@ -4,19 +4,22 @@
 extends PlayerState
 
 var reversing := false
-onready var audio_thrusters: LoopingAudioStreamPlayer2D = $ThrustersAudioPlayer
-
+onready var engine_audio: AudioStreamPlayer2D = $EngineAudio #Kim-Lancaster
 
 func physics_process(delta: float) -> void:
 	var movement := get_movement()
 	reversing = movement.y > 0
 	var direction := GSAIUtils.angle_to_vector2(_parent.agent.orientation)
 	
-	audio_thrusters.global_position = owner.global_position
-	if movement.y < 0.0 and not audio_thrusters.playing:
-		audio_thrusters.start()
-	elif is_equal_approx(movement.y, 0.0) and not audio_thrusters.ending:
-		audio_thrusters.end()
+	#Removed LoopAudioStreamPlayer2D from Travel.gd and 
+	#ThrustersAudioPlayer from PlayerShip Scene. Replaced with a audio stream 
+	#with only 1 audio file due to audio pops and clips during playback of 
+	#multiple audio files. See commit 
+	engine_audio.global_position = owner.global_position
+	if not engine_audio.playing and Input.is_action_pressed("thrust_forwards"):
+		engine_audio.play()
+	elif not Input.is_action_pressed("thrust_forwards"):
+		engine_audio.stop()
 
 	_parent.linear_velocity += (
 		movement.y
@@ -43,3 +46,4 @@ func unhandled_input(event: InputEvent) -> void:
 		return
 	if event.is_action("thrust_forwards") and event.is_pressed():
 		ship.vfx.create_shockwave()
+		

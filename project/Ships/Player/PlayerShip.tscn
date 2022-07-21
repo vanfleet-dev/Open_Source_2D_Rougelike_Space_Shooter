@@ -19,7 +19,11 @@
 [ext_resource path="res://VFX/MoveTrail.tscn" type="PackedScene" id=17]
 [ext_resource path="res://Ships/Player/VFX.gd" type="Script" id=18]
 [ext_resource path="res://VFX/DustEmitter.tscn" type="PackedScene" id=19]
+<<<<<<< HEAD
+[ext_resource path="res://Ships/Player/Thrust_Loop.wav" type="AudioStream" id=20]
+=======
 [ext_resource path="res://Ships/Player/PlayerGun.tscn" type="PackedScene" id=21]
+>>>>>>> b7612c28a039c5b4228d947f814190c2fa7ab0d3
 [ext_resource path="res://VFX/exhaust_sprite_3.png" type="Texture" id=22]
 [ext_resource path="res://Ships/Player/Player_Landing.wav" type="AudioStream" id=24]
 
@@ -48,14 +52,20 @@ initial_state = NodePath("Move/Travel")
 
 [node name="Move" type="Node" parent="StateMachine" index="0"]
 script = ExtResource( 3 )
+<<<<<<< HEAD
+=======
 drag_linear_coeff = 0.001
 reverse_multiplier = 1.0
 drag_angular_coeff = 0.02
+>>>>>>> b7612c28a039c5b4228d947f814190c2fa7ab0d3
 
 [node name="Travel" type="Node" parent="StateMachine/Move" index="0"]
 script = ExtResource( 4 )
 
-[node name="ThrustersAudioPlayer" parent="StateMachine/Move/Travel" index="0" instance=ExtResource( 20 )]
+[node name="EngineAudio" type="AudioStreamPlayer2D" parent="StateMachine/Move/Travel" index="0"]
+stream = ExtResource( 20 )
+volume_db = 13.358
+pitch_scale = 0.63
 
 [node name="Dock" type="Node" parent="StateMachine/Move" index="1"]
 script = ExtResource( 5 )
@@ -66,6 +76,12 @@ stream = ExtResource( 24 )
 [node name="Precision" type="Node" parent="StateMachine/Move" index="2"]
 script = ExtResource( 7 )
 
+<<<<<<< HEAD
+script = ExtResource( 9 )
+Projectile = ExtResource( 14 )
+
+
+=======
 [node name="Gun" parent="." index="5"]
 position = Vector2( -12.5, -30.8333 )
 script = ExtResource( 9 )
@@ -73,6 +89,7 @@ Projectile = ExtResource( 14 )
 
 [node name="Gun 2" parent="." index="6" instance=ExtResource( 21 )]
 position = Vector2( 12.5, -30.8333 )
+>>>>>>> b7612c28a039c5b4228d947f814190c2fa7ab0d3
 
 [node name="MapTimer" type="Timer" parent="." index="6"]
 
