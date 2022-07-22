@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/topdown-portal-blue.svg-ee71353bdf5bb9c4edcfcccd8ce15f94.stex"
+path="res://.import/sun_1.png-68ca43c18d53025979dde72564cb592f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://World/DockingPoint/topdown-portal-blue.svg"
-dest_files=[ "res://.import/topdown-portal-blue.svg-ee71353bdf5bb9c4edcfcccd8ce15f94.stex" ]
+source_file="res://World/DockingPoint/sprites/sun_1.png"
+dest_files=[ "res://.import/sun_1.png-68ca43c18d53025979dde72564cb592f.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
