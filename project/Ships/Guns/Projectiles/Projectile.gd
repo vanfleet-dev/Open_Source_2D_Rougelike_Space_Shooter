@@ -13,7 +13,7 @@ const _AUDIO_SAMPLES = [
 	preload("Weapons_Plasma_Shot_06.wav"),
 ]
 
-export var speed := 1650.0
+export var speed := 3000.0
 export var damage := 10.0
 export var distortion_emitter: PackedScene
 
