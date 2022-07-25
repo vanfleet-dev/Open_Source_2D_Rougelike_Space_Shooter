@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/shield_bar_over.svg-5fff58ee6b15d4d11c41399fb2abe1bf.stex"
+path="res://.import/shield_bar_over.png-9e6c8c062a302bbdecf44b00d4c8ae5c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/HUD/shield_bar_over.svg"
-dest_files=[ "res://.import/shield_bar_over.svg-5fff58ee6b15d4d11c41399fb2abe1bf.stex" ]
+source_file="res://UI/HUD/shield_bar_over.png"
+dest_files=[ "res://.import/shield_bar_over.png-9e6c8c062a302bbdecf44b00d4c8ae5c.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

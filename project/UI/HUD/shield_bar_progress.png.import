@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/shield_bar_progress.svg-4f5bcf51444a65e486e7000cbcc080a4.stex"
+path="res://.import/shield_bar_progress.png-61f1d75f1288e847856e5d6706ee5a13.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/HUD/shield_bar_progress.svg"
-dest_files=[ "res://.import/shield_bar_progress.svg-4f5bcf51444a65e486e7000cbcc080a4.stex" ]
+source_file="res://UI/HUD/shield_bar_progress.png"
+dest_files=[ "res://.import/shield_bar_progress.png-61f1d75f1288e847856e5d6706ee5a13.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

@@ -4,7 +4,6 @@
 [ext_resource path="res://UI/CargoProgress.tscn" type="PackedScene" id=2]
 [ext_resource path="res://UI/HUD/HUD.gd" type="Script" id=3]
 
-
 [node name="HUD" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -14,17 +13,34 @@ __meta__ = {
 }
 
 [node name="ShieldBar" parent="." instance=ExtResource( 1 )]
-margin_left = 24.0
-margin_top = 24.0
-margin_right = 296.0
-margin_bottom = 64.0
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 388.0
+margin_bottom = 40.0
 stretch_margin_left = 40
 stretch_margin_right = 56
 
+[node name="count" type="Control" parent="ShieldBar"]
+margin_left = -7.0
+margin_top = -7.0
+margin_right = 33.0
+margin_bottom = 33.0
+
+[node name="background" type="NinePatchRect" parent="ShieldBar/count"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="title" type="TextureRect" parent="ShieldBar/count/background"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="number" type="Label" parent="ShieldBar/count/background"]
+margin_right = 40.0
+margin_bottom = 14.0
+
 [node name="CargoGauge" parent="." instance=ExtResource( 2 )]
-anchor_left = 1.0
-anchor_bottom = 0.0
-margin_left = -168.0
-margin_top = 32.0
-margin_right = -40.0
-margin_bottom = 160.0
+margin_left = 2.0
+margin_top = 43.0
+margin_right = 3.0
+margin_bottom = 44.0
+rect_scale = Vector2( 0.8, 0.45 )
