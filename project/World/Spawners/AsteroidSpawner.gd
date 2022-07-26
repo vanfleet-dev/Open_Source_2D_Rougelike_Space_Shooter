@@ -14,8 +14,8 @@ export var count_max := 5
 export var min_distance_from_station := 10000.0
 export var min_distance_between_clusters := 3000.0
 
-export var cluster_radius := 200.0
-export var asteroid_radius := 200.0
+export var cluster_radius := 2000.0
+export var asteroid_radius := 1000.0
 export var randomize_rotation := true
 
 

@@ -14,8 +14,7 @@
 [ext_resource path="res://Ships/Player/PlayerLaserGun.gd" type="Script" id=12]
 [ext_resource path="res://Ships/Guns/LaserGun/LaserGun.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Ships/Guns/Projectiles/PlasmaShotPlayer.tscn" type="PackedScene" id=14]
-[ext_resource path="res://VFX/ShockwaveEmitter.tscn" type="PackedScene" id=15]
-[ext_resource path="res://VFX/RippleEmitter.tscn" type="PackedScene" id=16]
+[ext_resource path="res://VFX/RockEmitter.tscn" type="PackedScene" id=16]
 [ext_resource path="res://VFX/MoveTrail.tscn" type="PackedScene" id=17]
 [ext_resource path="res://Ships/Player/VFX.gd" type="Script" id=18]
 [ext_resource path="res://VFX/DustEmitter.tscn" type="PackedScene" id=19]
@@ -118,14 +117,21 @@ initial_velocity = 200.0
 [node name="Ripple" parent="VFX" index="2" instance=ExtResource( 16 )]
 position = Vector2( 0, 20 )
 
-[node name="DustRight" parent="VFX" index="3" instance=ExtResource( 19 )]
+[node name="DustRight" parent="VFX" index="5" instance=ExtResource( 19 )]
 position = Vector2( 0, 20.2518 )
 z_index = -1
 
-[node name="DustLeft" parent="VFX" index="4" instance=ExtResource( 19 )]
-position = Vector2( 0, 20.2518 )
+[node name="DustLeft" parent="VFX" index="6" instance=ExtResource( 19 )]
+position = Vector2( 8.34465e-07, 20 )
 rotation = 3.66519
 z_index = -1
+
+[node name="RockRight" parent="VFX" index="7" instance=ExtResource( 16 )]
+position = Vector2( -0.5, 18.5 )
+
+[node name="RockLeft" parent="VFX" index="8" instance=ExtResource( 16 )]
+position = Vector2( -1, 19.5 )
+rotation = -3.14159
 
 [node name="LaserGun" parent="." index="10" instance=ExtResource( 13 )]
 visible = false

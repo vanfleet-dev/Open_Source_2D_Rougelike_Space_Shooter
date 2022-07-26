@@ -1,19 +1,20 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://World/DockingPoint/DockingPoint.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/DockingPoint/Asteroid.gd" type="Script" id=2]
 [ext_resource path="res://World/DockingPoint/sprites/asteroid_512_1.png" type="Texture" id=3]
 [ext_resource path="res://World/DockingPoint/Minig_DigUp.wav" type="AudioStream" id=4]
+[ext_resource path="res://VFX/DustEmitter.tscn" type="PackedScene" id=5]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 108.116
+radius = 117.956
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 69.1809
+radius = 48.0012
 
 [sub_resource type="Animation" id=3]
 resource_name = "spin"
-length = 4.0
+length = 30.0
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:rotation_degrees")
@@ -22,7 +23,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 4 ),
+"times": PoolRealArray( 0, 30 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 0.0, 360.0 ]
@@ -45,7 +46,7 @@ tracks/0/path = NodePath("Sprite:scale")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
-tracks/0/enabled = true
+tracks/0/enabled = false
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.15, 0.3 ),
 "transitions": PoolRealArray( 2, 0.5, 2 ),
@@ -64,16 +65,28 @@ tracks/1/keys = {
 "update": 1,
 "values": [ true ]
 }
+tracks/2/type = "value"
+tracks/2/path = NodePath("DustEmitter:emitting")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [sub_resource type="AudioStreamRandomPitch" id=6]
 audio_stream = ExtResource( 4 )
 
 [node name="Asteroid" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
-min_scale = 1.0
 
 [node name="Sprite" parent="." index="2"]
-scale = Vector2( 1, 1 )
+rotation = 5.65487
+scale = Vector2( 0.449401, 0.449401 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" parent="DockingArea" index="0"]
@@ -84,7 +97,7 @@ shape = SubResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="6"]
 autoplay = "spin"
-playback_speed = 0.01
+playback_speed = 0.5
 anims/spin = SubResource( 3 )
 script = SubResource( 4 )
 
@@ -95,3 +108,5 @@ anims/pulse = SubResource( 5 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="9"]
 stream = SubResource( 6 )
+
+[node name="DustEmitter" parent="." index="10" instance=ExtResource( 5 )]
