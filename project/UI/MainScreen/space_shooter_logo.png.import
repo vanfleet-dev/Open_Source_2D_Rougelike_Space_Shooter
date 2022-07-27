@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/envelope-foreground.png-aa5c6951d7221fccb883ab3d12dbf02d.stex"
+path="res://.import/space_shooter_logo.png-96b34697bf284b31d4728f98bfd7bce8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/MainScreen/envelope-foreground.png"
-dest_files=[ "res://.import/envelope-foreground.png-aa5c6951d7221fccb883ab3d12dbf02d.stex" ]
+source_file="res://UI/MainScreen/space_shooter_logo.png"
+dest_files=[ "res://.import/space_shooter_logo.png-96b34697bf284b31d4728f98bfd7bce8.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
