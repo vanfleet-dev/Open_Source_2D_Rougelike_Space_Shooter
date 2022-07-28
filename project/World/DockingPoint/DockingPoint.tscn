@@ -2,23 +2,25 @@
 
 [ext_resource path="res://World/DockingPoint/DockingPoint.gd" type="Script" id=1]
 [ext_resource path="res://World/DockingPoint/dock-aura.svg" type="Texture" id=2]
-[ext_resource path="res://World/DockingPoint/asteroid_map_icon.tres" type="Resource" id=3]
+[ext_resource path="res://UI/Minimap/MapIcon.gd" type="Script" id=3]
 [ext_resource path="res://World/DockingPoint/TweenAura.gd" type="Script" id=4]
+[ext_resource path="res://VFX/glowing_circle.png" type="Texture" id=5]
 
-
+[sub_resource type="Resource" id=3]
+script = ExtResource( 3 )
+texture = ExtResource( 5 )
+color = Color( 1, 1, 1, 1 )
+scale = 1.0
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 200.0
+radius = 90.0888
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 81.3653
+radius = 41.7961
 
-[node name="DockingPoint" type="Node2D" groups=[
-"mini-map",
-"world_objects",
-]]
+[node name="DockingPoint" type="Node2D" groups=["mini-map", "world_objects"]]
 script = ExtResource( 1 )
-map_icon = ExtResource( 3 )
+map_icon = SubResource( 3 )
 
 [node name="TweenAura" type="Tween" parent="."]
 script = ExtResource( 4 )
@@ -42,7 +44,6 @@ update_scale = false
 collision_layer = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DockingArea"]
-visible = false
 shape = SubResource( 1 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
@@ -50,7 +51,6 @@ collision_layer = 2
 collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
-visible = false
 shape = SubResource( 2 )
 
 [node name="MapTransform" type="RemoteTransform2D" parent="."]
