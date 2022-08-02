@@ -1,14 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://UI/Minimap/MapView.gd" type="Script" id=1]
-
-[sub_resource type="Gradient" id=1]
-offsets = PoolRealArray( 0 )
-colors = PoolColorArray( 0, 0, 0, 1 )
-
-[sub_resource type="GradientTexture" id=2]
-gradient = SubResource( 1 )
-width = 1
+[ext_resource path="res://VFX/bg_1.png" type="Texture" id=2]
 
 [node name="MapView" type="ViewportContainer"]
 self_modulate = Color( 1, 1, 1, 0 )
@@ -16,9 +9,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 stretch = true
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Viewport" type="Viewport" parent="."]
 size = Vector2( 2560, 1080 )
@@ -33,7 +23,7 @@ layer = -100
 [node name="BlackBackground" type="TextureRect" parent="Viewport/CanvasLayer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = SubResource( 2 )
+texture = ExtResource( 2 )
 expand = true
 stretch_mode = 1
 
