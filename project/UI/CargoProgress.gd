@@ -65,3 +65,19 @@ func _on_value_changed(value_start: float, current_value: float) -> void:
 	)
 	tween.start()
 	spawn_ore()
+
+
+	# func _on_value_changed(_value: float) -> void:
+	# 	if tween.is_active():
+	# 		return
+	# 	tween.interpolate_property(
+	# 		fill,
+	# 		"rect_scale",
+	# 		fill.rect_scale,
+	# 		Vector2(ratio, ratio),
+	# 		0.25,
+	# 		Tween.TRANS_ELASTIC,
+	# 		Tween.EASE_OUT
+	# 	)
+	# 	tween.start()
+	# 	spawn_ore()

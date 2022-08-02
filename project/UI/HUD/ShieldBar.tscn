@@ -6,6 +6,7 @@
 [ext_resource path="res://Ships/Player/player_stats.tres" type="Resource" id=5]
 
 [sub_resource type="Gradient" id=4]
+colors = PoolColorArray( 1, 0.560784, 0, 1, 1, 0.513726, 0, 1 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "damage"
