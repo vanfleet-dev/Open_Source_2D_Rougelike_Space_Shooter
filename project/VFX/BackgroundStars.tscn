@@ -1,7 +1,6 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://VFX/bg_nebula_2.png" type="Texture" id=1]
-[ext_resource path="res://VFX/bg_green_sun.png" type="Texture" id=3]
 [ext_resource path="res://VFX/bg_nebula_1.png" type="Texture" id=4]
 [ext_resource path="res://VFX/bg_dust_2.png" type="Texture" id=5]
 [ext_resource path="res://VFX/bg_purple_sun.png" type="Texture" id=6]
@@ -11,6 +10,8 @@
 [ext_resource path="res://VFX/bg_1.png" type="Texture" id=10]
 
 [node name="BackgroundStars" type="ParallaxBackground"]
+scale = Vector2( 2, 2 )
+transform = Transform2D( 2, 0, 0, 2, 0, 0 )
 scroll_base_scale = Vector2( 0.5, 0.5 )
 scroll_ignore_camera_zoom = true
 
@@ -27,49 +28,23 @@ texture = ExtResource( 7 )
 centered = false
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
-motion_scale = Vector2( 0.23, 0.23 )
+motion_scale = Vector2( 0.21, 0.21 )
 motion_mirroring = Vector2( 5120, 3840 )
 
-[node name="Sprite" type="Sprite" parent="ParallaxLayer4"]
+[node name="suns_1" type="Sprite" parent="ParallaxLayer4"]
 texture = ExtResource( 9 )
-centered = false
-
-[node name="Sprite2" type="Sprite" parent="ParallaxLayer4"]
-position = Vector2( 4797, 226 )
-rotation = 1.63886
-texture = ExtResource( 9 )
-centered = false
-
-[node name="ParallaxLayer5" type="ParallaxLayer" parent="."]
-motion_scale = Vector2( 0.24, 0.24 )
-motion_mirroring = Vector2( 5120, 3840 )
-
-[node name="Sprite" type="Sprite" parent="ParallaxLayer5"]
-texture = ExtResource( 3 )
-centered = false
-
-[node name="Sprite2" type="Sprite" parent="ParallaxLayer5"]
-position = Vector2( -1097, 2512 )
-rotation = -0.764454
-texture = ExtResource( 3 )
 centered = false
 
 [node name="ParallaxLayer6" type="ParallaxLayer" parent="."]
-motion_scale = Vector2( 0.25, 0.25 )
+motion_scale = Vector2( 0.21, 0.21 )
 motion_mirroring = Vector2( 5120, 3840 )
 
-[node name="Sprite" type="Sprite" parent="ParallaxLayer6"]
-texture = ExtResource( 6 )
-centered = false
-
-[node name="Sprite2" type="Sprite" parent="ParallaxLayer6"]
-position = Vector2( 2342, 3915 )
-rotation = -2.76635
+[node name="suns_2" type="Sprite" parent="ParallaxLayer6"]
 texture = ExtResource( 6 )
 centered = false
 
 [node name="ParallaxLayer7" type="ParallaxLayer" parent="."]
-motion_scale = Vector2( 0.26, 0.26 )
+motion_scale = Vector2( 0.3, 0.3 )
 motion_mirroring = Vector2( 5120, 3840 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxLayer7"]
@@ -77,25 +52,28 @@ texture = ExtResource( 4 )
 centered = false
 
 [node name="ParallaxLayer8" type="ParallaxLayer" parent="."]
-motion_scale = Vector2( 0.27, 0.27 )
+motion_scale = Vector2( 0.4, 0.4 )
 motion_mirroring = Vector2( 5120, 3840 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxLayer8"]
+position = Vector2( 5897.5, 3692 )
 texture = ExtResource( 1 )
 centered = false
 
 [node name="ParallaxLayer9" type="ParallaxLayer" parent="."]
-motion_scale = Vector2( 0.29, 0.29 )
+motion_scale = Vector2( 0.6, 0.6 )
 motion_mirroring = Vector2( 5120, 3840 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxLayer9"]
+position = Vector2( -15, 68.5 )
 texture = ExtResource( 5 )
 centered = false
 
 [node name="ParallaxLayer10" type="ParallaxLayer" parent="."]
-motion_scale = Vector2( 0.35, 0.35 )
+motion_scale = Vector2( 0.8, 0.8 )
 motion_mirroring = Vector2( 5120, 3840 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxLayer10"]
+position = Vector2( -19.5, -35 )
 texture = ExtResource( 8 )
 centered = false
