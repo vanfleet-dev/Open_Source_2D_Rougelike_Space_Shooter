@@ -1,15 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://UI/Menus/Upgrades/normal.svg" type="Texture" id=2]
-[ext_resource path="res://UI/Menus/Upgrades/pressed.svg" type="Texture" id=3]
-[ext_resource path="res://UI/Menus/Upgrades/hover.svg" type="Texture" id=4]
 [ext_resource path="res://UI/fonts/default_font_bold.tres" type="DynamicFont" id=5]
 [ext_resource path="res://UI/Menus/Upgrades/UpgradeButton.gd" type="Script" id=6]
-
-
-
-
-
 
 [sub_resource type="Animation" id=1]
 resource_name = "hide"
@@ -99,12 +92,7 @@ margin_right = 128.0
 margin_bottom = 128.0
 rect_pivot_offset = Vector2( 64, 64 )
 texture_normal = ExtResource( 2 )
-texture_pressed = ExtResource( 3 )
-texture_hover = ExtResource( 4 )
 script = ExtResource( 6 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchor_right = 1.0
@@ -114,9 +102,6 @@ margin_top = 9.0
 margin_right = -19.0
 margin_bottom = -9.0
 alignment = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="TextureRect" type="TextureRect" parent="VBoxContainer"]
 margin_top = 15.0
@@ -140,4 +125,5 @@ align = 1
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/hide = SubResource( 1 )
 anims/show = SubResource( 2 )
+
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
