@@ -8,6 +8,7 @@
 [ext_resource path="res://UI/Minimap/MapView.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/GameInitializer.gd" type="Script" id=7]
 [ext_resource path="res://VFX/BackgroundStars.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Main/Background_Audio.tscn" type="PackedScene" id=9]
 [ext_resource path="res://UI/Minimap/MapDisplay.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Main/white.png" type="Texture" id=11]
 [ext_resource path="res://World/ShakingCamera.tscn" type="PackedScene" id=12]
@@ -107,6 +108,10 @@ script = ExtResource( 1 )
 script = ExtResource( 15 )
 PirateScene = ExtResource( 3 )
 spawn_radius = 350.0
+
+[node name="Background_Audio" parent="GameWorld" instance=ExtResource( 9 )]
+volume_db = -15.0
+autoplay = true
 
 [node name="MapView" parent="." instance=ExtResource( 6 )]
 mouse_filter = 2
