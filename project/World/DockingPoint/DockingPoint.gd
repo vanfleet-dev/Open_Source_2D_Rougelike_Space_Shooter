@@ -8,7 +8,7 @@ extends Node2D
 signal died
 
 export (Resource) var map_icon = MapIcon.new()
-export var docking_distance := 400.0 setget _set_docking_distance
+export var docking_distance := 300.0 setget _set_docking_distance
 
 var angle_proportion := 1.0
 var is_player_inside := false

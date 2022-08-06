@@ -7,7 +7,7 @@ enum DockingProcess { CLEARING, DOCKING, DOCKED }
 
 #jvf asteroid docking test
 export var docking_release_speed := 150.0
-export var docking_speed_multiplier := 0.65
+export var docking_speed_multiplier := 0.2
 
 var _acceleration := GSAITargetAcceleration.new()
 var _agent: GSAISteeringAgent
