@@ -1,4 +1,4 @@
-[gd_scene load_steps=863 format=2]
+[gd_scene load_steps=859 format=2]
 
 [ext_resource path="res://World/DockingPoint/gas_1.gd" type="Script" id=1]
 [ext_resource path="res://World/DockingPoint/sprites/gas_belt_sprites/gas_belt_1.png" type="Texture" id=2]
@@ -7,14 +7,10 @@
 [ext_resource path="res://World/DockingPoint/sprites/gas_1.png" type="Texture" id=5]
 [ext_resource path="res://World/DockingPoint/sprites/gas_belt_sprites/gas_belt_6.png" type="Texture" id=6]
 [ext_resource path="res://World/DockingPoint/sprites/gas_belt_sprites/gas_belt_8.png" type="Texture" id=7]
-[ext_resource path="res://World/DockingPoint/sprites/gas_belt_sprites/gas_belt_9.png" type="Texture" id=8]
 [ext_resource path="res://World/DockingPoint/sprites/gas_moon_2.png" type="Texture" id=9]
-[ext_resource path="res://World/DockingPoint/sprites/gas_belt_sprites/gas_belt_3.png" type="Texture" id=10]
-[ext_resource path="res://World/DockingPoint/sprites/gas_belt_sprites/gas_belt_5.png" type="Texture" id=11]
 [ext_resource path="res://World/DockingPoint/sprites/gas_moon_3.png" type="Texture" id=12]
 [ext_resource path="res://World/DockingPoint/sprites/gas_belt_sprites/gas_belt_4.png" type="Texture" id=13]
 [ext_resource path="res://World/DockingPoint/sprites/gas_belt_sprites/gas_belt_2.png" type="Texture" id=14]
-[ext_resource path="res://World/DockingPoint/sprites/gas_belt_sprites/gas_belt_7.png" type="Texture" id=15]
 [ext_resource path="res://World/DockingPoint/gas_moon_2.gd" type="Script" id=16]
 [ext_resource path="res://World/DockingPoint/gas_moon_1.gd" type="Script" id=17]
 [ext_resource path="res://World/DockingPoint/gas_moon_3.gd" type="Script" id=18]
@@ -1952,7 +1948,7 @@ animations = [ {
 "frames": [ SubResource( 1573 ), SubResource( 1574 ), SubResource( 1575 ), SubResource( 1576 ), SubResource( 1577 ), SubResource( 1578 ), SubResource( 1579 ), SubResource( 1580 ), SubResource( 1581 ), SubResource( 1582 ), SubResource( 1583 ), SubResource( 1584 ), SubResource( 1585 ), SubResource( 1586 ), SubResource( 1587 ), SubResource( 1588 ), SubResource( 1589 ), SubResource( 1590 ), SubResource( 1591 ), SubResource( 1592 ), SubResource( 1593 ), SubResource( 1594 ), SubResource( 1595 ), SubResource( 1596 ), SubResource( 1597 ), SubResource( 1598 ), SubResource( 1599 ), SubResource( 1600 ), SubResource( 1601 ), SubResource( 1602 ), SubResource( 1603 ), SubResource( 1604 ), SubResource( 1605 ), SubResource( 1606 ), SubResource( 1607 ), SubResource( 1608 ), SubResource( 1609 ), SubResource( 1610 ), SubResource( 1611 ), SubResource( 1612 ), SubResource( 1613 ), SubResource( 1614 ), SubResource( 1615 ), SubResource( 1616 ), SubResource( 1617 ), SubResource( 1618 ), SubResource( 1619 ), SubResource( 1620 ), SubResource( 1621 ), SubResource( 1622 ), SubResource( 1623 ), SubResource( 1624 ), SubResource( 1625 ), SubResource( 1626 ), SubResource( 1627 ), SubResource( 1628 ), SubResource( 1629 ), SubResource( 1630 ), SubResource( 1631 ), SubResource( 1632 ), SubResource( 1633 ), SubResource( 1634 ), SubResource( 1635 ), SubResource( 1636 ), SubResource( 1637 ), SubResource( 1638 ), SubResource( 1639 ), SubResource( 1640 ), SubResource( 1641 ), SubResource( 1642 ), SubResource( 1643 ), SubResource( 1644 ), SubResource( 1645 ), SubResource( 1646 ), SubResource( 1647 ), SubResource( 1648 ), SubResource( 1649 ), SubResource( 1650 ), SubResource( 1651 ), SubResource( 1652 ), SubResource( 1653 ), SubResource( 1654 ), SubResource( 1655 ), SubResource( 1656 ), SubResource( 1657 ), SubResource( 1658 ), SubResource( 1659 ), SubResource( 1660 ), SubResource( 1661 ), SubResource( 1662 ), SubResource( 1663 ), SubResource( 1664 ), SubResource( 1665 ), SubResource( 1666 ), SubResource( 1667 ), SubResource( 1668 ), SubResource( 1669 ), SubResource( 1670 ), SubResource( 1671 ), SubResource( 1672 ), SubResource( 1673 ), SubResource( 1674 ), SubResource( 1675 ), SubResource( 1676 ), SubResource( 1677 ), SubResource( 1678 ), SubResource( 1679 ), SubResource( 1680 ), SubResource( 1681 ), SubResource( 1682 ), SubResource( 1683 ), SubResource( 1684 ), SubResource( 1685 ), SubResource( 1686 ), SubResource( 1687 ), SubResource( 1688 ), SubResource( 1689 ), SubResource( 1690 ), SubResource( 1691 ), SubResource( 1692 ), SubResource( 1693 ), SubResource( 1694 ), SubResource( 1695 ), SubResource( 1696 ), SubResource( 1697 ), SubResource( 1698 ), SubResource( 1699 ), SubResource( 1700 ), SubResource( 1701 ), SubResource( 1702 ), SubResource( 1703 ), SubResource( 1704 ), SubResource( 1705 ), SubResource( 1706 ), SubResource( 1707 ), SubResource( 1708 ), SubResource( 1709 ), SubResource( 1710 ), SubResource( 1711 ), SubResource( 1712 ), SubResource( 1713 ), SubResource( 1714 ), SubResource( 1715 ), SubResource( 1716 ), SubResource( 1717 ), SubResource( 1718 ), SubResource( 1719 ), SubResource( 1720 ), SubResource( 1721 ), SubResource( 1722 ), SubResource( 1723 ), SubResource( 1724 ), SubResource( 1725 ), SubResource( 1726 ), SubResource( 1727 ), SubResource( 1728 ), SubResource( 1729 ), SubResource( 1730 ), SubResource( 1731 ), SubResource( 1732 ), SubResource( 1733 ), SubResource( 1734 ), SubResource( 1735 ), SubResource( 1736 ), SubResource( 1737 ), SubResource( 1738 ), SubResource( 1739 ), SubResource( 1740 ), SubResource( 1741 ), SubResource( 1742 ), SubResource( 1743 ), SubResource( 1744 ), SubResource( 1745 ), SubResource( 1746 ), SubResource( 1747 ), SubResource( 1748 ), SubResource( 1749 ), SubResource( 1750 ), SubResource( 1751 ), SubResource( 1752 ), SubResource( 1753 ), SubResource( 1754 ), SubResource( 1755 ), SubResource( 1756 ), SubResource( 1757 ), SubResource( 1758 ), SubResource( 1759 ), SubResource( 1760 ), SubResource( 1761 ), SubResource( 1762 ), SubResource( 1763 ), SubResource( 1764 ), SubResource( 1765 ), SubResource( 1766 ), SubResource( 1767 ), SubResource( 1768 ), SubResource( 1769 ), SubResource( 1770 ), SubResource( 1771 ), SubResource( 1772 ), SubResource( 1773 ), SubResource( 1774 ), SubResource( 1775 ), SubResource( 1776 ), SubResource( 1777 ), SubResource( 1778 ), SubResource( 1779 ), SubResource( 1780 ), SubResource( 1781 ), SubResource( 1782 ), SubResource( 1783 ), SubResource( 1784 ), SubResource( 1785 ), SubResource( 1786 ), SubResource( 1787 ), SubResource( 1788 ), SubResource( 1789 ), SubResource( 1790 ), SubResource( 1791 ), SubResource( 1792 ), SubResource( 1793 ), SubResource( 1794 ), SubResource( 1795 ), SubResource( 1796 ), SubResource( 1797 ), SubResource( 1798 ), SubResource( 1799 ), SubResource( 1800 ), SubResource( 1801 ), SubResource( 1802 ), SubResource( 1803 ), SubResource( 1804 ), SubResource( 1805 ), SubResource( 1806 ), SubResource( 1807 ), SubResource( 1808 ), SubResource( 1809 ), SubResource( 1810 ), SubResource( 1811 ), SubResource( 1812 ) ],
 "loop": true,
 "name": "default",
-"speed": 5.0
+"speed": 4.0
 } ]
 
 [sub_resource type="AtlasTexture" id=1814]
@@ -3408,1978 +3404,969 @@ animations = [ {
 "frames": [ SubResource( 2055 ), SubResource( 2056 ), SubResource( 2057 ), SubResource( 2058 ), SubResource( 2059 ), SubResource( 2060 ), SubResource( 2061 ), SubResource( 2062 ), SubResource( 2063 ), SubResource( 2064 ), SubResource( 2065 ), SubResource( 2066 ), SubResource( 2067 ), SubResource( 2068 ), SubResource( 2069 ), SubResource( 2070 ), SubResource( 2071 ), SubResource( 2072 ), SubResource( 2073 ), SubResource( 2074 ), SubResource( 2075 ), SubResource( 2076 ), SubResource( 2077 ), SubResource( 2078 ), SubResource( 2079 ), SubResource( 2080 ), SubResource( 2081 ), SubResource( 2082 ), SubResource( 2083 ), SubResource( 2084 ), SubResource( 2085 ), SubResource( 2086 ), SubResource( 2087 ), SubResource( 2088 ), SubResource( 2089 ), SubResource( 2090 ), SubResource( 2091 ), SubResource( 2092 ), SubResource( 2093 ), SubResource( 2094 ), SubResource( 2095 ), SubResource( 2096 ), SubResource( 2097 ), SubResource( 2098 ), SubResource( 2099 ), SubResource( 2100 ), SubResource( 2101 ), SubResource( 2102 ), SubResource( 2103 ), SubResource( 2104 ), SubResource( 2105 ), SubResource( 2106 ), SubResource( 2107 ), SubResource( 2108 ), SubResource( 2109 ), SubResource( 2110 ), SubResource( 2111 ), SubResource( 2112 ), SubResource( 2113 ), SubResource( 2114 ), SubResource( 2115 ), SubResource( 2116 ), SubResource( 2117 ), SubResource( 2118 ), SubResource( 2119 ), SubResource( 2120 ), SubResource( 2121 ), SubResource( 2122 ), SubResource( 2123 ), SubResource( 2124 ), SubResource( 2125 ), SubResource( 2126 ), SubResource( 2127 ), SubResource( 2128 ), SubResource( 2129 ), SubResource( 2130 ), SubResource( 2131 ), SubResource( 2132 ), SubResource( 2133 ), SubResource( 2134 ), SubResource( 2135 ), SubResource( 2136 ), SubResource( 2137 ), SubResource( 2138 ), SubResource( 2139 ), SubResource( 2140 ), SubResource( 2141 ), SubResource( 2142 ), SubResource( 2143 ), SubResource( 2144 ), SubResource( 2145 ), SubResource( 2146 ), SubResource( 2147 ), SubResource( 2148 ), SubResource( 2149 ), SubResource( 2150 ), SubResource( 2151 ), SubResource( 2152 ), SubResource( 2153 ), SubResource( 2154 ), SubResource( 2155 ), SubResource( 2156 ), SubResource( 2157 ), SubResource( 2158 ), SubResource( 2159 ), SubResource( 2160 ), SubResource( 2161 ), SubResource( 2162 ), SubResource( 2163 ), SubResource( 2164 ), SubResource( 2165 ), SubResource( 2166 ), SubResource( 2167 ), SubResource( 2168 ), SubResource( 2169 ), SubResource( 2170 ), SubResource( 2171 ), SubResource( 2172 ), SubResource( 2173 ), SubResource( 2174 ) ],
 "loop": true,
 "name": "default",
-"speed": 5.0
+"speed": 4.0
 } ]
 
 [node name="gas_1" type="Node2D"]
-light_mask = 0
 script = ExtResource( 1 )
 
 [node name="gas_1_sprite" type="AnimatedSprite" parent="."]
-light_mask = 0
 position = Vector2( -3283.22, 1156.61 )
 rotation = -1.02102
 frames = SubResource( 1572 )
-frame = 45
+frame = 231
 playing = true
 flip_h = true
 flip_v = true
 
 [node name="gas_moon_1" type="Node2D" parent="."]
-light_mask = 0
 position = Vector2( -3283.22, 1156.61 )
 rotation = -1.02102
 script = ExtResource( 17 )
 
 [node name="gas_moon_1_sprite" type="AnimatedSprite" parent="gas_moon_1"]
-light_mask = 0
 position = Vector2( 895.847, 669.591 )
+rotation = -3.62854
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 1813 )
-frame = 44
+frame = 160
 playing = true
 
 [node name="gas_moon_2" type="Node2D" parent="."]
-light_mask = 0
 position = Vector2( -3283.22, 1156.61 )
 rotation = -1.02102
 script = ExtResource( 16 )
 
 [node name="gas_moon_2_sprite" type="AnimatedSprite" parent="gas_moon_2"]
-light_mask = 0
 position = Vector2( 559.361, 405.361 )
+rotation = -5.044
 frames = SubResource( 2054 )
-frame = 176
+frame = 85
 playing = true
+flip_h = true
 
 [node name="gas_moon_3" type="Node2D" parent="."]
-light_mask = 0
 position = Vector2( -3283.22, 1156.61 )
 rotation = -1.11876
 script = ExtResource( 18 )
 
-[node name="moon_3_sprite" type="AnimatedSprite" parent="gas_moon_3"]
-light_mask = 0
+[node name="gas_moon_3_sprite" type="AnimatedSprite" parent="gas_moon_3"]
 position = Vector2( 689.623, 621.648 )
+rotation = -4.6897
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 2175 )
-frame = 75
+frame = 32
 playing = true
+flip_h = true
 
 [node name="gas_1_rings" type="Node2D" parent="."]
-light_mask = 0
 position = Vector2( -3283.22, 1156.61 )
 rotation = -1.02102
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Sprite1" type="Sprite" parent="gas_1_rings"]
-light_mask = 0
 position = Vector2( 879.192, 511.695 )
 texture = ExtResource( 2 )
 flip_h = true
 flip_v = true
 
 [node name="Sprite2" type="Sprite" parent="gas_1_rings"]
-light_mask = 0
 position = Vector2( 835.156, 461.947 )
 texture = ExtResource( 14 )
 
 [node name="Sprite3" type="Sprite" parent="gas_1_rings"]
-light_mask = 0
-position = Vector2( 769.452, 433.786 )
-texture = ExtResource( 10 )
-flip_h = true
-
-[node name="Sprite4" type="Sprite" parent="gas_1_rings"]
-light_mask = 0
 position = Vector2( 908.689, 465.065 )
 texture = ExtResource( 13 )
 
-[node name="Sprite5" type="Sprite" parent="gas_1_rings"]
-light_mask = 0
-position = Vector2( 851.811, 423.753 )
-texture = ExtResource( 11 )
-flip_h = true
-flip_v = true
-
-[node name="Sprite6" type="Sprite" parent="gas_1_rings"]
-light_mask = 0
+[node name="Sprite4" type="Sprite" parent="gas_1_rings"]
 position = Vector2( 797.154, 534.96 )
 texture = ExtResource( 6 )
 
-[node name="Sprite7" type="Sprite" parent="gas_1_rings"]
-light_mask = 0
-position = Vector2( 845.03, 562.6 )
-texture = ExtResource( 15 )
-flip_h = true
-flip_v = true
-
-[node name="Sprite8" type="Sprite" parent="gas_1_rings"]
-light_mask = 0
+[node name="Sprite5" type="Sprite" parent="gas_1_rings"]
 position = Vector2( 797.265, 397.023 )
 texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite9" type="Sprite" parent="gas_1_rings"]
-light_mask = 0
-position = Vector2( 739.268, 502.172 )
-texture = ExtResource( 8 )
-
-[node name="Sprite10" type="Sprite" parent="gas_1_rings"]
-light_mask = 0
+[node name="Sprite6" type="Sprite" parent="gas_1_rings"]
 position = Vector2( 752.009, 601.429 )
 texture = ExtResource( 4 )
 
-[node name="Sprite11" type="Sprite" parent="gas_1_rings"]
-light_mask = 0
-position = Vector2( 826.361, 363.364 )
-texture = ExtResource( 2 )
-flip_h = true
-
-[node name="Sprite12" type="Sprite" parent="gas_1_rings"]
-light_mask = 0
+[node name="Sprite7" type="Sprite" parent="gas_1_rings"]
 position = Vector2( 894.224, 361.555 )
 texture = ExtResource( 14 )
 
-[node name="Sprite13" type="Sprite" parent="gas_1_rings"]
-light_mask = 0
-position = Vector2( 806.817, 606.434 )
-texture = ExtResource( 10 )
-flip_h = true
-
-[node name="Sprite14" type="Sprite" parent="gas_1_rings"]
-light_mask = 0
+[node name="Sprite8" type="Sprite" parent="gas_1_rings"]
 position = Vector2( 736.805, 570.58 )
 texture = ExtResource( 13 )
 
-[node name="Sprite15" type="Sprite" parent="gas_1_rings"]
-light_mask = 0
-position = Vector2( 689.715, 515.82 )
-texture = ExtResource( 11 )
-
-[node name="Sprite16" type="Sprite" parent="gas_1_rings"]
-light_mask = 0
+[node name="Sprite9" type="Sprite" parent="gas_1_rings"]
 position = Vector2( 653.725, 573.128 )
 texture = ExtResource( 6 )
 flip_v = true
 
-[node name="Sprite17" type="Sprite" parent="gas_1_rings"]
-light_mask = 0
-position = Vector2( 885.848, 312.174 )
-texture = ExtResource( 15 )
-
-[node name="Sprite18" type="Sprite" parent="gas_1_rings"]
-light_mask = 0
+[node name="Sprite10" type="Sprite" parent="gas_1_rings"]
 position = Vector2( 969.938, 344.37 )
 texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite19" type="Sprite" parent="gas_1_rings"]
-light_mask = 0
-position = Vector2( 987.65, 281.528 )
-texture = ExtResource( 8 )
-
-[node name="Sprite20" type="Sprite" parent="gas_1_rings"]
-light_mask = 0
+[node name="Sprite11" type="Sprite" parent="gas_1_rings"]
 position = Vector2( 927.042, 243.098 )
 texture = ExtResource( 4 )
 flip_h = true
 
 [node name="gas_1_rings2" type="Node2D" parent="."]
-light_mask = 0
 position = Vector2( -3283.22, 1156.61 )
-rotation = -1.41023
+rotation = -1.33518
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Sprite1" type="Sprite" parent="gas_1_rings2"]
-light_mask = 0
 position = Vector2( 879.192, 511.695 )
 texture = ExtResource( 2 )
+flip_h = true
+flip_v = true
 
 [node name="Sprite2" type="Sprite" parent="gas_1_rings2"]
-light_mask = 0
 position = Vector2( 835.156, 461.947 )
 texture = ExtResource( 14 )
-flip_h = true
 
 [node name="Sprite3" type="Sprite" parent="gas_1_rings2"]
-light_mask = 0
-position = Vector2( 769.452, 433.786 )
-texture = ExtResource( 10 )
-
-[node name="Sprite4" type="Sprite" parent="gas_1_rings2"]
-light_mask = 0
 position = Vector2( 908.689, 465.065 )
 texture = ExtResource( 13 )
 
+[node name="Sprite4" type="Sprite" parent="gas_1_rings2"]
+position = Vector2( 797.154, 534.96 )
+texture = ExtResource( 6 )
+
 [node name="Sprite5" type="Sprite" parent="gas_1_rings2"]
-light_mask = 0
-position = Vector2( 851.811, 423.753 )
-texture = ExtResource( 11 )
+position = Vector2( 797.265, 397.023 )
+texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
 [node name="Sprite6" type="Sprite" parent="gas_1_rings2"]
-light_mask = 0
-position = Vector2( 797.154, 534.96 )
-texture = ExtResource( 6 )
-
-[node name="Sprite7" type="Sprite" parent="gas_1_rings2"]
-light_mask = 0
-position = Vector2( 845.03, 562.6 )
-texture = ExtResource( 15 )
-flip_h = true
-flip_v = true
-
-[node name="Sprite8" type="Sprite" parent="gas_1_rings2"]
-light_mask = 0
-position = Vector2( 797.265, 397.023 )
-texture = ExtResource( 7 )
-
-[node name="Sprite9" type="Sprite" parent="gas_1_rings2"]
-light_mask = 0
-position = Vector2( 739.268, 502.172 )
-texture = ExtResource( 8 )
-flip_h = true
-
-[node name="Sprite10" type="Sprite" parent="gas_1_rings2"]
-light_mask = 0
 position = Vector2( 752.009, 601.429 )
 texture = ExtResource( 4 )
-flip_v = true
 
-[node name="Sprite11" type="Sprite" parent="gas_1_rings2"]
-light_mask = 0
-position = Vector2( 826.361, 363.364 )
-texture = ExtResource( 2 )
-
-[node name="Sprite12" type="Sprite" parent="gas_1_rings2"]
-light_mask = 0
+[node name="Sprite7" type="Sprite" parent="gas_1_rings2"]
 position = Vector2( 894.224, 361.555 )
 texture = ExtResource( 14 )
 
-[node name="Sprite13" type="Sprite" parent="gas_1_rings2"]
-light_mask = 0
-position = Vector2( 806.817, 606.434 )
-texture = ExtResource( 10 )
-
-[node name="Sprite14" type="Sprite" parent="gas_1_rings2"]
-light_mask = 0
+[node name="Sprite8" type="Sprite" parent="gas_1_rings2"]
 position = Vector2( 736.805, 570.58 )
 texture = ExtResource( 13 )
-flip_v = true
 
-[node name="Sprite15" type="Sprite" parent="gas_1_rings2"]
-light_mask = 0
-position = Vector2( 689.715, 515.82 )
-texture = ExtResource( 11 )
-
-[node name="Sprite16" type="Sprite" parent="gas_1_rings2"]
-light_mask = 0
+[node name="Sprite9" type="Sprite" parent="gas_1_rings2"]
 position = Vector2( 653.725, 573.128 )
 texture = ExtResource( 6 )
-flip_h = true
+flip_v = true
 
-[node name="Sprite17" type="Sprite" parent="gas_1_rings2"]
-light_mask = 0
-position = Vector2( 885.848, 312.174 )
-texture = ExtResource( 15 )
-
-[node name="Sprite18" type="Sprite" parent="gas_1_rings2"]
-light_mask = 0
+[node name="Sprite10" type="Sprite" parent="gas_1_rings2"]
 position = Vector2( 969.938, 344.37 )
 texture = ExtResource( 7 )
-
-[node name="Sprite19" type="Sprite" parent="gas_1_rings2"]
-light_mask = 0
-position = Vector2( 987.65, 281.528 )
-texture = ExtResource( 8 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite20" type="Sprite" parent="gas_1_rings2"]
-light_mask = 0
+[node name="Sprite11" type="Sprite" parent="gas_1_rings2"]
 position = Vector2( 927.042, 243.098 )
 texture = ExtResource( 4 )
 flip_h = true
 
 [node name="gas_1_rings3" type="Node2D" parent="."]
-light_mask = 0
 position = Vector2( -3283.22, 1156.61 )
-rotation = -0.630066
+rotation = -1.80816
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Sprite1" type="Sprite" parent="gas_1_rings3"]
-light_mask = 0
 position = Vector2( 879.192, 511.695 )
 texture = ExtResource( 2 )
 flip_h = true
+flip_v = true
 
 [node name="Sprite2" type="Sprite" parent="gas_1_rings3"]
-light_mask = 0
 position = Vector2( 835.156, 461.947 )
 texture = ExtResource( 14 )
 
 [node name="Sprite3" type="Sprite" parent="gas_1_rings3"]
-light_mask = 0
-position = Vector2( 769.452, 433.786 )
-texture = ExtResource( 10 )
-
-[node name="Sprite4" type="Sprite" parent="gas_1_rings3"]
-light_mask = 0
 position = Vector2( 908.689, 465.065 )
 texture = ExtResource( 13 )
-flip_h = true
-flip_v = true
 
-[node name="Sprite5" type="Sprite" parent="gas_1_rings3"]
-light_mask = 0
-position = Vector2( 851.811, 423.753 )
-texture = ExtResource( 11 )
-
-[node name="Sprite6" type="Sprite" parent="gas_1_rings3"]
-light_mask = 0
+[node name="Sprite4" type="Sprite" parent="gas_1_rings3"]
 position = Vector2( 797.154, 534.96 )
 texture = ExtResource( 6 )
+
+[node name="Sprite5" type="Sprite" parent="gas_1_rings3"]
+position = Vector2( 797.265, 397.023 )
+texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite7" type="Sprite" parent="gas_1_rings3"]
-light_mask = 0
-position = Vector2( 845.03, 562.6 )
-texture = ExtResource( 15 )
-
-[node name="Sprite8" type="Sprite" parent="gas_1_rings3"]
-light_mask = 0
-position = Vector2( 797.265, 397.023 )
-texture = ExtResource( 7 )
-
-[node name="Sprite9" type="Sprite" parent="gas_1_rings3"]
-light_mask = 0
-position = Vector2( 739.268, 502.172 )
-texture = ExtResource( 8 )
-flip_h = true
-
-[node name="Sprite10" type="Sprite" parent="gas_1_rings3"]
-light_mask = 0
+[node name="Sprite6" type="Sprite" parent="gas_1_rings3"]
 position = Vector2( 752.009, 601.429 )
 texture = ExtResource( 4 )
 
-[node name="Sprite11" type="Sprite" parent="gas_1_rings3"]
-light_mask = 0
-position = Vector2( 826.361, 363.364 )
-texture = ExtResource( 2 )
-
-[node name="Sprite12" type="Sprite" parent="gas_1_rings3"]
-light_mask = 0
+[node name="Sprite7" type="Sprite" parent="gas_1_rings3"]
 position = Vector2( 894.224, 361.555 )
 texture = ExtResource( 14 )
-flip_h = true
-flip_v = true
 
-[node name="Sprite13" type="Sprite" parent="gas_1_rings3"]
-light_mask = 0
-position = Vector2( 806.817, 606.434 )
-texture = ExtResource( 10 )
-
-[node name="Sprite14" type="Sprite" parent="gas_1_rings3"]
-light_mask = 0
+[node name="Sprite8" type="Sprite" parent="gas_1_rings3"]
 position = Vector2( 736.805, 570.58 )
 texture = ExtResource( 13 )
 
-[node name="Sprite15" type="Sprite" parent="gas_1_rings3"]
-light_mask = 0
-position = Vector2( 689.715, 515.82 )
-texture = ExtResource( 11 )
-flip_h = true
-
-[node name="Sprite16" type="Sprite" parent="gas_1_rings3"]
-light_mask = 0
+[node name="Sprite9" type="Sprite" parent="gas_1_rings3"]
 position = Vector2( 653.725, 573.128 )
 texture = ExtResource( 6 )
-
-[node name="Sprite17" type="Sprite" parent="gas_1_rings3"]
-light_mask = 0
-position = Vector2( 885.848, 312.174 )
-texture = ExtResource( 15 )
-flip_h = true
 flip_v = true
 
-[node name="Sprite18" type="Sprite" parent="gas_1_rings3"]
-light_mask = 0
+[node name="Sprite10" type="Sprite" parent="gas_1_rings3"]
 position = Vector2( 969.938, 344.37 )
 texture = ExtResource( 7 )
 flip_h = true
-
-[node name="Sprite19" type="Sprite" parent="gas_1_rings3"]
-light_mask = 0
-position = Vector2( 987.65, 281.528 )
-texture = ExtResource( 8 )
 flip_v = true
 
-[node name="Sprite20" type="Sprite" parent="gas_1_rings3"]
-light_mask = 0
+[node name="Sprite11" type="Sprite" parent="gas_1_rings3"]
 position = Vector2( 927.042, 243.098 )
 texture = ExtResource( 4 )
 flip_h = true
-flip_v = true
 
 [node name="gas_1_rings4" type="Node2D" parent="."]
-light_mask = 0
 position = Vector2( -3283.22, 1156.61 )
-rotation = -1.76802
+rotation = -2.24624
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Sprite1" type="Sprite" parent="gas_1_rings4"]
-light_mask = 0
 position = Vector2( 879.192, 511.695 )
 texture = ExtResource( 2 )
+flip_h = true
+flip_v = true
 
 [node name="Sprite2" type="Sprite" parent="gas_1_rings4"]
-light_mask = 0
 position = Vector2( 835.156, 461.947 )
 texture = ExtResource( 14 )
-flip_h = true
 
 [node name="Sprite3" type="Sprite" parent="gas_1_rings4"]
-light_mask = 0
-position = Vector2( 769.452, 433.786 )
-texture = ExtResource( 10 )
-
-[node name="Sprite4" type="Sprite" parent="gas_1_rings4"]
-light_mask = 0
 position = Vector2( 908.689, 465.065 )
 texture = ExtResource( 13 )
 
+[node name="Sprite4" type="Sprite" parent="gas_1_rings4"]
+position = Vector2( 797.154, 534.96 )
+texture = ExtResource( 6 )
+
 [node name="Sprite5" type="Sprite" parent="gas_1_rings4"]
-light_mask = 0
-position = Vector2( 851.811, 423.753 )
-texture = ExtResource( 11 )
+position = Vector2( 797.265, 397.023 )
+texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
 [node name="Sprite6" type="Sprite" parent="gas_1_rings4"]
-light_mask = 0
-position = Vector2( 797.154, 534.96 )
-texture = ExtResource( 6 )
-
-[node name="Sprite7" type="Sprite" parent="gas_1_rings4"]
-light_mask = 0
-position = Vector2( 845.03, 562.6 )
-texture = ExtResource( 15 )
-flip_h = true
-flip_v = true
-
-[node name="Sprite8" type="Sprite" parent="gas_1_rings4"]
-light_mask = 0
-position = Vector2( 797.265, 397.023 )
-texture = ExtResource( 7 )
-
-[node name="Sprite9" type="Sprite" parent="gas_1_rings4"]
-light_mask = 0
-position = Vector2( 739.268, 502.172 )
-texture = ExtResource( 8 )
-flip_h = true
-
-[node name="Sprite10" type="Sprite" parent="gas_1_rings4"]
-light_mask = 0
 position = Vector2( 752.009, 601.429 )
 texture = ExtResource( 4 )
-flip_v = true
 
-[node name="Sprite11" type="Sprite" parent="gas_1_rings4"]
-light_mask = 0
-position = Vector2( 826.361, 363.364 )
-texture = ExtResource( 2 )
-
-[node name="Sprite12" type="Sprite" parent="gas_1_rings4"]
-light_mask = 0
+[node name="Sprite7" type="Sprite" parent="gas_1_rings4"]
 position = Vector2( 894.224, 361.555 )
 texture = ExtResource( 14 )
 
-[node name="Sprite13" type="Sprite" parent="gas_1_rings4"]
-light_mask = 0
-position = Vector2( 806.817, 606.434 )
-texture = ExtResource( 10 )
-
-[node name="Sprite14" type="Sprite" parent="gas_1_rings4"]
-light_mask = 0
+[node name="Sprite8" type="Sprite" parent="gas_1_rings4"]
 position = Vector2( 736.805, 570.58 )
 texture = ExtResource( 13 )
-flip_v = true
 
-[node name="Sprite15" type="Sprite" parent="gas_1_rings4"]
-light_mask = 0
-position = Vector2( 689.715, 515.82 )
-texture = ExtResource( 11 )
-
-[node name="Sprite16" type="Sprite" parent="gas_1_rings4"]
-light_mask = 0
+[node name="Sprite9" type="Sprite" parent="gas_1_rings4"]
 position = Vector2( 653.725, 573.128 )
 texture = ExtResource( 6 )
-flip_h = true
+flip_v = true
 
-[node name="Sprite17" type="Sprite" parent="gas_1_rings4"]
-light_mask = 0
-position = Vector2( 885.848, 312.174 )
-texture = ExtResource( 15 )
-
-[node name="Sprite18" type="Sprite" parent="gas_1_rings4"]
-light_mask = 0
+[node name="Sprite10" type="Sprite" parent="gas_1_rings4"]
 position = Vector2( 969.938, 344.37 )
 texture = ExtResource( 7 )
-
-[node name="Sprite19" type="Sprite" parent="gas_1_rings4"]
-light_mask = 0
-position = Vector2( 987.65, 281.528 )
-texture = ExtResource( 8 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite20" type="Sprite" parent="gas_1_rings4"]
-light_mask = 0
+[node name="Sprite11" type="Sprite" parent="gas_1_rings4"]
 position = Vector2( 927.042, 243.098 )
 texture = ExtResource( 4 )
 flip_h = true
 
 [node name="gas_1_rings5" type="Node2D" parent="."]
-light_mask = 0
 position = Vector2( -3283.22, 1156.61 )
-rotation = -0.270528
+rotation = -2.78555
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Sprite1" type="Sprite" parent="gas_1_rings5"]
-light_mask = 0
 position = Vector2( 879.192, 511.695 )
 texture = ExtResource( 2 )
 flip_h = true
 flip_v = true
 
 [node name="Sprite2" type="Sprite" parent="gas_1_rings5"]
-light_mask = 0
 position = Vector2( 835.156, 461.947 )
 texture = ExtResource( 14 )
 
 [node name="Sprite3" type="Sprite" parent="gas_1_rings5"]
-light_mask = 0
-position = Vector2( 769.452, 433.786 )
-texture = ExtResource( 10 )
-flip_h = true
-
-[node name="Sprite4" type="Sprite" parent="gas_1_rings5"]
-light_mask = 0
 position = Vector2( 908.689, 465.065 )
 texture = ExtResource( 13 )
 
-[node name="Sprite5" type="Sprite" parent="gas_1_rings5"]
-light_mask = 0
-position = Vector2( 851.811, 423.753 )
-texture = ExtResource( 11 )
-flip_h = true
-flip_v = true
-
-[node name="Sprite6" type="Sprite" parent="gas_1_rings5"]
-light_mask = 0
+[node name="Sprite4" type="Sprite" parent="gas_1_rings5"]
 position = Vector2( 797.154, 534.96 )
 texture = ExtResource( 6 )
 
-[node name="Sprite7" type="Sprite" parent="gas_1_rings5"]
-light_mask = 0
-position = Vector2( 845.03, 562.6 )
-texture = ExtResource( 15 )
-flip_h = true
-flip_v = true
-
-[node name="Sprite8" type="Sprite" parent="gas_1_rings5"]
-light_mask = 0
+[node name="Sprite5" type="Sprite" parent="gas_1_rings5"]
 position = Vector2( 797.265, 397.023 )
 texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite9" type="Sprite" parent="gas_1_rings5"]
-light_mask = 0
-position = Vector2( 739.268, 502.172 )
-texture = ExtResource( 8 )
-
-[node name="Sprite10" type="Sprite" parent="gas_1_rings5"]
-light_mask = 0
+[node name="Sprite6" type="Sprite" parent="gas_1_rings5"]
 position = Vector2( 752.009, 601.429 )
 texture = ExtResource( 4 )
 
-[node name="Sprite11" type="Sprite" parent="gas_1_rings5"]
-light_mask = 0
-position = Vector2( 826.361, 363.364 )
-texture = ExtResource( 2 )
-flip_h = true
-
-[node name="Sprite12" type="Sprite" parent="gas_1_rings5"]
-light_mask = 0
+[node name="Sprite7" type="Sprite" parent="gas_1_rings5"]
 position = Vector2( 894.224, 361.555 )
 texture = ExtResource( 14 )
 
-[node name="Sprite13" type="Sprite" parent="gas_1_rings5"]
-light_mask = 0
-position = Vector2( 806.817, 606.434 )
-texture = ExtResource( 10 )
-flip_h = true
-
-[node name="Sprite14" type="Sprite" parent="gas_1_rings5"]
-light_mask = 0
+[node name="Sprite8" type="Sprite" parent="gas_1_rings5"]
 position = Vector2( 736.805, 570.58 )
 texture = ExtResource( 13 )
 
-[node name="Sprite15" type="Sprite" parent="gas_1_rings5"]
-light_mask = 0
-position = Vector2( 689.715, 515.82 )
-texture = ExtResource( 11 )
-
-[node name="Sprite16" type="Sprite" parent="gas_1_rings5"]
-light_mask = 0
+[node name="Sprite9" type="Sprite" parent="gas_1_rings5"]
 position = Vector2( 653.725, 573.128 )
 texture = ExtResource( 6 )
 flip_v = true
 
-[node name="Sprite17" type="Sprite" parent="gas_1_rings5"]
-light_mask = 0
-position = Vector2( 885.848, 312.174 )
-texture = ExtResource( 15 )
-
-[node name="Sprite18" type="Sprite" parent="gas_1_rings5"]
-light_mask = 0
+[node name="Sprite10" type="Sprite" parent="gas_1_rings5"]
 position = Vector2( 969.938, 344.37 )
 texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite19" type="Sprite" parent="gas_1_rings5"]
-light_mask = 0
-position = Vector2( 987.65, 281.528 )
-texture = ExtResource( 8 )
-
-[node name="Sprite20" type="Sprite" parent="gas_1_rings5"]
-light_mask = 0
+[node name="Sprite11" type="Sprite" parent="gas_1_rings5"]
 position = Vector2( 927.042, 243.098 )
 texture = ExtResource( 4 )
 flip_h = true
 
 [node name="gas_1_rings6" type="Node2D" parent="."]
-light_mask = 0
 position = Vector2( -3283.22, 1156.61 )
-rotation = 0.10297
+rotation = -3.17999
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Sprite1" type="Sprite" parent="gas_1_rings6"]
-light_mask = 0
 position = Vector2( 879.192, 511.695 )
 texture = ExtResource( 2 )
 flip_h = true
+flip_v = true
 
 [node name="Sprite2" type="Sprite" parent="gas_1_rings6"]
-light_mask = 0
 position = Vector2( 835.156, 461.947 )
 texture = ExtResource( 14 )
 
 [node name="Sprite3" type="Sprite" parent="gas_1_rings6"]
-light_mask = 0
-position = Vector2( 769.452, 433.786 )
-texture = ExtResource( 10 )
-
-[node name="Sprite4" type="Sprite" parent="gas_1_rings6"]
-light_mask = 0
 position = Vector2( 908.689, 465.065 )
 texture = ExtResource( 13 )
-flip_h = true
-flip_v = true
 
-[node name="Sprite5" type="Sprite" parent="gas_1_rings6"]
-light_mask = 0
-position = Vector2( 851.811, 423.753 )
-texture = ExtResource( 11 )
-
-[node name="Sprite6" type="Sprite" parent="gas_1_rings6"]
-light_mask = 0
+[node name="Sprite4" type="Sprite" parent="gas_1_rings6"]
 position = Vector2( 797.154, 534.96 )
 texture = ExtResource( 6 )
+
+[node name="Sprite5" type="Sprite" parent="gas_1_rings6"]
+position = Vector2( 797.265, 397.023 )
+texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite7" type="Sprite" parent="gas_1_rings6"]
-light_mask = 0
-position = Vector2( 845.03, 562.6 )
-texture = ExtResource( 15 )
-
-[node name="Sprite8" type="Sprite" parent="gas_1_rings6"]
-light_mask = 0
-position = Vector2( 797.265, 397.023 )
-texture = ExtResource( 7 )
-
-[node name="Sprite9" type="Sprite" parent="gas_1_rings6"]
-light_mask = 0
-position = Vector2( 739.268, 502.172 )
-texture = ExtResource( 8 )
-flip_h = true
-
-[node name="Sprite10" type="Sprite" parent="gas_1_rings6"]
-light_mask = 0
+[node name="Sprite6" type="Sprite" parent="gas_1_rings6"]
 position = Vector2( 752.009, 601.429 )
 texture = ExtResource( 4 )
 
-[node name="Sprite11" type="Sprite" parent="gas_1_rings6"]
-light_mask = 0
-position = Vector2( 826.361, 363.364 )
-texture = ExtResource( 2 )
-
-[node name="Sprite12" type="Sprite" parent="gas_1_rings6"]
-light_mask = 0
+[node name="Sprite7" type="Sprite" parent="gas_1_rings6"]
 position = Vector2( 894.224, 361.555 )
 texture = ExtResource( 14 )
-flip_h = true
-flip_v = true
 
-[node name="Sprite13" type="Sprite" parent="gas_1_rings6"]
-light_mask = 0
-position = Vector2( 806.817, 606.434 )
-texture = ExtResource( 10 )
-
-[node name="Sprite14" type="Sprite" parent="gas_1_rings6"]
-light_mask = 0
+[node name="Sprite8" type="Sprite" parent="gas_1_rings6"]
 position = Vector2( 736.805, 570.58 )
 texture = ExtResource( 13 )
 
-[node name="Sprite15" type="Sprite" parent="gas_1_rings6"]
-light_mask = 0
-position = Vector2( 689.715, 515.82 )
-texture = ExtResource( 11 )
-flip_h = true
-
-[node name="Sprite16" type="Sprite" parent="gas_1_rings6"]
-light_mask = 0
+[node name="Sprite9" type="Sprite" parent="gas_1_rings6"]
 position = Vector2( 653.725, 573.128 )
 texture = ExtResource( 6 )
-
-[node name="Sprite17" type="Sprite" parent="gas_1_rings6"]
-light_mask = 0
-position = Vector2( 885.848, 312.174 )
-texture = ExtResource( 15 )
-flip_h = true
 flip_v = true
 
-[node name="Sprite18" type="Sprite" parent="gas_1_rings6"]
-light_mask = 0
+[node name="Sprite10" type="Sprite" parent="gas_1_rings6"]
 position = Vector2( 969.938, 344.37 )
 texture = ExtResource( 7 )
 flip_h = true
-
-[node name="Sprite19" type="Sprite" parent="gas_1_rings6"]
-light_mask = 0
-position = Vector2( 987.65, 281.528 )
-texture = ExtResource( 8 )
 flip_v = true
 
-[node name="Sprite20" type="Sprite" parent="gas_1_rings6"]
-light_mask = 0
+[node name="Sprite11" type="Sprite" parent="gas_1_rings6"]
 position = Vector2( 927.042, 243.098 )
 texture = ExtResource( 4 )
 flip_h = true
-flip_v = true
 
 [node name="gas_1_rings7" type="Node2D" parent="."]
-light_mask = 0
 position = Vector2( -3283.22, 1156.61 )
-rotation = -2.22355
+rotation = -3.50288
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Sprite1" type="Sprite" parent="gas_1_rings7"]
-light_mask = 0
 position = Vector2( 879.192, 511.695 )
 texture = ExtResource( 2 )
+flip_h = true
+flip_v = true
 
 [node name="Sprite2" type="Sprite" parent="gas_1_rings7"]
-light_mask = 0
 position = Vector2( 835.156, 461.947 )
 texture = ExtResource( 14 )
-flip_h = true
 
 [node name="Sprite3" type="Sprite" parent="gas_1_rings7"]
-light_mask = 0
-position = Vector2( 769.452, 433.786 )
-texture = ExtResource( 10 )
-
-[node name="Sprite4" type="Sprite" parent="gas_1_rings7"]
-light_mask = 0
 position = Vector2( 908.689, 465.065 )
 texture = ExtResource( 13 )
 
+[node name="Sprite4" type="Sprite" parent="gas_1_rings7"]
+position = Vector2( 797.154, 534.96 )
+texture = ExtResource( 6 )
+
 [node name="Sprite5" type="Sprite" parent="gas_1_rings7"]
-light_mask = 0
-position = Vector2( 851.811, 423.753 )
-texture = ExtResource( 11 )
+position = Vector2( 797.265, 397.023 )
+texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
 [node name="Sprite6" type="Sprite" parent="gas_1_rings7"]
-light_mask = 0
-position = Vector2( 797.154, 534.96 )
-texture = ExtResource( 6 )
-
-[node name="Sprite7" type="Sprite" parent="gas_1_rings7"]
-light_mask = 0
-position = Vector2( 845.03, 562.6 )
-texture = ExtResource( 15 )
-flip_h = true
-flip_v = true
-
-[node name="Sprite8" type="Sprite" parent="gas_1_rings7"]
-light_mask = 0
-position = Vector2( 797.265, 397.023 )
-texture = ExtResource( 7 )
-
-[node name="Sprite9" type="Sprite" parent="gas_1_rings7"]
-light_mask = 0
-position = Vector2( 739.268, 502.172 )
-texture = ExtResource( 8 )
-flip_h = true
-
-[node name="Sprite10" type="Sprite" parent="gas_1_rings7"]
-light_mask = 0
 position = Vector2( 752.009, 601.429 )
 texture = ExtResource( 4 )
-flip_v = true
 
-[node name="Sprite11" type="Sprite" parent="gas_1_rings7"]
-light_mask = 0
-position = Vector2( 826.361, 363.364 )
-texture = ExtResource( 2 )
-
-[node name="Sprite12" type="Sprite" parent="gas_1_rings7"]
-light_mask = 0
+[node name="Sprite7" type="Sprite" parent="gas_1_rings7"]
 position = Vector2( 894.224, 361.555 )
 texture = ExtResource( 14 )
 
-[node name="Sprite13" type="Sprite" parent="gas_1_rings7"]
-light_mask = 0
-position = Vector2( 806.817, 606.434 )
-texture = ExtResource( 10 )
-
-[node name="Sprite14" type="Sprite" parent="gas_1_rings7"]
-light_mask = 0
+[node name="Sprite8" type="Sprite" parent="gas_1_rings7"]
 position = Vector2( 736.805, 570.58 )
 texture = ExtResource( 13 )
-flip_v = true
 
-[node name="Sprite15" type="Sprite" parent="gas_1_rings7"]
-light_mask = 0
-position = Vector2( 689.715, 515.82 )
-texture = ExtResource( 11 )
-
-[node name="Sprite16" type="Sprite" parent="gas_1_rings7"]
-light_mask = 0
+[node name="Sprite9" type="Sprite" parent="gas_1_rings7"]
 position = Vector2( 653.725, 573.128 )
 texture = ExtResource( 6 )
-flip_h = true
+flip_v = true
 
-[node name="Sprite17" type="Sprite" parent="gas_1_rings7"]
-light_mask = 0
-position = Vector2( 885.848, 312.174 )
-texture = ExtResource( 15 )
-
-[node name="Sprite18" type="Sprite" parent="gas_1_rings7"]
-light_mask = 0
+[node name="Sprite10" type="Sprite" parent="gas_1_rings7"]
 position = Vector2( 969.938, 344.37 )
 texture = ExtResource( 7 )
-
-[node name="Sprite19" type="Sprite" parent="gas_1_rings7"]
-light_mask = 0
-position = Vector2( 987.65, 281.528 )
-texture = ExtResource( 8 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite20" type="Sprite" parent="gas_1_rings7"]
-light_mask = 0
+[node name="Sprite11" type="Sprite" parent="gas_1_rings7"]
 position = Vector2( 927.042, 243.098 )
 texture = ExtResource( 4 )
 flip_h = true
 
 [node name="gas_1_rings8" type="Node2D" parent="."]
-light_mask = 0
 position = Vector2( -3283.22, 1156.61 )
-rotation = -2.47662
+rotation = -0.692896
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Sprite1" type="Sprite" parent="gas_1_rings8"]
-light_mask = 0
 position = Vector2( 879.192, 511.695 )
 texture = ExtResource( 2 )
 flip_h = true
+flip_v = true
 
 [node name="Sprite2" type="Sprite" parent="gas_1_rings8"]
-light_mask = 0
 position = Vector2( 835.156, 461.947 )
 texture = ExtResource( 14 )
 
 [node name="Sprite3" type="Sprite" parent="gas_1_rings8"]
-light_mask = 0
-position = Vector2( 769.452, 433.786 )
-texture = ExtResource( 10 )
-
-[node name="Sprite4" type="Sprite" parent="gas_1_rings8"]
-light_mask = 0
 position = Vector2( 908.689, 465.065 )
 texture = ExtResource( 13 )
-flip_h = true
-flip_v = true
 
-[node name="Sprite5" type="Sprite" parent="gas_1_rings8"]
-light_mask = 0
-position = Vector2( 851.811, 423.753 )
-texture = ExtResource( 11 )
-
-[node name="Sprite6" type="Sprite" parent="gas_1_rings8"]
-light_mask = 0
+[node name="Sprite4" type="Sprite" parent="gas_1_rings8"]
 position = Vector2( 797.154, 534.96 )
 texture = ExtResource( 6 )
+
+[node name="Sprite5" type="Sprite" parent="gas_1_rings8"]
+position = Vector2( 797.265, 397.023 )
+texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite7" type="Sprite" parent="gas_1_rings8"]
-light_mask = 0
-position = Vector2( 845.03, 562.6 )
-texture = ExtResource( 15 )
-
-[node name="Sprite8" type="Sprite" parent="gas_1_rings8"]
-light_mask = 0
-position = Vector2( 797.265, 397.023 )
-texture = ExtResource( 7 )
-
-[node name="Sprite9" type="Sprite" parent="gas_1_rings8"]
-light_mask = 0
-position = Vector2( 739.268, 502.172 )
-texture = ExtResource( 8 )
-flip_h = true
-
-[node name="Sprite10" type="Sprite" parent="gas_1_rings8"]
-light_mask = 0
+[node name="Sprite6" type="Sprite" parent="gas_1_rings8"]
 position = Vector2( 752.009, 601.429 )
 texture = ExtResource( 4 )
 
-[node name="Sprite11" type="Sprite" parent="gas_1_rings8"]
-light_mask = 0
-position = Vector2( 826.361, 363.364 )
-texture = ExtResource( 2 )
-
-[node name="Sprite12" type="Sprite" parent="gas_1_rings8"]
-light_mask = 0
+[node name="Sprite7" type="Sprite" parent="gas_1_rings8"]
 position = Vector2( 894.224, 361.555 )
 texture = ExtResource( 14 )
-flip_h = true
-flip_v = true
 
-[node name="Sprite13" type="Sprite" parent="gas_1_rings8"]
-light_mask = 0
-position = Vector2( 806.817, 606.434 )
-texture = ExtResource( 10 )
-
-[node name="Sprite14" type="Sprite" parent="gas_1_rings8"]
-light_mask = 0
+[node name="Sprite8" type="Sprite" parent="gas_1_rings8"]
 position = Vector2( 736.805, 570.58 )
 texture = ExtResource( 13 )
 
-[node name="Sprite15" type="Sprite" parent="gas_1_rings8"]
-light_mask = 0
-position = Vector2( 689.715, 515.82 )
-texture = ExtResource( 11 )
-flip_h = true
-
-[node name="Sprite16" type="Sprite" parent="gas_1_rings8"]
-light_mask = 0
+[node name="Sprite9" type="Sprite" parent="gas_1_rings8"]
 position = Vector2( 653.725, 573.128 )
 texture = ExtResource( 6 )
-
-[node name="Sprite17" type="Sprite" parent="gas_1_rings8"]
-light_mask = 0
-position = Vector2( 885.848, 312.174 )
-texture = ExtResource( 15 )
-flip_h = true
 flip_v = true
 
-[node name="Sprite18" type="Sprite" parent="gas_1_rings8"]
-light_mask = 0
+[node name="Sprite10" type="Sprite" parent="gas_1_rings8"]
 position = Vector2( 969.938, 344.37 )
 texture = ExtResource( 7 )
 flip_h = true
-
-[node name="Sprite19" type="Sprite" parent="gas_1_rings8"]
-light_mask = 0
-position = Vector2( 987.65, 281.528 )
-texture = ExtResource( 8 )
 flip_v = true
 
-[node name="Sprite20" type="Sprite" parent="gas_1_rings8"]
-light_mask = 0
+[node name="Sprite11" type="Sprite" parent="gas_1_rings8"]
 position = Vector2( 927.042, 243.098 )
 texture = ExtResource( 4 )
 flip_h = true
-flip_v = true
 
 [node name="gas_1_rings9" type="Node2D" parent="."]
-light_mask = 0
 position = Vector2( -3283.22, 1156.61 )
-rotation = -2.84314
+rotation = -0.368264
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Sprite1" type="Sprite" parent="gas_1_rings9"]
-light_mask = 0
 position = Vector2( 879.192, 511.695 )
 texture = ExtResource( 2 )
 flip_h = true
+flip_v = true
 
 [node name="Sprite2" type="Sprite" parent="gas_1_rings9"]
-light_mask = 0
 position = Vector2( 835.156, 461.947 )
 texture = ExtResource( 14 )
 
 [node name="Sprite3" type="Sprite" parent="gas_1_rings9"]
-light_mask = 0
-position = Vector2( 769.452, 433.786 )
-texture = ExtResource( 10 )
-
-[node name="Sprite4" type="Sprite" parent="gas_1_rings9"]
-light_mask = 0
 position = Vector2( 908.689, 465.065 )
 texture = ExtResource( 13 )
-flip_h = true
-flip_v = true
 
-[node name="Sprite5" type="Sprite" parent="gas_1_rings9"]
-light_mask = 0
-position = Vector2( 851.811, 423.753 )
-texture = ExtResource( 11 )
-
-[node name="Sprite6" type="Sprite" parent="gas_1_rings9"]
-light_mask = 0
+[node name="Sprite4" type="Sprite" parent="gas_1_rings9"]
 position = Vector2( 797.154, 534.96 )
 texture = ExtResource( 6 )
+
+[node name="Sprite5" type="Sprite" parent="gas_1_rings9"]
+position = Vector2( 797.265, 397.023 )
+texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite7" type="Sprite" parent="gas_1_rings9"]
-light_mask = 0
-position = Vector2( 845.03, 562.6 )
-texture = ExtResource( 15 )
-
-[node name="Sprite8" type="Sprite" parent="gas_1_rings9"]
-light_mask = 0
-position = Vector2( 797.265, 397.023 )
-texture = ExtResource( 7 )
-
-[node name="Sprite9" type="Sprite" parent="gas_1_rings9"]
-light_mask = 0
-position = Vector2( 739.268, 502.172 )
-texture = ExtResource( 8 )
-flip_h = true
-
-[node name="Sprite10" type="Sprite" parent="gas_1_rings9"]
-light_mask = 0
+[node name="Sprite6" type="Sprite" parent="gas_1_rings9"]
 position = Vector2( 752.009, 601.429 )
 texture = ExtResource( 4 )
 
-[node name="Sprite11" type="Sprite" parent="gas_1_rings9"]
-light_mask = 0
-position = Vector2( 826.361, 363.364 )
-texture = ExtResource( 2 )
-
-[node name="Sprite12" type="Sprite" parent="gas_1_rings9"]
-light_mask = 0
+[node name="Sprite7" type="Sprite" parent="gas_1_rings9"]
 position = Vector2( 894.224, 361.555 )
 texture = ExtResource( 14 )
-flip_h = true
-flip_v = true
 
-[node name="Sprite13" type="Sprite" parent="gas_1_rings9"]
-light_mask = 0
-position = Vector2( 806.817, 606.434 )
-texture = ExtResource( 10 )
-
-[node name="Sprite14" type="Sprite" parent="gas_1_rings9"]
-light_mask = 0
+[node name="Sprite8" type="Sprite" parent="gas_1_rings9"]
 position = Vector2( 736.805, 570.58 )
 texture = ExtResource( 13 )
 
-[node name="Sprite15" type="Sprite" parent="gas_1_rings9"]
-light_mask = 0
-position = Vector2( 689.715, 515.82 )
-texture = ExtResource( 11 )
-flip_h = true
-
-[node name="Sprite16" type="Sprite" parent="gas_1_rings9"]
-light_mask = 0
+[node name="Sprite9" type="Sprite" parent="gas_1_rings9"]
 position = Vector2( 653.725, 573.128 )
 texture = ExtResource( 6 )
-
-[node name="Sprite17" type="Sprite" parent="gas_1_rings9"]
-light_mask = 0
-position = Vector2( 885.848, 312.174 )
-texture = ExtResource( 15 )
-flip_h = true
 flip_v = true
 
-[node name="Sprite18" type="Sprite" parent="gas_1_rings9"]
-light_mask = 0
+[node name="Sprite10" type="Sprite" parent="gas_1_rings9"]
 position = Vector2( 969.938, 344.37 )
 texture = ExtResource( 7 )
 flip_h = true
-
-[node name="Sprite19" type="Sprite" parent="gas_1_rings9"]
-light_mask = 0
-position = Vector2( 987.65, 281.528 )
-texture = ExtResource( 8 )
 flip_v = true
 
-[node name="Sprite20" type="Sprite" parent="gas_1_rings9"]
-light_mask = 0
+[node name="Sprite11" type="Sprite" parent="gas_1_rings9"]
 position = Vector2( 927.042, 243.098 )
 texture = ExtResource( 4 )
 flip_h = true
-flip_v = true
 
 [node name="gas_1_rings10" type="Node2D" parent="."]
-light_mask = 0
 position = Vector2( -3283.22, 1156.61 )
-rotation = 3.0805
+rotation = -6.27969
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Sprite1" type="Sprite" parent="gas_1_rings10"]
-light_mask = 0
 position = Vector2( 879.192, 511.695 )
 texture = ExtResource( 2 )
 flip_h = true
 flip_v = true
 
 [node name="Sprite2" type="Sprite" parent="gas_1_rings10"]
-light_mask = 0
 position = Vector2( 835.156, 461.947 )
 texture = ExtResource( 14 )
 
 [node name="Sprite3" type="Sprite" parent="gas_1_rings10"]
-light_mask = 0
-position = Vector2( 769.452, 433.786 )
-texture = ExtResource( 10 )
-flip_h = true
-
-[node name="Sprite4" type="Sprite" parent="gas_1_rings10"]
-light_mask = 0
 position = Vector2( 908.689, 465.065 )
 texture = ExtResource( 13 )
 
-[node name="Sprite5" type="Sprite" parent="gas_1_rings10"]
-light_mask = 0
-position = Vector2( 851.811, 423.753 )
-texture = ExtResource( 11 )
-flip_h = true
-flip_v = true
-
-[node name="Sprite6" type="Sprite" parent="gas_1_rings10"]
-light_mask = 0
+[node name="Sprite4" type="Sprite" parent="gas_1_rings10"]
 position = Vector2( 797.154, 534.96 )
 texture = ExtResource( 6 )
 
-[node name="Sprite7" type="Sprite" parent="gas_1_rings10"]
-light_mask = 0
-position = Vector2( 845.03, 562.6 )
-texture = ExtResource( 15 )
-flip_h = true
-flip_v = true
-
-[node name="Sprite8" type="Sprite" parent="gas_1_rings10"]
-light_mask = 0
+[node name="Sprite5" type="Sprite" parent="gas_1_rings10"]
 position = Vector2( 797.265, 397.023 )
 texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite9" type="Sprite" parent="gas_1_rings10"]
-light_mask = 0
-position = Vector2( 739.268, 502.172 )
-texture = ExtResource( 8 )
-
-[node name="Sprite10" type="Sprite" parent="gas_1_rings10"]
-light_mask = 0
+[node name="Sprite6" type="Sprite" parent="gas_1_rings10"]
 position = Vector2( 752.009, 601.429 )
 texture = ExtResource( 4 )
 
-[node name="Sprite11" type="Sprite" parent="gas_1_rings10"]
-light_mask = 0
-position = Vector2( 826.361, 363.364 )
-texture = ExtResource( 2 )
-flip_h = true
-
-[node name="Sprite12" type="Sprite" parent="gas_1_rings10"]
-light_mask = 0
+[node name="Sprite7" type="Sprite" parent="gas_1_rings10"]
 position = Vector2( 894.224, 361.555 )
 texture = ExtResource( 14 )
 
-[node name="Sprite13" type="Sprite" parent="gas_1_rings10"]
-light_mask = 0
-position = Vector2( 806.817, 606.434 )
-texture = ExtResource( 10 )
-flip_h = true
-
-[node name="Sprite14" type="Sprite" parent="gas_1_rings10"]
-light_mask = 0
+[node name="Sprite8" type="Sprite" parent="gas_1_rings10"]
 position = Vector2( 736.805, 570.58 )
 texture = ExtResource( 13 )
 
-[node name="Sprite15" type="Sprite" parent="gas_1_rings10"]
-light_mask = 0
-position = Vector2( 689.715, 515.82 )
-texture = ExtResource( 11 )
-
-[node name="Sprite16" type="Sprite" parent="gas_1_rings10"]
-light_mask = 0
+[node name="Sprite9" type="Sprite" parent="gas_1_rings10"]
 position = Vector2( 653.725, 573.128 )
 texture = ExtResource( 6 )
 flip_v = true
 
-[node name="Sprite17" type="Sprite" parent="gas_1_rings10"]
-light_mask = 0
-position = Vector2( 885.848, 312.174 )
-texture = ExtResource( 15 )
-
-[node name="Sprite18" type="Sprite" parent="gas_1_rings10"]
-light_mask = 0
+[node name="Sprite10" type="Sprite" parent="gas_1_rings10"]
 position = Vector2( 969.938, 344.37 )
 texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite19" type="Sprite" parent="gas_1_rings10"]
-light_mask = 0
-position = Vector2( 987.65, 281.528 )
-texture = ExtResource( 8 )
-
-[node name="Sprite20" type="Sprite" parent="gas_1_rings10"]
-light_mask = 0
+[node name="Sprite11" type="Sprite" parent="gas_1_rings10"]
 position = Vector2( 927.042, 243.098 )
 texture = ExtResource( 4 )
 flip_h = true
 
 [node name="gas_1_rings11" type="Node2D" parent="."]
-light_mask = 0
 position = Vector2( -3283.22, 1156.61 )
-rotation = 0.54978
+rotation = -3.831
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Sprite1" type="Sprite" parent="gas_1_rings11"]
-light_mask = 0
 position = Vector2( 879.192, 511.695 )
 texture = ExtResource( 2 )
 flip_h = true
 flip_v = true
 
 [node name="Sprite2" type="Sprite" parent="gas_1_rings11"]
-light_mask = 0
 position = Vector2( 835.156, 461.947 )
 texture = ExtResource( 14 )
 
 [node name="Sprite3" type="Sprite" parent="gas_1_rings11"]
-light_mask = 0
-position = Vector2( 769.452, 433.786 )
-texture = ExtResource( 10 )
-flip_h = true
-
-[node name="Sprite4" type="Sprite" parent="gas_1_rings11"]
-light_mask = 0
 position = Vector2( 908.689, 465.065 )
 texture = ExtResource( 13 )
 
-[node name="Sprite5" type="Sprite" parent="gas_1_rings11"]
-light_mask = 0
-position = Vector2( 851.811, 423.753 )
-texture = ExtResource( 11 )
-flip_h = true
-flip_v = true
-
-[node name="Sprite6" type="Sprite" parent="gas_1_rings11"]
-light_mask = 0
+[node name="Sprite4" type="Sprite" parent="gas_1_rings11"]
 position = Vector2( 797.154, 534.96 )
 texture = ExtResource( 6 )
 
-[node name="Sprite7" type="Sprite" parent="gas_1_rings11"]
-light_mask = 0
-position = Vector2( 845.03, 562.6 )
-texture = ExtResource( 15 )
-flip_h = true
-flip_v = true
-
-[node name="Sprite8" type="Sprite" parent="gas_1_rings11"]
-light_mask = 0
+[node name="Sprite5" type="Sprite" parent="gas_1_rings11"]
 position = Vector2( 797.265, 397.023 )
 texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite9" type="Sprite" parent="gas_1_rings11"]
-light_mask = 0
-position = Vector2( 739.268, 502.172 )
-texture = ExtResource( 8 )
-
-[node name="Sprite10" type="Sprite" parent="gas_1_rings11"]
-light_mask = 0
+[node name="Sprite6" type="Sprite" parent="gas_1_rings11"]
 position = Vector2( 752.009, 601.429 )
 texture = ExtResource( 4 )
 
-[node name="Sprite11" type="Sprite" parent="gas_1_rings11"]
-light_mask = 0
-position = Vector2( 826.361, 363.364 )
-texture = ExtResource( 2 )
-flip_h = true
-
-[node name="Sprite12" type="Sprite" parent="gas_1_rings11"]
-light_mask = 0
+[node name="Sprite7" type="Sprite" parent="gas_1_rings11"]
 position = Vector2( 894.224, 361.555 )
 texture = ExtResource( 14 )
 
-[node name="Sprite13" type="Sprite" parent="gas_1_rings11"]
-light_mask = 0
-position = Vector2( 806.817, 606.434 )
-texture = ExtResource( 10 )
-flip_h = true
-
-[node name="Sprite14" type="Sprite" parent="gas_1_rings11"]
-light_mask = 0
+[node name="Sprite8" type="Sprite" parent="gas_1_rings11"]
 position = Vector2( 736.805, 570.58 )
 texture = ExtResource( 13 )
 
-[node name="Sprite15" type="Sprite" parent="gas_1_rings11"]
-light_mask = 0
-position = Vector2( 689.715, 515.82 )
-texture = ExtResource( 11 )
-
-[node name="Sprite16" type="Sprite" parent="gas_1_rings11"]
-light_mask = 0
+[node name="Sprite9" type="Sprite" parent="gas_1_rings11"]
 position = Vector2( 653.725, 573.128 )
 texture = ExtResource( 6 )
 flip_v = true
 
-[node name="Sprite17" type="Sprite" parent="gas_1_rings11"]
-light_mask = 0
-position = Vector2( 885.848, 312.174 )
-texture = ExtResource( 15 )
-
-[node name="Sprite18" type="Sprite" parent="gas_1_rings11"]
-light_mask = 0
+[node name="Sprite10" type="Sprite" parent="gas_1_rings11"]
 position = Vector2( 969.938, 344.37 )
 texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite19" type="Sprite" parent="gas_1_rings11"]
-light_mask = 0
-position = Vector2( 987.65, 281.528 )
-texture = ExtResource( 8 )
-
-[node name="Sprite20" type="Sprite" parent="gas_1_rings11"]
-light_mask = 0
+[node name="Sprite11" type="Sprite" parent="gas_1_rings11"]
 position = Vector2( 927.042, 243.098 )
 texture = ExtResource( 4 )
 flip_h = true
 
 [node name="gas_1_rings12" type="Node2D" parent="."]
-light_mask = 0
 position = Vector2( -3283.22, 1156.61 )
-rotation = 1.01054
+rotation = -4.15388
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Sprite1" type="Sprite" parent="gas_1_rings12"]
-light_mask = 0
 position = Vector2( 879.192, 511.695 )
 texture = ExtResource( 2 )
+flip_h = true
+flip_v = true
 
 [node name="Sprite2" type="Sprite" parent="gas_1_rings12"]
-light_mask = 0
 position = Vector2( 835.156, 461.947 )
 texture = ExtResource( 14 )
-flip_h = true
 
 [node name="Sprite3" type="Sprite" parent="gas_1_rings12"]
-light_mask = 0
-position = Vector2( 769.452, 433.786 )
-texture = ExtResource( 10 )
-
-[node name="Sprite4" type="Sprite" parent="gas_1_rings12"]
-light_mask = 0
 position = Vector2( 908.689, 465.065 )
 texture = ExtResource( 13 )
 
+[node name="Sprite4" type="Sprite" parent="gas_1_rings12"]
+position = Vector2( 797.154, 534.96 )
+texture = ExtResource( 6 )
+
 [node name="Sprite5" type="Sprite" parent="gas_1_rings12"]
-light_mask = 0
-position = Vector2( 851.811, 423.753 )
-texture = ExtResource( 11 )
+position = Vector2( 797.265, 397.023 )
+texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
 [node name="Sprite6" type="Sprite" parent="gas_1_rings12"]
-light_mask = 0
-position = Vector2( 797.154, 534.96 )
-texture = ExtResource( 6 )
-
-[node name="Sprite7" type="Sprite" parent="gas_1_rings12"]
-light_mask = 0
-position = Vector2( 845.03, 562.6 )
-texture = ExtResource( 15 )
-flip_h = true
-flip_v = true
-
-[node name="Sprite8" type="Sprite" parent="gas_1_rings12"]
-light_mask = 0
-position = Vector2( 797.265, 397.023 )
-texture = ExtResource( 7 )
-
-[node name="Sprite9" type="Sprite" parent="gas_1_rings12"]
-light_mask = 0
-position = Vector2( 739.268, 502.172 )
-texture = ExtResource( 8 )
-flip_h = true
-
-[node name="Sprite10" type="Sprite" parent="gas_1_rings12"]
-light_mask = 0
 position = Vector2( 752.009, 601.429 )
 texture = ExtResource( 4 )
-flip_v = true
 
-[node name="Sprite11" type="Sprite" parent="gas_1_rings12"]
-light_mask = 0
-position = Vector2( 826.361, 363.364 )
-texture = ExtResource( 2 )
-
-[node name="Sprite12" type="Sprite" parent="gas_1_rings12"]
-light_mask = 0
+[node name="Sprite7" type="Sprite" parent="gas_1_rings12"]
 position = Vector2( 894.224, 361.555 )
 texture = ExtResource( 14 )
 
-[node name="Sprite13" type="Sprite" parent="gas_1_rings12"]
-light_mask = 0
-position = Vector2( 806.817, 606.434 )
-texture = ExtResource( 10 )
-
-[node name="Sprite14" type="Sprite" parent="gas_1_rings12"]
-light_mask = 0
+[node name="Sprite8" type="Sprite" parent="gas_1_rings12"]
 position = Vector2( 736.805, 570.58 )
 texture = ExtResource( 13 )
-flip_v = true
 
-[node name="Sprite15" type="Sprite" parent="gas_1_rings12"]
-light_mask = 0
-position = Vector2( 689.715, 515.82 )
-texture = ExtResource( 11 )
-
-[node name="Sprite16" type="Sprite" parent="gas_1_rings12"]
-light_mask = 0
+[node name="Sprite9" type="Sprite" parent="gas_1_rings12"]
 position = Vector2( 653.725, 573.128 )
 texture = ExtResource( 6 )
-flip_h = true
+flip_v = true
 
-[node name="Sprite17" type="Sprite" parent="gas_1_rings12"]
-light_mask = 0
-position = Vector2( 885.848, 312.174 )
-texture = ExtResource( 15 )
-
-[node name="Sprite18" type="Sprite" parent="gas_1_rings12"]
-light_mask = 0
+[node name="Sprite10" type="Sprite" parent="gas_1_rings12"]
 position = Vector2( 969.938, 344.37 )
 texture = ExtResource( 7 )
-
-[node name="Sprite19" type="Sprite" parent="gas_1_rings12"]
-light_mask = 0
-position = Vector2( 987.65, 281.528 )
-texture = ExtResource( 8 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite20" type="Sprite" parent="gas_1_rings12"]
-light_mask = 0
+[node name="Sprite11" type="Sprite" parent="gas_1_rings12"]
 position = Vector2( 927.042, 243.098 )
 texture = ExtResource( 4 )
 flip_h = true
 
 [node name="gas_1_rings13" type="Node2D" parent="."]
-light_mask = 0
 position = Vector2( -3283.22, 1156.61 )
-rotation = 2.61102
+rotation = -4.5012
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Sprite1" type="Sprite" parent="gas_1_rings13"]
-light_mask = 0
 position = Vector2( 879.192, 511.695 )
 texture = ExtResource( 2 )
+flip_h = true
+flip_v = true
 
 [node name="Sprite2" type="Sprite" parent="gas_1_rings13"]
-light_mask = 0
 position = Vector2( 835.156, 461.947 )
 texture = ExtResource( 14 )
-flip_h = true
 
 [node name="Sprite3" type="Sprite" parent="gas_1_rings13"]
-light_mask = 0
-position = Vector2( 769.452, 433.786 )
-texture = ExtResource( 10 )
-
-[node name="Sprite4" type="Sprite" parent="gas_1_rings13"]
-light_mask = 0
 position = Vector2( 908.689, 465.065 )
 texture = ExtResource( 13 )
 
+[node name="Sprite4" type="Sprite" parent="gas_1_rings13"]
+position = Vector2( 797.154, 534.96 )
+texture = ExtResource( 6 )
+
 [node name="Sprite5" type="Sprite" parent="gas_1_rings13"]
-light_mask = 0
-position = Vector2( 851.811, 423.753 )
-texture = ExtResource( 11 )
+position = Vector2( 797.265, 397.023 )
+texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
 [node name="Sprite6" type="Sprite" parent="gas_1_rings13"]
-light_mask = 0
-position = Vector2( 797.154, 534.96 )
-texture = ExtResource( 6 )
-
-[node name="Sprite7" type="Sprite" parent="gas_1_rings13"]
-light_mask = 0
-position = Vector2( 845.03, 562.6 )
-texture = ExtResource( 15 )
-flip_h = true
-flip_v = true
-
-[node name="Sprite8" type="Sprite" parent="gas_1_rings13"]
-light_mask = 0
-position = Vector2( 797.265, 397.023 )
-texture = ExtResource( 7 )
-
-[node name="Sprite9" type="Sprite" parent="gas_1_rings13"]
-light_mask = 0
-position = Vector2( 739.268, 502.172 )
-texture = ExtResource( 8 )
-flip_h = true
-
-[node name="Sprite10" type="Sprite" parent="gas_1_rings13"]
-light_mask = 0
 position = Vector2( 752.009, 601.429 )
 texture = ExtResource( 4 )
-flip_v = true
 
-[node name="Sprite11" type="Sprite" parent="gas_1_rings13"]
-light_mask = 0
-position = Vector2( 826.361, 363.364 )
-texture = ExtResource( 2 )
-
-[node name="Sprite12" type="Sprite" parent="gas_1_rings13"]
-light_mask = 0
+[node name="Sprite7" type="Sprite" parent="gas_1_rings13"]
 position = Vector2( 894.224, 361.555 )
 texture = ExtResource( 14 )
 
-[node name="Sprite13" type="Sprite" parent="gas_1_rings13"]
-light_mask = 0
-position = Vector2( 806.817, 606.434 )
-texture = ExtResource( 10 )
-
-[node name="Sprite14" type="Sprite" parent="gas_1_rings13"]
-light_mask = 0
+[node name="Sprite8" type="Sprite" parent="gas_1_rings13"]
 position = Vector2( 736.805, 570.58 )
 texture = ExtResource( 13 )
-flip_v = true
 
-[node name="Sprite15" type="Sprite" parent="gas_1_rings13"]
-light_mask = 0
-position = Vector2( 689.715, 515.82 )
-texture = ExtResource( 11 )
-
-[node name="Sprite16" type="Sprite" parent="gas_1_rings13"]
-light_mask = 0
+[node name="Sprite9" type="Sprite" parent="gas_1_rings13"]
 position = Vector2( 653.725, 573.128 )
 texture = ExtResource( 6 )
-flip_h = true
+flip_v = true
 
-[node name="Sprite17" type="Sprite" parent="gas_1_rings13"]
-light_mask = 0
-position = Vector2( 885.848, 312.174 )
-texture = ExtResource( 15 )
-
-[node name="Sprite18" type="Sprite" parent="gas_1_rings13"]
-light_mask = 0
+[node name="Sprite10" type="Sprite" parent="gas_1_rings13"]
 position = Vector2( 969.938, 344.37 )
 texture = ExtResource( 7 )
-
-[node name="Sprite19" type="Sprite" parent="gas_1_rings13"]
-light_mask = 0
-position = Vector2( 987.65, 281.528 )
-texture = ExtResource( 8 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite20" type="Sprite" parent="gas_1_rings13"]
-light_mask = 0
+[node name="Sprite11" type="Sprite" parent="gas_1_rings13"]
 position = Vector2( 927.042, 243.098 )
 texture = ExtResource( 4 )
 flip_h = true
 
 [node name="gas_1_rings14" type="Node2D" parent="."]
-light_mask = 0
 position = Vector2( -3283.22, 1156.61 )
-rotation = 2.2794
+rotation = 0.354302
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Sprite1" type="Sprite" parent="gas_1_rings14"]
-light_mask = 0
 position = Vector2( 879.192, 511.695 )
 texture = ExtResource( 2 )
+flip_h = true
+flip_v = true
 
 [node name="Sprite2" type="Sprite" parent="gas_1_rings14"]
-light_mask = 0
 position = Vector2( 835.156, 461.947 )
 texture = ExtResource( 14 )
-flip_h = true
 
 [node name="Sprite3" type="Sprite" parent="gas_1_rings14"]
-light_mask = 0
-position = Vector2( 769.452, 433.786 )
-texture = ExtResource( 10 )
-
-[node name="Sprite4" type="Sprite" parent="gas_1_rings14"]
-light_mask = 0
 position = Vector2( 908.689, 465.065 )
 texture = ExtResource( 13 )
 
+[node name="Sprite4" type="Sprite" parent="gas_1_rings14"]
+position = Vector2( 797.154, 534.96 )
+texture = ExtResource( 6 )
+
 [node name="Sprite5" type="Sprite" parent="gas_1_rings14"]
-light_mask = 0
-position = Vector2( 851.811, 423.753 )
-texture = ExtResource( 11 )
+position = Vector2( 797.265, 397.023 )
+texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
 [node name="Sprite6" type="Sprite" parent="gas_1_rings14"]
-light_mask = 0
-position = Vector2( 797.154, 534.96 )
-texture = ExtResource( 6 )
-
-[node name="Sprite7" type="Sprite" parent="gas_1_rings14"]
-light_mask = 0
-position = Vector2( 845.03, 562.6 )
-texture = ExtResource( 15 )
-flip_h = true
-flip_v = true
-
-[node name="Sprite8" type="Sprite" parent="gas_1_rings14"]
-light_mask = 0
-position = Vector2( 797.265, 397.023 )
-texture = ExtResource( 7 )
-
-[node name="Sprite9" type="Sprite" parent="gas_1_rings14"]
-light_mask = 0
-position = Vector2( 739.268, 502.172 )
-texture = ExtResource( 8 )
-flip_h = true
-
-[node name="Sprite10" type="Sprite" parent="gas_1_rings14"]
-light_mask = 0
 position = Vector2( 752.009, 601.429 )
 texture = ExtResource( 4 )
-flip_v = true
 
-[node name="Sprite11" type="Sprite" parent="gas_1_rings14"]
-light_mask = 0
-position = Vector2( 826.361, 363.364 )
-texture = ExtResource( 2 )
-
-[node name="Sprite12" type="Sprite" parent="gas_1_rings14"]
-light_mask = 0
+[node name="Sprite7" type="Sprite" parent="gas_1_rings14"]
 position = Vector2( 894.224, 361.555 )
 texture = ExtResource( 14 )
 
-[node name="Sprite13" type="Sprite" parent="gas_1_rings14"]
-light_mask = 0
-position = Vector2( 806.817, 606.434 )
-texture = ExtResource( 10 )
-
-[node name="Sprite14" type="Sprite" parent="gas_1_rings14"]
-light_mask = 0
+[node name="Sprite8" type="Sprite" parent="gas_1_rings14"]
 position = Vector2( 736.805, 570.58 )
 texture = ExtResource( 13 )
-flip_v = true
 
-[node name="Sprite15" type="Sprite" parent="gas_1_rings14"]
-light_mask = 0
-position = Vector2( 689.715, 515.82 )
-texture = ExtResource( 11 )
-
-[node name="Sprite16" type="Sprite" parent="gas_1_rings14"]
-light_mask = 0
+[node name="Sprite9" type="Sprite" parent="gas_1_rings14"]
 position = Vector2( 653.725, 573.128 )
 texture = ExtResource( 6 )
-flip_h = true
+flip_v = true
 
-[node name="Sprite17" type="Sprite" parent="gas_1_rings14"]
-light_mask = 0
-position = Vector2( 885.848, 312.174 )
-texture = ExtResource( 15 )
-
-[node name="Sprite18" type="Sprite" parent="gas_1_rings14"]
-light_mask = 0
+[node name="Sprite10" type="Sprite" parent="gas_1_rings14"]
 position = Vector2( 969.938, 344.37 )
 texture = ExtResource( 7 )
-
-[node name="Sprite19" type="Sprite" parent="gas_1_rings14"]
-light_mask = 0
-position = Vector2( 987.65, 281.528 )
-texture = ExtResource( 8 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite20" type="Sprite" parent="gas_1_rings14"]
-light_mask = 0
+[node name="Sprite11" type="Sprite" parent="gas_1_rings14"]
 position = Vector2( 927.042, 243.098 )
 texture = ExtResource( 4 )
 flip_h = true
 
 [node name="gas_1_rings15" type="Node2D" parent="."]
-light_mask = 0
 position = Vector2( -3283.22, 1156.61 )
-rotation = 1.32819
+rotation = 0.760963
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Sprite1" type="Sprite" parent="gas_1_rings15"]
-light_mask = 0
 position = Vector2( 879.192, 511.695 )
 texture = ExtResource( 2 )
 flip_h = true
+flip_v = true
 
 [node name="Sprite2" type="Sprite" parent="gas_1_rings15"]
-light_mask = 0
 position = Vector2( 835.156, 461.947 )
 texture = ExtResource( 14 )
 
 [node name="Sprite3" type="Sprite" parent="gas_1_rings15"]
-light_mask = 0
-position = Vector2( 769.452, 433.786 )
-texture = ExtResource( 10 )
-
-[node name="Sprite4" type="Sprite" parent="gas_1_rings15"]
-light_mask = 0
 position = Vector2( 908.689, 465.065 )
 texture = ExtResource( 13 )
-flip_h = true
-flip_v = true
 
-[node name="Sprite5" type="Sprite" parent="gas_1_rings15"]
-light_mask = 0
-position = Vector2( 851.811, 423.753 )
-texture = ExtResource( 11 )
-
-[node name="Sprite6" type="Sprite" parent="gas_1_rings15"]
-light_mask = 0
+[node name="Sprite4" type="Sprite" parent="gas_1_rings15"]
 position = Vector2( 797.154, 534.96 )
 texture = ExtResource( 6 )
+
+[node name="Sprite5" type="Sprite" parent="gas_1_rings15"]
+position = Vector2( 797.265, 397.023 )
+texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite7" type="Sprite" parent="gas_1_rings15"]
-light_mask = 0
-position = Vector2( 845.03, 562.6 )
-texture = ExtResource( 15 )
-
-[node name="Sprite8" type="Sprite" parent="gas_1_rings15"]
-light_mask = 0
-position = Vector2( 797.265, 397.023 )
-texture = ExtResource( 7 )
-
-[node name="Sprite9" type="Sprite" parent="gas_1_rings15"]
-light_mask = 0
-position = Vector2( 739.268, 502.172 )
-texture = ExtResource( 8 )
-flip_h = true
-
-[node name="Sprite10" type="Sprite" parent="gas_1_rings15"]
-light_mask = 0
+[node name="Sprite6" type="Sprite" parent="gas_1_rings15"]
 position = Vector2( 752.009, 601.429 )
 texture = ExtResource( 4 )
 
-[node name="Sprite11" type="Sprite" parent="gas_1_rings15"]
-light_mask = 0
-position = Vector2( 826.361, 363.364 )
-texture = ExtResource( 2 )
-
-[node name="Sprite12" type="Sprite" parent="gas_1_rings15"]
-light_mask = 0
+[node name="Sprite7" type="Sprite" parent="gas_1_rings15"]
 position = Vector2( 894.224, 361.555 )
 texture = ExtResource( 14 )
-flip_h = true
-flip_v = true
 
-[node name="Sprite13" type="Sprite" parent="gas_1_rings15"]
-light_mask = 0
-position = Vector2( 806.817, 606.434 )
-texture = ExtResource( 10 )
-
-[node name="Sprite14" type="Sprite" parent="gas_1_rings15"]
-light_mask = 0
+[node name="Sprite8" type="Sprite" parent="gas_1_rings15"]
 position = Vector2( 736.805, 570.58 )
 texture = ExtResource( 13 )
 
-[node name="Sprite15" type="Sprite" parent="gas_1_rings15"]
-light_mask = 0
-position = Vector2( 689.715, 515.82 )
-texture = ExtResource( 11 )
-flip_h = true
-
-[node name="Sprite16" type="Sprite" parent="gas_1_rings15"]
-light_mask = 0
+[node name="Sprite9" type="Sprite" parent="gas_1_rings15"]
 position = Vector2( 653.725, 573.128 )
 texture = ExtResource( 6 )
-
-[node name="Sprite17" type="Sprite" parent="gas_1_rings15"]
-light_mask = 0
-position = Vector2( 885.848, 312.174 )
-texture = ExtResource( 15 )
-flip_h = true
 flip_v = true
 
-[node name="Sprite18" type="Sprite" parent="gas_1_rings15"]
-light_mask = 0
+[node name="Sprite10" type="Sprite" parent="gas_1_rings15"]
 position = Vector2( 969.938, 344.37 )
 texture = ExtResource( 7 )
 flip_h = true
-
-[node name="Sprite19" type="Sprite" parent="gas_1_rings15"]
-light_mask = 0
-position = Vector2( 987.65, 281.528 )
-texture = ExtResource( 8 )
 flip_v = true
 
-[node name="Sprite20" type="Sprite" parent="gas_1_rings15"]
-light_mask = 0
+[node name="Sprite11" type="Sprite" parent="gas_1_rings15"]
 position = Vector2( 927.042, 243.098 )
 texture = ExtResource( 4 )
 flip_h = true
-flip_v = true
 
 [node name="gas_1_rings16" type="Node2D" parent="."]
-light_mask = 0
 position = Vector2( -3283.22, 1156.61 )
-rotation = 1.82387
+rotation = 1.24442
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Sprite1" type="Sprite" parent="gas_1_rings16"]
-light_mask = 0
 position = Vector2( 879.192, 511.695 )
 texture = ExtResource( 2 )
 flip_h = true
 flip_v = true
 
 [node name="Sprite2" type="Sprite" parent="gas_1_rings16"]
-light_mask = 0
 position = Vector2( 835.156, 461.947 )
 texture = ExtResource( 14 )
 
 [node name="Sprite3" type="Sprite" parent="gas_1_rings16"]
-light_mask = 0
-position = Vector2( 769.452, 433.786 )
-texture = ExtResource( 10 )
-flip_h = true
-
-[node name="Sprite4" type="Sprite" parent="gas_1_rings16"]
-light_mask = 0
 position = Vector2( 908.689, 465.065 )
 texture = ExtResource( 13 )
 
-[node name="Sprite5" type="Sprite" parent="gas_1_rings16"]
-light_mask = 0
-position = Vector2( 851.811, 423.753 )
-texture = ExtResource( 11 )
-flip_h = true
-flip_v = true
-
-[node name="Sprite6" type="Sprite" parent="gas_1_rings16"]
-light_mask = 0
+[node name="Sprite4" type="Sprite" parent="gas_1_rings16"]
 position = Vector2( 797.154, 534.96 )
 texture = ExtResource( 6 )
 
-[node name="Sprite7" type="Sprite" parent="gas_1_rings16"]
-light_mask = 0
-position = Vector2( 845.03, 562.6 )
-texture = ExtResource( 15 )
-flip_h = true
-flip_v = true
-
-[node name="Sprite8" type="Sprite" parent="gas_1_rings16"]
-light_mask = 0
+[node name="Sprite5" type="Sprite" parent="gas_1_rings16"]
 position = Vector2( 797.265, 397.023 )
 texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite9" type="Sprite" parent="gas_1_rings16"]
-light_mask = 0
-position = Vector2( 739.268, 502.172 )
-texture = ExtResource( 8 )
-
-[node name="Sprite10" type="Sprite" parent="gas_1_rings16"]
-light_mask = 0
+[node name="Sprite6" type="Sprite" parent="gas_1_rings16"]
 position = Vector2( 752.009, 601.429 )
 texture = ExtResource( 4 )
 
-[node name="Sprite11" type="Sprite" parent="gas_1_rings16"]
-light_mask = 0
-position = Vector2( 826.361, 363.364 )
-texture = ExtResource( 2 )
-flip_h = true
-
-[node name="Sprite12" type="Sprite" parent="gas_1_rings16"]
-light_mask = 0
+[node name="Sprite7" type="Sprite" parent="gas_1_rings16"]
 position = Vector2( 894.224, 361.555 )
 texture = ExtResource( 14 )
 
-[node name="Sprite13" type="Sprite" parent="gas_1_rings16"]
-light_mask = 0
-position = Vector2( 806.817, 606.434 )
-texture = ExtResource( 10 )
-flip_h = true
-
-[node name="Sprite14" type="Sprite" parent="gas_1_rings16"]
-light_mask = 0
+[node name="Sprite8" type="Sprite" parent="gas_1_rings16"]
 position = Vector2( 736.805, 570.58 )
 texture = ExtResource( 13 )
 
-[node name="Sprite15" type="Sprite" parent="gas_1_rings16"]
-light_mask = 0
-position = Vector2( 689.715, 515.82 )
-texture = ExtResource( 11 )
-
-[node name="Sprite16" type="Sprite" parent="gas_1_rings16"]
-light_mask = 0
+[node name="Sprite9" type="Sprite" parent="gas_1_rings16"]
 position = Vector2( 653.725, 573.128 )
 texture = ExtResource( 6 )
 flip_v = true
 
-[node name="Sprite17" type="Sprite" parent="gas_1_rings16"]
-light_mask = 0
-position = Vector2( 885.848, 312.174 )
-texture = ExtResource( 15 )
-
-[node name="Sprite18" type="Sprite" parent="gas_1_rings16"]
-light_mask = 0
+[node name="Sprite10" type="Sprite" parent="gas_1_rings16"]
 position = Vector2( 969.938, 344.37 )
 texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
-[node name="Sprite19" type="Sprite" parent="gas_1_rings16"]
-light_mask = 0
-position = Vector2( 987.65, 281.528 )
-texture = ExtResource( 8 )
-
-[node name="Sprite20" type="Sprite" parent="gas_1_rings16"]
-light_mask = 0
+[node name="Sprite11" type="Sprite" parent="gas_1_rings16"]
 position = Vector2( 927.042, 243.098 )
 texture = ExtResource( 4 )
 flip_h = true
