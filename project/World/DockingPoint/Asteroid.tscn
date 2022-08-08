@@ -7,10 +7,10 @@
 [ext_resource path="res://VFX/DustEmitter.tscn" type="PackedScene" id=5]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 117.956
+radius = 30.2655
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 48.0012
+radius = 19.2354
 
 [sub_resource type="Animation" id=3]
 resource_name = "spin"
@@ -83,6 +83,10 @@ audio_stream = ExtResource( 4 )
 
 [node name="Asteroid" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
+min_scale = 3
+
+[node name="DockingAura" parent="." index="1"]
+visible = false
 
 [node name="Sprite" parent="." index="2"]
 rotation = 5.65487
