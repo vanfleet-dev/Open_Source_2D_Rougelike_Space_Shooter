@@ -1,7 +1,10 @@
-[gd_scene load_steps=245 format=2]
+[gd_scene load_steps=248 format=2]
 
 [ext_resource path="res://World/DockingPoint/sprites/wet_planet_1.png" type="Texture" id=1]
 [ext_resource path="res://World/DockingPoint/sprites/moon_1_120.png" type="Texture" id=2]
+[ext_resource path="res://World/DockingPoint/wet_1.gd" type="Script" id=3]
+[ext_resource path="res://World/DockingPoint/wet_moon_1_sprite.gd" type="Script" id=4]
+[ext_resource path="res://World/DockingPoint/wet_moon_1.gd" type="Script" id=5]
 
 [sub_resource type="AtlasTexture" id=1092]
 atlas = ExtResource( 1 )
@@ -980,30 +983,29 @@ animations = [ {
 } ]
 
 [node name="wet_1" type="Node2D"]
-light_mask = 0
 rotation = -2.15025
 scale = Vector2( 1.16667, 1.16667 )
+script = ExtResource( 3 )
 
 [node name="wet_1_sprite" type="AnimatedSprite" parent="."]
-light_mask = 0
-position = Vector2( -1395.43, 438.857 )
-rotation = -3.16603
+position = Vector2( -1751.67, 580.789 )
+rotation = 3.11716
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 730 )
 animation = "New Anim"
-frame = 41
+frame = 95
 playing = true
 
 [node name="wet_moon_1" type="Node2D" parent="."]
-light_mask = 0
-position = Vector2( -1395.43, 438.857 )
-rotation = -2.241
+position = Vector2( -1751.67, 580.789 )
+rotation = -2.15548
 scale = Vector2( 0.8, 0.8 )
+script = ExtResource( 5 )
 
 [node name="wet_moon_1_sprite" type="AnimatedSprite" parent="wet_moon_1"]
-light_mask = 0
-position = Vector2( 98.18, -318.421 )
+position = Vector2( 98.1799, -318.421 )
 rotation = -2.14501
 frames = SubResource( 851 )
-frame = 115
+frame = 49
 playing = true
+script = ExtResource( 4 )

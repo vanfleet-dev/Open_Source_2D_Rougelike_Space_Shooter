@@ -1,8 +1,8 @@
-[gd_scene load_steps=127 format=2]
+[gd_scene load_steps=125 format=2]
+
 [ext_resource path="res://World/DockingPoint/sprites/planet_1.png" type="Texture" id=2]
 [ext_resource path="res://World/DockingPoint/twins_1.gd" type="Script" id=3]
-[ext_resource path="res://World/DockingPoint/twin_1.gd" type="Script" id=4]
-[ext_resource path="res://World/DockingPoint/occluder_1.gd" type="Script" id=7]
+[ext_resource path="res://World/DockingPoint/twin_planet_1.gd" type="Script" id=4]
 
 [sub_resource type="AtlasTexture" id=128]
 atlas = ExtResource( 2 )
@@ -492,34 +492,20 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="OccluderPolygon2D" id=1332]
-polygon = PoolVector2Array( 83.1624, 97.079, 88.2686, 73.3871, 89.9114, 62.9778, 88.86, 46.9197, 85.499, 30.2093, 77.762, 14.1584, 69.5455, 0.865112, 54.573, -13.9371, 37.3612, -27.8755, 12.4271, -44.4934, -11.4629, -51.7388, -39.965, -53.6031, -60.4307, -49.3075, -76.6226, -44.603, -93.019, -37.7616, -109.895, -28.1628, -118.773, -21.7266, -127.314, -10.6372, -129.345, -27.4845, -125.53, -47.8539, -121.331, -59.6453, -109.719, -78.6449, -94.5995, -96.0828, -76.8007, -111.277, -58.4193, -123.059, -35.9954, -130.94, -8.89505, -135.162, 12.7929, -135.489, 34.9163, -130.893, 55.8683, -123.667, 73.0659, -113.908, 99.3217, -93.8115, 115.489, -73.4778, 125.856, -53.0991, 133.1, -25.7043, 135.085, -5.37988, 135.562, 10.0698, 133.406, 29.0757, 129.399, 45.1561, 124.809, 57.8246, 118.174, 68.0062, 107.785, 80.7196, 94.912, 90.7509 )
-
-[node name="twins_1" type="Node2D"]
+[node name="twin_1" type="Node2D"]
 rotation = -3.75246
 scale = Vector2( 1.66667, 1.66667 )
 script = ExtResource( 3 )
-rotation_speed = 0.01
 
-[node name="twin_1" type="Node2D" parent="."]
-light_mask = 0
-position = Vector2( 766.51, -1098.87 )
-rotation = 0.10472
+[node name="twin_planet_1" type="Node2D" parent="."]
+rotation = -2.98023e-08
 script = ExtResource( 4 )
 
-[node name="twin_1_sprite" type="AnimatedSprite" parent="twin_1"]
-position = Vector2( 118.952, -212.786 )
-rotation = -2.15374
+[node name="twin_1_sprite" type="AnimatedSprite" parent="twin_planet_1"]
+position = Vector2( 772.264, -1102.9 )
+rotation = -2.04902
 scale = Vector2( 1.25, 1.25 )
 frames = SubResource( 248 )
 animation = "New Anim"
-frame = 56
+frame = 75
 playing = true
-
-[node name="occluder_1" type="LightOccluder2D" parent="twin_1"]
-position = Vector2( 118.952, -212.786 )
-rotation = 0.0872665
-scale = Vector2( 1.25, 1.25 )
-occluder = SubResource( 1332 )
-script = ExtResource( 7 )
-rotation_speed = -0.1
