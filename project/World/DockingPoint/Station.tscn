@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://World/DockingPoint/station_map_icon.tres" type="Resource" id=1]
 [ext_resource path="res://World/DockingPoint/sprites/satellite_1.png" type="Texture" id=2]
@@ -6,18 +6,26 @@
 [ext_resource path="res://World/DockingPoint/Station.gd" type="Script" id=4]
 [ext_resource path="res://World/DockingPoint/station_audio.wav" type="AudioStream" id=5]
 [ext_resource path="res://World/DockingPoint/sprites/space_station_10.png" type="Texture" id=6]
-[ext_resource path="res://World/DockingPoint/sprites/dock-aura.svg" type="Texture" id=7]
 [ext_resource path="res://VFX/Station_Particle_1.tscn" type="PackedScene" id=8]
-[ext_resource path="res://VFX/lighting_texture_2.png" type="Texture" id=9]
+[ext_resource path="res://VFX/lighting_texture_1.png" type="Texture" id=9]
 [ext_resource path="res://VFX/Station_Particle_2.tscn" type="PackedScene" id=10]
 
 [sub_resource type="Animation" id=6]
 resource_name = "Idle"
 length = 60.0
 loop = true
-
-[sub_resource type="OccluderPolygon2D" id=8]
-polygon = PoolVector2Array( 781.087, 1029.53, 805.804, 1013.09, 876.78, 953.843, 982.124, 857.99, 1058.79, 780.641, 1118.64, 714.586, 1133.31, 695.327, 1140.08, 682.207, 1142.87, 670.156, 1142.87, 670.156, 1145.85, 669.104, 1152.01, 677.998, 1151.34, 697.013, 1129.04, 737.408, 1078.96, 790.29, 1002.3, 867.64, 920.599, 943.077, 855.604, 1001.22, 812.204, 1035.98, 791.364, 1045.35, 780.418, 1048.54, 770.333, 1043.71, 761.229, 1037.87 )
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/keys = {
+"times": PoolRealArray( 0, 60 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 360.0 ]
+}
 
 [node name="Station" instance=ExtResource( 3 )]
 position = Vector2( 9.00006, 5757 )
@@ -116,7 +124,3 @@ color = Color( 1, 0.584314, 0, 1 )
 energy = 0.5
 range_z_min = -3000
 range_z_max = 3000
-
-[node name="LightOccluder2D2" type="LightOccluder2D" parent="." index="11"]
-position = Vector2( -84.1567, -65.5412 )
-occluder = SubResource( 8 )
