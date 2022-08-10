@@ -8,9 +8,6 @@ onready var _shockwave := $Shockwave
 onready var _ripple := $Ripple
 onready var _dust_right := $DustRight
 onready var _dust_left := $DustLeft
-#jvf added rocks to mining animation
-onready var _rock_right := $RockRight
-onready var _rock_left := $RockLeft
 
 
 func make_trail(current_speed: float) -> void:
@@ -36,5 +33,3 @@ func create_ripple() -> void:
 func create_dust() -> void:
 	_dust_right.emitting = true
 	_dust_left.emitting = true
-	_rock_right.emitting = true #jvf added for rocks in mining animation
-	_rock_left.emitting = true #jvf added for rocks in mining animation

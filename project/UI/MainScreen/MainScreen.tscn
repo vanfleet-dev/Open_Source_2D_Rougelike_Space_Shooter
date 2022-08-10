@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://VFX/lighting_texture_1.png" type="Texture" id=1]
 [ext_resource path="res://VFX/bg_stars.png" type="Texture" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://UI/MainScreen/space_shooter_logo.png" type="Texture" id=4]
 [ext_resource path="res://World/DockingPoint/Sun.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/DockingPoint/sprites/asteroid_512_1.png" type="Texture" id=12]
-[ext_resource path="res://World/Ores/asteroid_128_1.png" type="Texture" id=13]
 
 [sub_resource type="Animation" id=4]
 resource_name = "idle"
@@ -170,9 +169,9 @@ expand = true
 stretch_mode = 6
 
 [node name="Asteroid1" type="Sprite" parent="MarginContainer/MarginContainer/Asteroids"]
-position = Vector2( 1383, 591 )
-scale = Vector2( 0.726561, 0.726563 )
-texture = ExtResource( 13 )
+position = Vector2( 1344.5, 629 )
+scale = Vector2( 0.42578, 0.429688 )
+texture = ExtResource( 12 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="MarginContainer/MarginContainer/Asteroids/Asteroid1"]
 autoplay = "idle"
@@ -180,10 +179,10 @@ playback_speed = 0.05
 anims/idle = SubResource( 4 )
 
 [node name="Asteroid6" type="Sprite" parent="MarginContainer/MarginContainer/Asteroids"]
-position = Vector2( 1405, 92.9999 )
+position = Vector2( 1399.17, 54.8592 )
 rotation = -2.57611
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 13 )
+scale = Vector2( 0.301901, 0.272804 )
+texture = ExtResource( 12 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="MarginContainer/MarginContainer/Asteroids/Asteroid6"]
 autoplay = "idle"
@@ -191,10 +190,10 @@ playback_speed = 0.05
 anims/idle = SubResource( 16 )
 
 [node name="Asteroid7" type="Sprite" parent="MarginContainer/MarginContainer/Asteroids"]
-position = Vector2( 1157, 114 )
-rotation = -1.26711
-scale = Vector2( 0.726561, 0.726563 )
-texture = ExtResource( 13 )
+position = Vector2( 1178.19, 99.6973 )
+rotation = -0.757473
+scale = Vector2( 0.882691, 0.851114 )
+texture = ExtResource( 12 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="MarginContainer/MarginContainer/Asteroids/Asteroid7"]
 autoplay = "idle"
@@ -250,5 +249,5 @@ position = Vector2( 1198, 1468 )
 position = Vector2( 1273, 1098 )
 scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 1 )
-color = Color( 1, 0.996078, 0.713726, 1 )
+color = Color( 0.992157, 1, 0, 1 )
 energy = 1.8
