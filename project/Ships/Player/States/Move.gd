@@ -46,7 +46,12 @@ func physics_process(delta: float) -> void:
 
 	linear_velocity = ship.move_and_slide(linear_velocity)
 	ship.rotation += angular_velocity * delta
-	ship.vfx.make_trail(linear_velocity.length())
+	#kim removed see below
+	#ship.vfx.make_trail(linear_velocity.length()) 
+	#ship.vfx.make_trail2(linear_velocity.length()) #jvf added for 2nd particle effect
+
+
+
 
 
 func unhandled_input(event: InputEvent) -> void:
@@ -71,3 +76,6 @@ func unhandled_input(event: InputEvent) -> void:
 		_state_machine.transition_to(
 			"Move/Precision", {toggled = event.is_action_pressed("precision_mode_toggle")}
 		)
+	#kim added. thruster vfx change. thrusters tied to movement input.
+	if event.is_action_pressed("thrust_forwards"):
+		ship.vfx.make_trail1(true)

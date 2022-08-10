@@ -3,15 +3,16 @@ extends Node2D
 
 const TRAIL_VELOCITY_THRESHOLD := 200
 
-onready var _ship_trail := $MoveTrail
+onready var _ship_trail_1 := $MoveTrail1 #kim changed see below
 onready var _shockwave := $Shockwave
 onready var _ripple := $Ripple
 onready var _dust_right := $DustRight
 onready var _dust_left := $DustLeft
 
 
-func make_trail(current_speed: float) -> void:
-	_ship_trail.emitting = current_speed > TRAIL_VELOCITY_THRESHOLD
+#kim changed to take a bool
+func make_trail1(par: bool) -> void: #was the parameter (current_speed: float)
+	_ship_trail_1.emitting = par #current_speed > TRAIL_VELOCITY_THRESHOLD
 
 
 func create_shockwave() -> void:
