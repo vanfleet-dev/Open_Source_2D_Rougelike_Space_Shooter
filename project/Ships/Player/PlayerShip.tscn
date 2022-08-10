@@ -19,11 +19,8 @@
 [ext_resource path="res://VFX/MoveTrail.tscn" type="PackedScene" id=17]
 [ext_resource path="res://Ships/Player/VFX.gd" type="Script" id=18]
 [ext_resource path="res://VFX/DustEmitter.tscn" type="PackedScene" id=19]
-<<<<<<< HEAD
 [ext_resource path="res://Ships/Player/Thrust_Loop.wav" type="AudioStream" id=20]
-=======
 [ext_resource path="res://Ships/Player/PlayerGun.tscn" type="PackedScene" id=21]
->>>>>>> b7612c28a039c5b4228d947f814190c2fa7ab0d3
 [ext_resource path="res://VFX/exhaust_sprite_3.png" type="Texture" id=22]
 [ext_resource path="res://Ships/Player/Player_Landing.wav" type="AudioStream" id=24]
 
