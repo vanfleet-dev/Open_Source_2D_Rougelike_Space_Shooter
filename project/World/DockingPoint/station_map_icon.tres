@@ -6,5 +6,5 @@
 [resource]
 script = ExtResource( 1 )
 texture = ExtResource( 2 )
-color = Color( 1, 1, 1, 1 )
-scale = 0.8
+color = Color( 1, 0.352941, 0, 1 )
+scale = 2.0

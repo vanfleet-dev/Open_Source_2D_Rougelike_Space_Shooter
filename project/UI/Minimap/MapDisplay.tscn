@@ -1,8 +1,6 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://UI/Minimap/MapDisplay.gd" type="Script" id=1]
-[ext_resource path="res://UI/Minimap/UI_Minimap_ZoomIn.wav" type="AudioStream" id=2]
-
 
 [sub_resource type="Animation" id=1]
 resource_name = "SETUP"
@@ -12,7 +10,7 @@ tracks/0/path = NodePath(".:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
-tracks/0/enabled = true
+tracks/0/enabled = false
 tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -24,7 +22,7 @@ tracks/1/path = NodePath(".:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
-tracks/1/enabled = true
+tracks/1/enabled = false
 tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -95,9 +93,6 @@ mouse_filter = 2
 expand = true
 stretch_mode = 5
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "SETUP"
@@ -106,5 +101,4 @@ anims/appear = SubResource( 2 )
 anims/disappear = SubResource( 3 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 2 )
 volume_db = -5.465

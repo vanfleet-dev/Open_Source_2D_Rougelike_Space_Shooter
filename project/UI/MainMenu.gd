@@ -18,7 +18,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	if screen_fader.is_playing:
 		return
 	if event is InputEventKey or event.is_action_pressed("thrust_forwards"):
-		main_screen.animator.play_backwards("intro")
+#		main_screen.animator.play_backwards("intro") #errored when animation disabled
 		menu_sounds.play_confirm()
 		screen_fader.fade_out()
 		yield(screen_fader, "animation_finished")

@@ -5,8 +5,9 @@ extends PlayerState
 
 enum DockingProcess { CLEARING, DOCKING, DOCKED }
 
-export var docking_release_speed := 1.0
-export var docking_speed_multiplier := 0.09
+#jvf asteroid docking test
+export var docking_release_speed := 150.0
+export var docking_speed_multiplier := 0.2
 
 var _acceleration := GSAITargetAcceleration.new()
 var _agent: GSAISteeringAgent
@@ -37,8 +38,9 @@ func _ready() -> void:
 	var flee := GSAIFlee.new(_agent, _dock_position)
 	# Face makes sure we face away from the docking point
 	var face := GSAIFace.new(_agent, _reverse_face_position)
+	#jvf asteroid docking test
 	face.alignment_tolerance = deg2rad(15)
-	face.deceleration_radius = deg2rad(22)
+	face.deceleration_radius = deg2rad(45)
 
 	_flee_blend = GSAIBlend.new(_agent)
 	_flee_blend.add(flee, 1)
@@ -102,7 +104,8 @@ func physics_process(delta: float) -> void:
 				_current_docking_point.set_docking_remote(ship, _agent.bounding_radius * 0.75)
 				if not Events.is_connected("force_undock", self, "_on_Ship_force_undock"):
 					Events.connect("force_undock", self, "_on_Ship_force_undock")
-				ship.vfx.create_ripple()
+				#jvf distortion effect removal test 1
+				#ship.vfx.create_ripple()
 				ship.vfx.create_dust()
 				audio.play()
 

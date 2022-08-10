@@ -5,9 +5,12 @@ extends DockingPoint
 
 export var rotation_speed = 0.08
 
+##anim stop for use with orbiting station
+#onready var anim_player := $AnimationPlayer
+
 
 func _process(delta):
-	rotation += rotation_speed * delta
+	#rotation += rotation_speed * delta
 	$Sprite/sat_1.rotation += rotation_speed * delta
 	$Sprite/sat_2.rotation += rotation_speed * delta
 
@@ -23,3 +26,15 @@ func _set_accumulated_iron(value: float) -> void:
 		accumulated_iron = 0
 		Events.emit_signal("upgrade_unlocked")
 		upgrade_iron_amount *= 1.25
+
+
+##anim stop for use with orbiting station
+
+#func _on_DockingArea_body_entered(body: Node) -> void:
+#	._on_DockingArea_body_entered(body)
+#	anim_player.stop(false)
+
+
+#unc _on_DockingArea_body_exited(body: Node) -> void:
+#	._on_DockingArea_body_exited(body)
+#	anim_player.play()

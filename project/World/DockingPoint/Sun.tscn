@@ -1,6 +1,6 @@
 [gd_scene load_steps=243 format=2]
 
-[ext_resource path="res://World/DockingPoint/sprites/sun_2_512.png" type="Texture" id=9]
+[ext_resource path="res://World/DockingPoint/sprites/sun_1.png" type="Texture" id=9]
 
 [sub_resource type="AtlasTexture" id=852]
 atlas = ExtResource( 9 )
@@ -972,11 +972,10 @@ animations = [ {
 
 [node name="Sun" type="Node2D"]
 
-
 [node name="sun_sprite" type="AnimatedSprite" parent="."]
 rotation = -2.24798
 scale = Vector2( 3, 3 )
 frames = SubResource( 7 )
 animation = "New Anim 1"
-frame = 49
+frame = 81
 playing = true

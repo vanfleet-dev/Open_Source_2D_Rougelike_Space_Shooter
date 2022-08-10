@@ -8,6 +8,7 @@
 [ext_resource path="res://UI/Minimap/MapView.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/GameInitializer.gd" type="Script" id=7]
 [ext_resource path="res://VFX/BackgroundStars.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Main/Background_Audio.tscn" type="PackedScene" id=9]
 [ext_resource path="res://UI/Minimap/MapDisplay.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Main/white.png" type="Texture" id=11]
 [ext_resource path="res://World/ShakingCamera.tscn" type="PackedScene" id=12]
@@ -18,7 +19,6 @@
 [ext_resource path="res://UI/UI.gd" type="Script" id=17]
 [ext_resource path="res://UI/Menus/QuitMenu.tscn" type="PackedScene" id=18]
 [ext_resource path="res://UI/ScreenFader.tscn" type="PackedScene" id=19]
-[ext_resource path="res://World/DockingPoint/wet_1.gd" type="Script" id=20]
 [ext_resource path="res://VFX/PostProcessGameView.gd" type="Script" id=21]
 [ext_resource path="res://UI/HUD/HUD.tscn" type="PackedScene" id=22]
 [ext_resource path="res://World/DockingPoint/Sun.tscn" type="PackedScene" id=23]
@@ -49,8 +49,8 @@ glow_levels/2 = true
 glow_levels/3 = false
 glow_levels/4 = true
 glow_levels/5 = false
-glow_intensity = 0.6
-glow_strength = 0.6
+glow_intensity = 8.0
+glow_strength = 0.5
 glow_blend_mode = 0
 glow_bicubic_upscale = true
 
@@ -59,15 +59,15 @@ script = ExtResource( 7 )
 
 [node name="GameWorld" type="Node2D" parent="."]
 script = ExtResource( 14 )
-radius = 3000.0
+radius = 300000.0
 iron_amount_balance_level = 750.0
 refresh_threshold_range = 350.0
 
 [node name="Light2D" type="Light2D" parent="GameWorld"]
-scale = Vector2( 50, 50 )
+position = Vector2( -2379, 162 )
+scale = Vector2( 75, 75 )
 texture = ExtResource( 30 )
-color = Color( 0.933333, 0.870588, 0.537255, 1 )
-energy = 1.3
+color = Color( 0.968627, 1, 0, 1 )
 range_z_min = -4096
 range_z_max = 4096
 shadow_enabled = true
@@ -78,16 +78,17 @@ shadow_filter_smooth = 1.0
 [node name="Sun" parent="GameWorld" instance=ExtResource( 23 )]
 light_mask = 0
 scale = Vector2( 3, 3 )
+
 [node name="twins_1" parent="GameWorld/Sun" instance=ExtResource( 28 )]
-rotation = -2.54644
+rotation = -3.48019
 scale = Vector2( 1.3, 1.3 )
 
 [node name="wet_1" parent="GameWorld/Sun" instance=ExtResource( 29 )]
-rotation = 0.0
+rotation = -0.340339
 scale = Vector2( 3, 3 )
-script = ExtResource( 20 )
 
 [node name="gas_1" parent="GameWorld/Sun" instance=ExtResource( 27 )]
+rotation = 0.169297
 scale = Vector2( 3, 3 )
 
 [node name="BackgroundStars" parent="GameWorld" instance=ExtResource( 8 )]
@@ -108,16 +109,14 @@ script = ExtResource( 15 )
 PirateScene = ExtResource( 3 )
 spawn_radius = 350.0
 
+[node name="Background_Audio" parent="GameWorld" instance=ExtResource( 9 )]
+volume_db = -15.0
+autoplay = true
+
 [node name="MapView" parent="." instance=ExtResource( 6 )]
 mouse_filter = 2
 
 [node name="BlackBackground" parent="MapView/Viewport/CanvasLayer" index="0"]
-mouse_filter = 2
-
-[node name="DistortMaskView" parent="." instance=ExtResource( 20 )]
-mouse_filter = 2
-
-[node name="BlackBackground" parent="DistortMaskView/Viewport/CanvasLayer" index="0"]
 mouse_filter = 2
 
 [node name="UI" type="CanvasLayer" parent="."]

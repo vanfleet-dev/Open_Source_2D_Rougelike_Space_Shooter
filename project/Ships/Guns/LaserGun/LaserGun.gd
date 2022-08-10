@@ -4,7 +4,7 @@
 class_name LaserGun
 extends Node2D
 
-export var damage_per_second := 200.0
+export var damage_per_second := 25.0
 
 onready var laser_beam := $LaserBeam2D
 onready var shooter := owner

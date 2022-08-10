@@ -6,8 +6,8 @@ class_name PirateSpawner
 extends Node2D
 
 export var PirateScene: PackedScene
-export var count_min := 1
-export var count_max := 1
+export var count_min := 10
+export var count_max := 10
 export var spawn_radius := 10000.0
 
 

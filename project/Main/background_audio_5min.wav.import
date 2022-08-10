@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/background_audio_5min.wav-e2ac0a3023182be412ce7f877ee169db.sample"
+
+[deps]
+
+source_file="res://Main/background_audio_5min.wav"
+dest_files=[ "res://.import/background_audio_5min.wav-e2ac0a3023182be412ce7f877ee169db.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -5,7 +5,7 @@ extends PirateState
 
 export var distance_from_player_min := 200.0
 export var firing_alignment_tolerance_percentage := 0.15
-export var pursuit_distance_max := 800.0
+export var pursuit_distance_max := 1200.0
 
 var target: GSAISteeringAgent
 var pursue: GSAIPursue

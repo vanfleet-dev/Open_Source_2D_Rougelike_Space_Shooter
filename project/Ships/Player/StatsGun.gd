@@ -4,7 +4,7 @@ extends Stats
 
 export var _damage := 4.0
 export var _cooldown := 0.0
-export var _spread := 30.0
+export var _spread := 1.0
 
 
 func _init() -> void:

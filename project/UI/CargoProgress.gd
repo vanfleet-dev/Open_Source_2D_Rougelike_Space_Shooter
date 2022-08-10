@@ -2,8 +2,7 @@ extends ProgressBar
 
 export var Ore: PackedScene = preload("res://World/Ores/IronOre.tscn")
 
-onready var arc_bottom := $ArcBottom
-onready var arc_top := $ArcTop
+onready var cargo_bar := $CargoBar  # jvf removed radial progress bar. see below
 onready var fill := $Fill
 onready var tween := $Tween
 onready var anim_player := $AnimationPlayer
@@ -19,8 +18,7 @@ func _ready() -> void:
 	Events.connect("mine_started", self, "_on_Events_mine_started")
 	Events.connect("mine_finished", self, "_on_Events_mine_finished")
 	self.connect("value_changed", self, "_on_value_changed")
-	share(arc_bottom)
-	share(arc_top)
+	share(cargo_bar) # jvf removed radial progress bar. see below
 
 
 func initialize(player: PlayerShip) -> void:
@@ -58,18 +56,28 @@ func _on_Stats_stat_changed(stat: String, _value_start: float, current_value: fl
 		return
 	value = current_value
 
-
-func _on_value_changed(_value: float) -> void:
+# jvf removed radial mining progress bar. replaced with standard left to right progress bar.
+func _on_value_changed(value_start: float, current_value: float) -> void:
 	if tween.is_active():
 		return
 	tween.interpolate_property(
-		fill,
-		"rect_scale",
-		fill.rect_scale,
-		Vector2(ratio, ratio),
-		0.25,
-		Tween.TRANS_ELASTIC,
-		Tween.EASE_OUT
+		"value", value_start, current_value, 0.25, Tween.TRANS_ELASTIC, Tween.EASE_OUT
 	)
 	tween.start()
 	spawn_ore()
+
+
+	# func _on_value_changed(_value: float) -> void:
+	# 	if tween.is_active():
+	# 		return
+	# 	tween.interpolate_property(
+	# 		fill,
+	# 		"rect_scale",
+	# 		fill.rect_scale,
+	# 		Vector2(ratio, ratio),
+	# 		0.25,
+	# 		Tween.TRANS_ELASTIC,
+	# 		Tween.EASE_OUT
+	# 	)
+	# 	tween.start()
+	# 	spawn_ore()

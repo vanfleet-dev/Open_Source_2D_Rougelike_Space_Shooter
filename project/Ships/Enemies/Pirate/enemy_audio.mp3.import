@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/enemy_audio.mp3-112684748619e0518f0f1669897e2657.mp3str"
+
+[deps]
+
+source_file="res://Ships/Enemies/Pirate/enemy_audio.mp3"
+dest_files=[ "res://.import/enemy_audio.mp3-112684748619e0518f0f1669897e2657.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
