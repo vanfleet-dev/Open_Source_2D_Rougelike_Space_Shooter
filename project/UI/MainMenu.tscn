@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://UI/MainScreen/MainScreen.tscn" type="PackedScene" id=1]
 [ext_resource path="res://UI/Menus/Sounds/MenuSoundPlayer.tscn" type="PackedScene" id=2]
 [ext_resource path="res://UI/theme_main_menu.tres" type="Theme" id=3]
+[ext_resource path="res://UI/Menus/Sounds/UI_Select.wav" type="AudioStream" id=4]
 [ext_resource path="res://UI/MainMenu.gd" type="Script" id=8]
 [ext_resource path="res://UI/ScreenFader.tscn" type="PackedScene" id=9]
 
@@ -30,3 +31,7 @@ layer = 3
 duration_fade_out = 1.0
 
 [node name="MenuSoundPlayer" parent="." instance=ExtResource( 2 )]
+sound_close = ExtResource( 4 )
+sound_confirm = ExtResource( 4 )
+sound_hide = ExtResource( 4 )
+sound_open = ExtResource( 4 )
