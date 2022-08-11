@@ -79,3 +79,30 @@ func unhandled_input(event: InputEvent) -> void:
 	#kim added. thruster vfx change. thrusters tied to movement input.
 	if event.is_action_pressed("thrust_forwards"):
 		ship.vfx.make_trail1(true)
+
+	if event.is_action_pressed("thrust_forwards"):	
+		ship.vfx.make_trail2(true) 
+	
+	if event.is_action_pressed("thrust_back"):
+		ship.vfx.make_trail3(true) 
+
+	if event.is_action_pressed("left"):
+		ship.vfx.make_trail4(true) 
+
+	if event.is_action_pressed("right"):
+		ship.vfx.make_trail5(true)
+
+	if event.is_action_released("thrust_forwards"):
+		ship.vfx.make_trail1(false)
+		
+	if event.is_action_released("thrust_forwards"):
+		ship.vfx.make_trail2(false)
+
+	if event.is_action_released("thrust_back"):
+		ship.vfx.make_trail3(false)
+
+	if event.is_action_released("left"):
+		ship.vfx.make_trail4(false)
+
+	if event.is_action_released("right"):
+		ship.vfx.make_trail5(false)

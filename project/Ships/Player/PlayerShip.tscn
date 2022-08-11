@@ -105,14 +105,59 @@ texture = ExtResource( 22 )
 initial_velocity = 200.0
 linear_accel = 50.0
 damping = 500.0
-z_index = -1
-lifetime = 0.3
+
+[node name="MoveTrail2" parent="VFX" index="1" instance=ExtResource( 17 )]
+position = Vector2( 40.8333, -12.5 )
+scale = Vector2( 1.2, 1.2 )
+amount = 3
+lifetime = 0.1
+speed_scale = 3.0
+texture = ExtResource( 22 )
 initial_velocity = 200.0
+linear_accel = 50.0
+damping = 500.0
 
-[node name="Shockwave" parent="VFX" index="1" instance=ExtResource( 15 )]
+[node name="MoveTrail3" parent="VFX" index="2" instance=ExtResource( 17 )]
+position = Vector2( -3.8147e-06, -30.8333 )
+rotation = 3.14159
+scale = Vector2( 1.5, 1.5 )
+amount = 3
+lifetime = 0.1
+speed_scale = 3.0
+texture = ExtResource( 22 )
+emission_shape = 2
+emission_rect_extents = Vector2( 1, 1 )
+initial_velocity = 200.0
+linear_accel = 50.0
+damping = 500.0
 
-[node name="Ripple" parent="VFX" index="2" instance=ExtResource( 16 )]
-position = Vector2( 0, 20 )
+[node name="MoveTrail4" parent="VFX" index="3" instance=ExtResource( 17 )]
+position = Vector2( 5.83334, 12.5 )
+rotation = -0.904081
+scale = Vector2( 1.2, 1.2 )
+amount = 3
+lifetime = 0.1
+speed_scale = 3.0
+texture = ExtResource( 22 )
+emission_shape = 2
+emission_rect_extents = Vector2( 1, 1 )
+initial_velocity = 200.0
+linear_accel = 50.0
+damping = 500.0
+
+[node name="MoveTrail5" parent="VFX" index="4" instance=ExtResource( 17 )]
+position = Vector2( -7.5, 12.5 )
+rotation = 0.736529
+scale = Vector2( 1.2, 1.2 )
+amount = 3
+lifetime = 0.1
+speed_scale = 3.0
+texture = ExtResource( 22 )
+emission_shape = 2
+emission_rect_extents = Vector2( 1, 1 )
+initial_velocity = 200.0
+linear_accel = 50.0
+damping = 500.0
 
 [node name="DustRight" parent="VFX" index="5" instance=ExtResource( 19 )]
 position = Vector2( 0, 20.2518 )

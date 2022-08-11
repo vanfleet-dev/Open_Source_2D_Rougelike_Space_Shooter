@@ -4,16 +4,31 @@ extends Node2D
 const TRAIL_VELOCITY_THRESHOLD := 200
 
 onready var _ship_trail_1 := $MoveTrail1 #kim changed see below
+#jvf added for additional thruster particle effects
+onready var _ship_trail_2 := $MoveTrail2 
+onready var _ship_trail_3 := $MoveTrail3 
+onready var _ship_trail_4 := $MoveTrail4 
+onready var _ship_trail_5 := $MoveTrail5 
 onready var _shockwave := $Shockwave
 onready var _ripple := $Ripple
 onready var _dust_right := $DustRight
 onready var _dust_left := $DustLeft
 
-
 #kim changed to take a bool
 func make_trail1(par: bool) -> void: #was the parameter (current_speed: float)
 	_ship_trail_1.emitting = par #current_speed > TRAIL_VELOCITY_THRESHOLD
 
+func make_trail2(par: bool) -> void:
+	_ship_trail_2.emitting = par
+
+func make_trail3(par: bool) -> void:
+	_ship_trail_3.emitting = par
+
+func make_trail4(par: bool) -> void:
+	_ship_trail_4.emitting = par 
+
+func make_trail5(par: bool) -> void:
+	_ship_trail_5.emitting = par
 
 func create_shockwave() -> void:
 	var shockwave := _shockwave.duplicate()
