@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mining_rumble_2sec.wav-4a4ae1fdbe7e4bfdcb96c50996cc1c4e.sample"
+
+[deps]
+
+source_file="res://World/DockingPoint/mining_rumble_2sec.wav"
+dest_files=[ "res://.import/mining_rumble_2sec.wav-4a4ae1fdbe7e4bfdcb96c50996cc1c4e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
