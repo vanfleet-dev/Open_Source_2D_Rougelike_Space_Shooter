@@ -14,7 +14,7 @@
 [ext_resource path="res://Ships/Player/PlayerLaserGun.gd" type="Script" id=12]
 [ext_resource path="res://Ships/Guns/LaserGun/LaserGun.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Ships/Guns/Projectiles/PlasmaShotPlayer.tscn" type="PackedScene" id=14]
-[ext_resource path="res://VFX/RockEmitter.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Ships/Player/EngineAudio.tscn" type="PackedScene" id=15]
 [ext_resource path="res://VFX/MoveTrail.tscn" type="PackedScene" id=17]
 [ext_resource path="res://Ships/Player/VFX.gd" type="Script" id=18]
 [ext_resource path="res://VFX/DustEmitter.tscn" type="PackedScene" id=19]
@@ -56,11 +56,26 @@ drag_angular_coeff = 0.02
 
 [node name="Travel" type="Node" parent="StateMachine/Move" index="0"]
 script = ExtResource( 4 )
+; jvf added individual auido nodes for thruster audio effects. 
+[node name="EngineAudio1" parent="StateMachine/Move/Travel" index="0" instance=ExtResource( 15 )]
+volume_db = 1.5
+pitch_scale = 0.5
 
-[node name="EngineAudio" type="AudioStreamPlayer2D" parent="StateMachine/Move/Travel" index="0"]
-stream = ExtResource( 20 )
-volume_db = 13.358
-pitch_scale = 0.63
+[node name="EngineAudio2" parent="StateMachine/Move/Travel" index="1" instance=ExtResource( 15 )]
+visible = false
+volume_db = 0.5
+pitch_scale = 1.0
+
+[node name="EngineAudio3" parent="StateMachine/Move/Travel" index="2" instance=ExtResource( 15 )]
+visible = false
+volume_db = 0.5
+pitch_scale = 1.0
+bus = "Thrusters"
+
+[node name="EngineAudio4" parent="StateMachine/Move/Travel" index="3" instance=ExtResource( 15 )]
+visible = false
+volume_db = 0.5
+pitch_scale = 1.0
 
 [node name="Dock" type="Node" parent="StateMachine/Move" index="1"]
 script = ExtResource( 5 )
@@ -70,6 +85,26 @@ stream = ExtResource( 24 )
 
 [node name="Precision" type="Node" parent="StateMachine/Move" index="2"]
 script = ExtResource( 7 )
+
+[node name="EngineAudio1" parent="StateMachine/Move/Precision" index="0" instance=ExtResource( 15 )]
+visible = false
+volume_db = 1.5
+pitch_scale = 0.5
+
+[node name="EngineAudio2" parent="StateMachine/Move/Precision" index="1" instance=ExtResource( 15 )]
+visible = false
+volume_db = 0.5
+pitch_scale = 1.0
+
+[node name="EngineAudio3" parent="StateMachine/Move/Precision" index="2" instance=ExtResource( 15 )]
+visible = false
+volume_db = 0.5
+pitch_scale = 1.0
+
+[node name="EngineAudio4" parent="StateMachine/Move/Precision" index="3" instance=ExtResource( 15 )]
+visible = false
+volume_db = 0.5
+pitch_scale = 1.0
 
 [node name="CameraTransform" type="RemoteTransform2D" parent="." index="3"]
 
