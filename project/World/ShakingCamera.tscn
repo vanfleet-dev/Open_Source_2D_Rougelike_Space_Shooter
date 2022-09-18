@@ -4,12 +4,10 @@
 
 [node name="Camera" type="Camera2D" groups=["Camera"]]
 current = true
-zoom = Vector2( 2, 2 )
 process_mode = 0
 smoothing_enabled = true
 editor_draw_drag_margin = true
 script = ExtResource( 1 )
-max_zoom = 25.0
 
 [node name="Tween" type="Tween" parent="."]
 playback_process_mode = 0

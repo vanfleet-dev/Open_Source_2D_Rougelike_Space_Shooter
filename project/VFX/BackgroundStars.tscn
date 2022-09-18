@@ -10,9 +10,6 @@
 [ext_resource path="res://VFX/bg_1.png" type="Texture" id=10]
 
 [node name="BackgroundStars" type="ParallaxBackground"]
-scale = Vector2( 2, 2 )
-transform = Transform2D( 2, 0, 0, 2, 0, 0 )
-scroll_base_scale = Vector2( 0.5, 0.5 )
 scroll_ignore_camera_zoom = true
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
@@ -70,7 +67,7 @@ texture = ExtResource( 5 )
 centered = false
 
 [node name="ParallaxLayer10" type="ParallaxLayer" parent="."]
-motion_scale = Vector2( 0.8, 0.8 )
+motion_scale = Vector2( 0.3, 0.3 )
 motion_mirroring = Vector2( 5120, 3840 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxLayer10"]

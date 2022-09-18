@@ -56,7 +56,7 @@ drag_angular_coeff = 0.02
 
 [node name="Travel" type="Node" parent="StateMachine/Move" index="0"]
 script = ExtResource( 4 )
-; jvf added individual auido nodes for thruster audio effects. 
+
 [node name="EngineAudio1" parent="StateMachine/Move/Travel" index="0" instance=ExtResource( 15 )]
 volume_db = 1.5
 pitch_scale = 0.5
@@ -112,7 +112,6 @@ pitch_scale = 1.0
 remote_path = NodePath("../BarRig")
 update_rotation = false
 
-
 [node name="Gun" parent="." index="5"]
 position = Vector2( -12.5, -30.8333 )
 script = ExtResource( 9 )
@@ -120,7 +119,6 @@ Projectile = ExtResource( 14 )
 
 [node name="Gun 2" parent="." index="6" instance=ExtResource( 21 )]
 position = Vector2( 12.5, -30.8333 )
-
 
 [node name="MapTimer" type="Timer" parent="." index="7"]
 
@@ -199,6 +197,7 @@ position = Vector2( 0, 20.2518 )
 z_index = -1
 
 [node name="DustLeft" parent="VFX" index="6" instance=ExtResource( 19 )]
+visible = false
 position = Vector2( 8.34465e-07, 20 )
 rotation = 3.66519
 z_index = -1

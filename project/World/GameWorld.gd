@@ -35,20 +35,20 @@ export var rotation_speed6 = 0.08
 
 func _process(delta):
 #twins sprites
-	$Sun/twins_1.rotation += rotation_speed1 * delta
+	$Sun/twins_1.rotation += 0.03 * delta
 	$Sun/twins_1/twin_planet_1.rotation += rotation_speed1 * delta
 #wet sprites
 	$Sun/wet_1.rotation += rotation_speed1 * delta
 	$Sun/wet_1/wet_moon_1.rotation += rotation_speed2 * delta
 	$Sun/wet_1/wet_moon_1/wet_moon_1_sprite.rotation -= rotation_speed2 * delta
 #gas sprites
-	$Sun/gas_1.rotation += rotation_speed3 * delta
+	$Sun/gas_1.rotation += rotation_speed4 * delta
 	$Sun/gas_1/gas_moon_1.rotation += rotation_speed4 * delta
 	$Sun/gas_1/gas_moon_1/gas_moon_1_sprite.rotation -= rotation_speed4 * delta
-	$Sun/gas_1/gas_moon_2.rotation += rotation_speed6 * delta
-	$Sun/gas_1/gas_moon_2/gas_moon_2_sprite.rotation -= rotation_speed6 * delta
-	$Sun/gas_1/gas_moon_3.rotation += rotation_speed5 * delta
-	$Sun/gas_1/gas_moon_3/gas_moon_3_sprite.rotation -= rotation_speed5 * delta
+	$Sun/gas_1/gas_moon_2.rotation += rotation_speed5 * delta
+	$Sun/gas_1/gas_moon_2/gas_moon_2_sprite.rotation -= rotation_speed5 * delta
+	$Sun/gas_1/gas_moon_3.rotation += rotation_speed3 * delta
+	$Sun/gas_1/gas_moon_3/gas_moon_3_sprite.rotation -= rotation_speed3 * delta
 #gas ring sprites
 	$Sun/gas_1/gas_1_rings.rotation += rotation_speed1 * delta
 	$Sun/gas_1/gas_1_rings2.rotation += rotation_speed1 * delta
