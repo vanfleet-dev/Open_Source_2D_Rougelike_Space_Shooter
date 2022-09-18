@@ -16,6 +16,7 @@ func _ready() -> void:
 	Events.connect("station_spawned", self, "_on_Spawner_station_spawned")
 	Events.connect("asteroid_spawned", self, "_on_Spawner_asteroid_spawned")
 	Events.connect("pirate_spawned", self, "_on_Spawner_pirate_spawned")
+	Events.connect("planet_spawned", self, "_on_Spawner_planet_spawned") #jvf spawner test
 
 	camera.setup_camera_map(map)
 
@@ -33,6 +34,13 @@ func _input(event: InputEvent) -> void:
 func _on_Spawner_pirate_spawned(pirate: PirateShip) -> void:
 	pirate.setup_world_objects(_world_objects)
 	Events.emit_signal("node_spawned", pirate)
+
+
+##jvf spawner test
+func _on_Spawner_planet_spawned(planet: DockingPoint):
+	_world_objects.append(weakref(planet))
+	Events.emit_signal("node_spawned", planet)
+##
 
 
 func _on_Spawner_station_spawned(station: DockingPoint, player: PlayerShip) -> void:

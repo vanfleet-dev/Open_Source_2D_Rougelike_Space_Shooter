@@ -12,6 +12,7 @@ signal node_spawned(node)
 signal station_spawned(station, player)
 signal pirate_spawned(pirate)
 signal asteroid_spawned(object)
+signal planet_spawned(planet) #jvf spawner test
 
 signal map_toggled(is_visible, animation_length)
 
