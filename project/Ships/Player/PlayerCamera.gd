@@ -20,8 +20,13 @@ var _start_zoom := zoom
 var _start_position := Vector2.ZERO
 
 onready var remote_map := $RemoteMap
-onready var remote_distort := $RemoteDistort
-onready var tween := $Tween
+#jvf distortion effect removal test 1
+#onready var remote_distort := $RemoteDistort
+
+
+###########zoom test##########  onready var tween := $Tween
+
+
 onready var noise := OpenSimplexNoise.new()
 
 
@@ -64,10 +69,10 @@ func setup_camera_map(map: MapView) -> void:
 	remote_map.remote_path = camera_map.get_path()
 
 
-func setup_distortion_camera() -> void:
-	var distort_camera := self.duplicate()
-	ObjectRegistry.register_distortion_effect(distort_camera)
-	remote_distort.remote_path = distort_camera.get_path()
+# func setup_distortion_camera() -> void:
+# 	var distort_camera := self.duplicate()
+# 	ObjectRegistry.register_distortion_effect(distort_camera)
+# 	remote_distort.remote_path = distort_camera.get_path()
 
 
 func _toggle_map(show: bool, duration: float) -> void:

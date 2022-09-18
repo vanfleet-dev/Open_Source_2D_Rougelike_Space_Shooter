@@ -9,8 +9,9 @@ onready var _ship_trail_2 := $MoveTrail2
 onready var _ship_trail_3 := $MoveTrail3 
 onready var _ship_trail_4 := $MoveTrail4 
 onready var _ship_trail_5 := $MoveTrail5 
-onready var _shockwave := $Shockwave
-onready var _ripple := $Ripple
+#jvf distortion effect removal test 1
+#onready var _shockwave := $Shockwave
+#onready var _ripple := $Ripple
 onready var _dust_right := $DustRight
 onready var _dust_left := $DustLeft
 
@@ -30,20 +31,20 @@ func make_trail4(par: bool) -> void:
 func make_trail5(par: bool) -> void:
 	_ship_trail_5.emitting = par
 
-func create_shockwave() -> void:
-	var shockwave := _shockwave.duplicate()
-	ObjectRegistry.register_distortion_effect(shockwave)
-	shockwave.global_position = _shockwave.global_position
-	shockwave.emitting = true
-	shockwave.get_node("LifeSpan").start()
+# func create_shockwave() -> void:
+# 	var shockwave := _shockwave.duplicate()
+# 	ObjectRegistry.register_distortion_effect(shockwave)
+# 	shockwave.global_position = _shockwave.global_position
+# 	shockwave.emitting = true
+# 	shockwave.get_node("LifeSpan").start()
 
 
-func create_ripple() -> void:
-	var ripple := _ripple.duplicate()
-	ObjectRegistry.register_distortion_effect(ripple)
-	ripple.global_position = _ripple.global_position
-	ripple.emitting = true
-	ripple.get_node("LifeSpan").start()
+# func create_ripple() -> void:
+# 	var ripple := _ripple.duplicate()
+# 	ObjectRegistry.register_distortion_effect(ripple)
+# 	ripple.global_position = _ripple.global_position
+# 	ripple.emitting = true
+# 	ripple.get_node("LifeSpan").start()
 
 
 func create_dust() -> void:

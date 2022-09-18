@@ -67,6 +67,7 @@ func unhandled_input(event: InputEvent) -> void:
 	_parent.unhandled_input(event)
 	if event.is_echo():
 		return
-	if event.is_action("thrust_forwards") and event.is_pressed():
-		ship.vfx.create_shockwave()
+	#jvf distortion effect removal test 1
+	# if event.is_action("thrust_forwards") and event.is_pressed():
+	# 	ship.vfx.create_shockwave()
 		

@@ -15,7 +15,8 @@ const _AUDIO_SAMPLES = [
 
 export var speed := 3000.0
 export var damage := 10.0
-export var distortion_emitter: PackedScene
+#jvf distortion effect removal test 1
+#export var distortion_emitter: PackedScene
 
 var is_active := true setget set_is_active
 var direction := Vector2.ZERO
@@ -24,7 +25,7 @@ var shooter: Node
 onready var tween := $Tween
 onready var sprite := $Sprite
 onready var player := $AnimationPlayer
-onready var remote_transform := $DistortionTransform
+#onready var remote_transform := $DistortionTransform
 onready var visibility_notifier: VisibilityNotifier2D = $VisibilityNotifier2D
 onready var collider: CollisionShape2D = $CollisionShape2D
 onready var audio: AudioStreamPlayer2D = $AudioStreamPlayer2D
@@ -34,12 +35,12 @@ func _ready() -> void:
 	direction = -GSAIUtils.angle_to_vector2(rotation)
 	visibility_notifier.connect("screen_exited", self, "queue_free")
 
-	sprite.material = sprite.material.duplicate()
-	player.play("Flicker")
+	#sprite.material = sprite.material.duplicate()
+	#player.play("Flicker")
 
-	var emitter := distortion_emitter.instance()
-	ObjectRegistry.register_distortion_effect(emitter)
-	remote_transform.remote_path = emitter.get_path()
+	 #var emitter := distortion_emitter.instance()
+	 #ObjectRegistry.register_distortion_effect(emitter)
+	 #remote_transform.remote_path = emitter.get_path()
 
 	appear()
 
@@ -53,7 +54,7 @@ func _physics_process(delta: float) -> void:
 
 func appear() -> void:
 	self.is_active = true
-	tween.interpolate_method(self, "_fade", 0.0, 1.0, 0.05, Tween.TRANS_LINEAR, Tween.EASE_OUT)
+	#tween.interpolate_method(self, "_fade", 0.0, 1.0, 0.05, Tween.TRANS_LINEAR, Tween.EASE_OUT)
 	tween.interpolate_property(
 		self, "scale", scale / 5.0, scale, 0.05, Tween.TRANS_LINEAR, Tween.EASE_OUT
 	)
@@ -77,5 +78,5 @@ func set_is_active(value: bool) -> void:
 	set_physics_process(is_active)
 
 
-func _fade(value: float) -> void:
-	sprite.material.set_shader_param("fade_amount", value)
+#func _fade(value: float) -> void:
+#	sprite.material.set_shader_param("fade_amount", value)

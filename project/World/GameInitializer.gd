@@ -19,8 +19,9 @@ func _ready() -> void:
 
 	camera.setup_camera_map(map)
 
-	ObjectRegistry.register_distortion_parent($DistortMaskView/Viewport)
-	camera.setup_distortion_camera()
+	#jvf distortion effect removal test 1
+	# ObjectRegistry.register_distortion_parent($DistortMaskView/Viewport)
+	# camera.setup_distortion_camera()
 
 
 func _input(event: InputEvent) -> void:
