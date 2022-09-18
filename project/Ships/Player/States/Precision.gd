@@ -43,12 +43,13 @@ func physics_process(delta: float) -> void:
 		_update_mouse_target()
 
 	var direction := get_movement()
-	### jvf tied user input to thruster audio effects. 
+	### jvf audio test
 	engine_audio1.global_position = owner.global_position
 	if not engine_audio1.playing and Input.is_action_pressed("thrust_forwards"):
 		engine_audio1.play()
 	elif not Input.is_action_pressed("thrust_forwards"):
 		engine_audio1.stop()
+	#audio test below
 	engine_audio2.global_position = owner.global_position
 	if not engine_audio2.playing and Input.is_action_pressed("thrust_back"):
 		engine_audio2.play()
@@ -60,13 +61,13 @@ func physics_process(delta: float) -> void:
 		engine_audio3.play()
 	elif not Input.is_action_pressed("left"):
 		engine_audio3.stop()
-
+	
 	engine_audio4.global_position = owner.global_position
 	if not engine_audio4.playing and Input.is_action_pressed("right"):
 		engine_audio4.play()
 	elif not Input.is_action_pressed("right"):
 		engine_audio4.stop()
-	##
+	## audio test end
 	_parent.linear_velocity += direction * _parent.acceleration_max * speed_multiplier * delta
 
 	_face.calculate_steering(acceleration)
