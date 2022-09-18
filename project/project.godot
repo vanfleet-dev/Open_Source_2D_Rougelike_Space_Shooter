@@ -390,7 +390,6 @@ config/icon="res://icon.png"
 Events="*res://Autoload/Events.gd"
 ObjectRegistry="*res://Autoload/ObjectRegistry.tscn"
 BackgroundAudio="*res://Main/Background_Audio.tscn"
-AsteroidSound="*res://Main/Asteroid_Sound.tscn"
 
 [debug]
 
@@ -401,6 +400,8 @@ gdscript/warnings/return_value_discarded=false
 
 window/size/width=2560
 window/size/height=1080
+mouse_cursor/custom_image="res://VFX/crosshair.png"
+mouse_cursor/custom_image_hotspot=Vector2( 16, 16 )
 window/stretch/mode="2d"
 window/stretch/aspect="keep_width"
 
