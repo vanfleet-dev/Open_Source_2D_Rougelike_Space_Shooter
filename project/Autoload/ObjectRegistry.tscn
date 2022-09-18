@@ -2,7 +2,6 @@
 
 [ext_resource path="res://Autoload/ObjectRegistry.gd" type="Script" id=1]
 
-
 [node name="ObjectRegistry" type="Node"]
 script = ExtResource( 1 )
 

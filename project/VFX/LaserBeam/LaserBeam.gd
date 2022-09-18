@@ -1,7 +1,7 @@
 extends RayCast2D
 
-export var cast_speed := 7000.0
-export var max_length := 1400
+export var cast_speed := 1000.0
+export var max_length := 400
 export var growth_time := 0.1
 
 onready var casting_particles := $CastingParticles2D

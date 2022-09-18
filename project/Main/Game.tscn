@@ -59,8 +59,6 @@ script = ExtResource( 7 )
 
 [node name="GameWorld" type="Node2D" parent="."]
 script = ExtResource( 14 )
-radius = 300000.0
-iron_amount_balance_level = 750.0
 refresh_threshold_range = 350.0
 
 [node name="Light2D" type="Light2D" parent="GameWorld"]
@@ -155,13 +153,8 @@ expand = true
 stretch_mode = 1
 flip_v = true
 script = ExtResource( 21 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource( 4 )
 
 [editable path="MapView"]
-
-[editable path="DistortMaskView"]

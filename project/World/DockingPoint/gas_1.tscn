@@ -3414,7 +3414,7 @@ script = ExtResource( 1 )
 position = Vector2( -3283.22, 1156.61 )
 rotation = -1.02102
 frames = SubResource( 1572 )
-frame = 231
+frame = 26
 playing = true
 flip_h = true
 flip_v = true
@@ -3429,7 +3429,7 @@ position = Vector2( 895.847, 669.591 )
 rotation = -3.62854
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 1813 )
-frame = 160
+frame = 43
 playing = true
 
 [node name="gas_moon_2" type="Node2D" parent="."]
@@ -3441,7 +3441,7 @@ script = ExtResource( 16 )
 position = Vector2( 559.361, 405.361 )
 rotation = -5.044
 frames = SubResource( 2054 )
-frame = 85
+frame = 120
 playing = true
 flip_h = true
 
@@ -3455,7 +3455,7 @@ position = Vector2( 689.623, 621.648 )
 rotation = -4.6897
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 2175 )
-frame = 32
+frame = 35
 playing = true
 flip_h = true
 

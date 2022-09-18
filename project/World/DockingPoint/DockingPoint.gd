@@ -8,7 +8,7 @@ extends Node2D
 signal died
 
 export (Resource) var map_icon = MapIcon.new()
-export var docking_distance := 300.0 setget _set_docking_distance
+export var docking_distance := 200.0 setget _set_docking_distance
 
 var angle_proportion := 1.0
 var is_player_inside := false
@@ -55,7 +55,6 @@ func _set_docking_distance(value: float) -> void:
 	docking_distance = value
 	if not is_inside_tree():
 		yield(self, "ready")
-
 	docking_shape.shape.radius = value
 
 

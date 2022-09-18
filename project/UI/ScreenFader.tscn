@@ -2,7 +2,6 @@
 
 [ext_resource path="res://UI/ScreenFader.gd" type="Script" id=1]
 
-
 [sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0 )
 colors = PoolColorArray( 0, 0, 0, 1 )

@@ -16,7 +16,7 @@ tracks/0/path = NodePath(".:rotation_degrees")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
-tracks/0/enabled = true
+tracks/0/enabled = false
 tracks/0/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -33,7 +33,7 @@ tracks/0/path = NodePath(".:rotation_degrees")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
-tracks/0/enabled = true
+tracks/0/enabled = false
 tracks/0/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -50,7 +50,7 @@ tracks/0/path = NodePath(".:rotation_degrees")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
-tracks/0/enabled = true
+tracks/0/enabled = false
 tracks/0/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -67,7 +67,7 @@ tracks/0/path = NodePath(".:rotation_degrees")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
-tracks/0/enabled = true
+tracks/0/enabled = false
 tracks/0/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -180,7 +180,6 @@ anims/idle = SubResource( 4 )
 
 [node name="Asteroid6" type="Sprite" parent="MarginContainer/MarginContainer/Asteroids"]
 position = Vector2( 1399.17, 54.8592 )
-rotation = -2.57611
 scale = Vector2( 0.301901, 0.272804 )
 texture = ExtResource( 12 )
 
@@ -191,7 +190,6 @@ anims/idle = SubResource( 16 )
 
 [node name="Asteroid7" type="Sprite" parent="MarginContainer/MarginContainer/Asteroids"]
 position = Vector2( 1178.19, 99.6973 )
-rotation = -0.757473
 scale = Vector2( 0.882691, 0.851114 )
 texture = ExtResource( 12 )
 

@@ -15,6 +15,7 @@ onready var fx_anim_player := $FXAnimationPlayer
 onready var fx_tween := $FXTween
 onready var sprite := $Sprite
 
+
 var iron_amount: float
 
 
@@ -45,7 +46,7 @@ func shrink() -> void:
 		sprite, "scale", sprite.scale, Vector2.ZERO, 0.25, Tween.TRANS_BACK, Tween.EASE_IN
 	)
 	fx_tween.interpolate_property(
-		dock_aura, "scale", dock_aura.scale, Vector2.ZERO, 0.5, Tween.TRANS_BACK, Tween.EASE_IN
+		dock_aura, "scale", dock_aura.scale, Vector2.ZERO, 0.50, Tween.TRANS_BACK, Tween.EASE_IN
 	)
 	fx_tween.start()
 	yield(fx_tween, "tween_all_completed")
@@ -57,6 +58,8 @@ func _on_DockingArea_body_entered(body: Node) -> void:
 	anim_player.stop(false)
 
 
+
 func _on_DockingArea_body_exited(body: Node) -> void:
 	._on_DockingArea_body_exited(body)
 	anim_player.play()
+
