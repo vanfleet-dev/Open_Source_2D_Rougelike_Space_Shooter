@@ -8,7 +8,19 @@ extends Camera2D
 
 const SHAKE_EXPONENT := 0.8
 
-export var max_zoom := 20.0
+###############################################
+export var min_zoom := 0.5
+export var max_zoom := 5
+export var zoom_factor := 0.5
+export var zoom_duration := 0.1
+
+var _zoom_level := 3.0 setget _set_zoom_level
+
+
+onready var tween: Tween = $Tween
+###############################################
+
+export var map_max_zoom := 20.0
 export var decay_rate := 1.0
 export var max_offset := Vector2(100.0, 100.0)
 export var max_rotation := 0.1
@@ -86,7 +98,7 @@ func _toggle_map(show: bool, duration: float) -> void:
 			self,
 			"zoom",
 			zoom,
-			Vector2(max_zoom, max_zoom),
+			Vector2(map_max_zoom, map_max_zoom),
 			duration,
 			Tween.TRANS_LINEAR,
 			Tween.EASE_OUT_IN
@@ -94,5 +106,31 @@ func _toggle_map(show: bool, duration: float) -> void:
 	tween.start()
 
 
-func _on_Events_explosion_occurred() -> void:
-	self.shake_amount += 0.6
+## jvf zoom test
+
+func _set_zoom_level(value: float) -> void:
+	_zoom_level = clamp(value, min_zoom, max_zoom)
+	tween.interpolate_property(
+		self,
+		"zoom",
+		zoom,
+		Vector2(_zoom_level, _zoom_level),
+		zoom_duration,
+		tween.TRANS_SINE
+	)
+	tween.start()
+
+func _unhandled_input(event):
+	if event.is_action_pressed("zoom_in"):
+		_set_zoom_level(_zoom_level - zoom_factor)
+	if event.is_action_pressed("zoom_out"):
+		_set_zoom_level(_zoom_level + zoom_factor)
+
+
+# func _unhandled_input(event):
+# 	if event.is_action_pressed("zoom_in"):
+# 		_set_zoom_level(_zoom_level - zoom_factor)
+# 	if event.is_action_pressed("zoom_out"):
+# 		_set_zoom_level(_zoom_level + zoom_factor)
+
+##
